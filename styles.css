@@ -507,8 +507,8 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
 }
 
 html[data-theme="dark"] .lang-switch-btn.is-active {
-    color: var(--black);
-    background: var(--gray-800);
+    color: var(--white);
+    background: var(--black);
 }
 
 html[data-theme="dark"] .lang-switch-btn:not(.is-active) {

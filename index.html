@@ -88,7 +88,14 @@
                     <span class="logo-caption">Breure Media</span>
                 </span>
             </a>
-            <div class="nav-links">
+            <button type="button" class="mobile-nav-trigger" aria-expanded="false" aria-controls="abshops-mobile-nav" data-i18n="nav.mobileOpen" data-i18n-attr="aria-label" aria-label="Hoofdmenu openen">
+                <span class="mobile-nav-trigger-bars" aria-hidden="true">
+                    <span class="mobile-nav-trigger-line"></span>
+                    <span class="mobile-nav-trigger-line"></span>
+                    <span class="mobile-nav-trigger-line"></span>
+                </span>
+            </button>
+            <div class="nav-links nav-links-desktop">
                 <a href="websites.html" data-i18n="nav.websites">Websites</a>
                 <a href="webshops.html" data-i18n="nav.webshops">Webshops</a>
                 <a href="ai-oplossingen.html" data-i18n="nav.ai">AI-oplossingen</a>
@@ -106,6 +113,39 @@
             </div>
         </div>
     </nav>
+
+    <div class="mobile-nav" id="abshops-mobile-nav" aria-hidden="true">
+        <div class="mobile-nav-backdrop" tabindex="-1"></div>
+        <div class="mobile-nav-panel" role="dialog" aria-modal="true" data-i18n="nav.mobileDialog" data-i18n-attr="aria-label">
+            <div class="mobile-nav-sheet">
+                <div class="mobile-nav-top">
+                    <button type="button" class="mobile-nav-close" data-i18n="nav.mobileClose" data-i18n-attr="aria-label" aria-label="Menu sluiten">
+                        <svg class="mobile-nav-close-svg" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" d="M6 6l12 12M18 6L6 18"/></svg>
+                    </button>
+                </div>
+                <nav class="mobile-nav-primary">
+                    <a href="websites.html" class="mobile-nav-primary-link" data-i18n="nav.websites">Websites</a>
+                    <a href="webshops.html" class="mobile-nav-primary-link" data-i18n="nav.webshops">Webshops</a>
+                    <a href="ai-oplossingen.html" class="mobile-nav-primary-link" data-i18n="nav.ai">AI-oplossingen</a>
+                </nav>
+                <div class="mobile-nav-divider" aria-hidden="true"></div>
+                <div class="mobile-nav-controls">
+                    <div class="lang-switch lang-switch--mobile" role="group">
+                        <button type="button" class="lang-switch-btn is-active" data-lang="nl" aria-pressed="true"><span data-i18n="lang.labelNl">Nederlands</span></button>
+                        <button type="button" class="lang-switch-btn" data-lang="en" aria-pressed="false"><span data-i18n="lang.labelEn">English</span></button>
+                    </div>
+                    <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Schakel naar donker thema">
+                        <span class="theme-toggle-thumb" aria-hidden="true">
+                            <svg class="theme-toggle-icon theme-toggle-icon-sun" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2.5v2M12 19.5v2M4 12H2m20 0h-2M5.64 5.64l1.41 1.41m10.91 10.91l1.41 1.41M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41"/></svg>
+                            <svg class="theme-toggle-icon theme-toggle-icon-moon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                        </span>
+                    </button>
+                </div>
+                <a href="contact.html" class="nav-cta mobile-nav-cta" data-i18n="nav.contact">Contact</a>
+                <p class="mobile-nav-trust" data-i18n="nav.mobileTrust">Premium websites, webshops en AI-oplossingen vanuit Rotterdam.</p>
+            </div>
+        </div>
+    </div>
 
     <section class="hero">
         <div class="hero-content">
@@ -273,6 +313,7 @@
     </footer>
 
     <script src="i18n.js" defer></script>
+    <script src="mobile-nav.js" defer></script>
     <script src="script.js" defer></script>
 </body>
 </html>

@@ -9,8 +9,8 @@
 })();
 
 function bindThemeToggle() {
-    var btn = document.querySelector('.theme-toggle');
-    if (!btn) return;
+    var btns = document.querySelectorAll('.theme-toggle');
+    if (!btns.length) return;
 
     function themeLabels() {
         var lang = document.documentElement.lang === 'en' ? 'en' : 'nl';
@@ -29,12 +29,15 @@ function bindThemeToggle() {
     function refresh() {
         var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
         var L = themeLabels();
-        btn.setAttribute('aria-checked', isDark ? 'true' : 'false');
-        btn.setAttribute('aria-label', isDark ? L.toLight : L.toDark);
+        btns.forEach(function (btn) {
+            btn.setAttribute('aria-checked', isDark ? 'true' : 'false');
+            btn.setAttribute('aria-label', isDark ? L.toLight : L.toDark);
+        });
     }
 
-    btn.addEventListener('click', function () {
-        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    function onToggle() {
+        var next =
+            document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', next);
         try {
             localStorage.setItem('abshops-theme', next);
@@ -42,6 +45,10 @@ function bindThemeToggle() {
             /* ignore */
         }
         refresh();
+    }
+
+    btns.forEach(function (btn) {
+        btn.addEventListener('click', onToggle);
     });
 
     document.addEventListener('abshops:i18n-applied', refresh);

@@ -22,7 +22,12 @@
         webshops: 'Webshops',
         ai: 'AI-oplossingen',
         contact: 'Contact',
-        logoAria: 'ABshops — Breure Media'
+        logoAria: 'ABshops — Breure Media',
+        mobileOpen: 'Hoofdmenu openen',
+        mobileClose: 'Menu sluiten',
+        mobileDialog: 'Hoofdnavigatie',
+        mobileTrust:
+            'Premium websites, webshops en AI-oplossingen vanuit Rotterdam.'
     };
     DICT.en.nav = {
         home: 'Home',
@@ -30,7 +35,12 @@
         webshops: 'Webshops',
         ai: 'AI solutions',
         contact: 'Contact',
-        logoAria: 'ABshops — Breure Media'
+        logoAria: 'ABshops — Breure Media',
+        mobileOpen: 'Open main menu',
+        mobileClose: 'Close menu',
+        mobileDialog: 'Primary navigation',
+        mobileTrust:
+            'Premium websites, webshops and AI solutions from Rotterdam.'
     };
 
     DICT.nl.footer = {
@@ -876,26 +886,30 @@
     }
 
     function bindLangSwitch() {
-        var root = document.querySelector('.lang-switch');
-        if (!root) return;
+        var roots = document.querySelectorAll('.lang-switch');
+        if (!roots.length) return;
 
         function syncButtons(active) {
-            root.querySelectorAll('.lang-switch-btn').forEach(function (btn) {
-                var code = btn.getAttribute('data-lang');
-                var isOn = code === active;
-                btn.setAttribute('aria-pressed', isOn ? 'true' : 'false');
-                btn.classList.toggle('is-active', isOn);
+            roots.forEach(function (root) {
+                root.querySelectorAll('.lang-switch-btn').forEach(function (btn) {
+                    var code = btn.getAttribute('data-lang');
+                    var isOn = code === active;
+                    btn.setAttribute('aria-pressed', isOn ? 'true' : 'false');
+                    btn.classList.toggle('is-active', isOn);
+                });
+                var grpAria = t(active, 'lang.groupAria');
+                if (grpAria) root.setAttribute('aria-label', grpAria);
             });
-            var grpAria = t(active, 'lang.groupAria');
-            if (grpAria) root.setAttribute('aria-label', grpAria);
         }
 
-        root.querySelectorAll('.lang-switch-btn').forEach(function (btn) {
-            btn.addEventListener('click', function () {
-                var next = btn.getAttribute('data-lang');
-                if (!next || !SUPPORTED[next]) return;
-                if (next === getPreferredLang()) return;
-                applyLanguage(next);
+        roots.forEach(function (root) {
+            root.querySelectorAll('.lang-switch-btn').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var next = btn.getAttribute('data-lang');
+                    if (!next || !SUPPORTED[next]) return;
+                    if (next === getPreferredLang()) return;
+                    applyLanguage(next);
+                });
             });
         });
 

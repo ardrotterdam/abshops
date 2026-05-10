@@ -1,38 +1,39 @@
-// Smooth scroll for navigation links
+// Smooth scroll for in-page anchors only (same document)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    const id = anchor.getAttribute('href');
+    if (!id || id === '#') return;
+
     anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(id);
+        if (!target) return;
+
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        
-        if (target) {
-            const navHeight = document.querySelector('.nav').offsetHeight;
-            const targetPosition = target.offsetTop - navHeight;
-            
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-        }
+        const navEl = document.querySelector('.nav');
+        const navHeight = navEl ? navEl.offsetHeight : 0;
+        const targetPosition = target.offsetTop - navHeight;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
     });
 });
 
 // Nav background on scroll
-let lastScroll = 0;
 const nav = document.querySelector('.nav');
+if (nav) {
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
 
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll > 50) {
-        nav.style.background = 'rgba(255, 255, 255, 0.95)';
-        nav.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
-    } else {
-        nav.style.background = 'rgba(255, 255, 255, 0.8)';
-        nav.style.boxShadow = 'none';
-    }
-    
-    lastScroll = currentScroll;
-});
+        if (currentScroll > 50) {
+            nav.style.background = 'rgba(255, 255, 255, 0.95)';
+            nav.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
+        } else {
+            nav.style.background = 'rgba(255, 255, 255, 0.8)';
+            nav.style.boxShadow = 'none';
+        }
+    });
+}
 
 // Intersection Observer for fade-in animations
 const observerOptions = {
@@ -49,8 +50,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements for animation
-document.querySelectorAll('.service-card, .stat-item').forEach(el => {
+document.querySelectorAll('.service-card, .stat-item, .animate-in').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)';

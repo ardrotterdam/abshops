@@ -44,8 +44,6 @@
 
     --nav-logo-title: #ffffff;
     --nav-logo-sub: rgba(255, 255, 255, 0.5);
-    --nav-logo-mark-bg: #ffffff;
-    --nav-logo-mark-fg: #0a0a0a;
 
     --nav-cta-bg: #ffffff;
     --nav-cta-fg: #0a0a0a;
@@ -84,7 +82,6 @@
     --shadow-card: 0 24px 64px rgba(0, 0, 0, 0.09);
     --shadow-cross: 0 18px 52px rgba(0, 0, 0, 0.08);
     --shadow-lead-card: 0 28px 80px rgba(0, 0, 0, 0.08);
-    --shadow-logo-mark: 0 10px 32px rgba(0, 0, 0, 0.14);
     --focus-ring: rgba(10, 10, 10, 0.1);
 
     --surface-glass: rgba(255, 255, 255, 0.5);
@@ -136,8 +133,6 @@ html[data-theme="dark"] {
 
     --nav-logo-title: #0a0a0a;
     --nav-logo-sub: rgba(10, 10, 10, 0.44);
-    --nav-logo-mark-bg: #0a0a0a;
-    --nav-logo-mark-fg: #ffffff;
 
     --nav-cta-bg: #0a0a0a;
     --nav-cta-fg: #ffffff;
@@ -175,7 +170,6 @@ html[data-theme="dark"] {
     --shadow-card: 0 28px 72px rgba(0, 0, 0, 0.52);
     --shadow-cross: 0 20px 58px rgba(0, 0, 0, 0.48);
     --shadow-lead-card: 0 32px 92px rgba(0, 0, 0, 0.5);
-    --shadow-logo-mark: 0 12px 40px rgba(0, 0, 0, 0.45);
     --focus-ring: rgba(242, 243, 247, 0.14);
 
     --surface-glass: rgba(24, 26, 34, 0.55);
@@ -275,81 +269,100 @@ html[data-theme="dark"] ::selection {
     gap: 1.5rem;
 }
 
-/* Logo — ABshops / Breure Media wordmark */
+/* Logo — typographic wordmark (nav: inverted strip tokens; footer: page theme) */
 .logo {
     display: inline-flex;
     align-items: center;
-    gap: 0.85rem;
     text-decoration: none;
-    color: var(--nav-logo-title);
+    -webkit-tap-highlight-color: transparent;
     transition:
-        opacity 0.35s var(--ease-nav),
+        opacity 0.4s var(--ease-nav),
         transform 0.45s var(--ease-spring);
 }
 
+.nav .logo {
+    color: var(--nav-logo-title);
+}
+
+.footer .logo {
+    color: var(--black);
+}
+
 .logo:hover {
-    opacity: 0.92;
+    opacity: 0.9;
 }
 
 .logo:focus-visible {
     outline: 2px solid var(--nav-focus-ring);
-    outline-offset: 4px;
-    border-radius: 0.25rem;
+    outline-offset: 3px;
+    border-radius: 0.125rem;
 }
 
-.logo-mark {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 0.55rem;
-    background: var(--nav-logo-mark-bg);
-    color: var(--nav-logo-mark-fg);
-    box-shadow: var(--shadow-logo-mark);
-    flex-shrink: 0;
-    transition:
-        transform 0.42s var(--ease-spring),
-        box-shadow 0.42s var(--ease-nav),
-        background-color var(--nav-transition-duration) var(--ease-nav),
-        color var(--nav-transition-duration) var(--ease-nav);
+.footer .logo:focus-visible {
+    outline-color: var(--gray-400);
 }
 
-.logo:hover .logo-mark {
-    transform: scale(1.05) rotate(-2deg);
-    box-shadow: var(--shadow-btn);
-}
-
-.logo-monogram {
-    font-family: var(--font-display);
-    font-size: 0.5625rem;
-    font-weight: 800;
-    letter-spacing: 0.02em;
-    line-height: 1;
-}
-
-.logo-wordmark {
+.logo-lockup {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.1rem;
-    line-height: 1.05;
+    justify-content: center;
+    gap: 0.18rem;
+    line-height: 1;
 }
 
-.logo-title {
+.logo-name {
     font-family: var(--font-display);
-    font-size: 1.0625rem;
+    font-size: clamp(1.0625rem, 2.35vw, 1.375rem);
     font-weight: 700;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.055em;
+    line-height: 1.03;
     color: inherit;
+    font-optical-sizing: auto;
+    text-rendering: geometricPrecision;
+    transition:
+        letter-spacing calc(var(--nav-transition-duration) * 0.78) var(--ease-nav),
+        transform 0.45s var(--ease-spring);
 }
 
-.logo-sub {
-    font-size: 0.625rem;
-    font-weight: 600;
-    letter-spacing: 0.16em;
+.logo-caption {
+    font-family: var(--font);
+    font-size: clamp(0.53125rem, 1.1vw, 0.6875rem);
+    font-weight: 500;
+    letter-spacing: 0.26em;
     text-transform: uppercase;
+    line-height: 1.25;
+}
+
+.nav .logo-caption {
     color: var(--nav-logo-sub);
+    transition:
+        letter-spacing calc(var(--nav-transition-duration) * 0.75) var(--ease-nav),
+        opacity 0.4s var(--ease-nav),
+        color var(--nav-transition-duration) var(--ease-nav);
+}
+
+.footer .logo-caption {
+    color: var(--gray-500);
+    transition:
+        letter-spacing calc(var(--nav-transition-duration) * 0.75) var(--ease-nav),
+        opacity 0.35s var(--ease-out),
+        color var(--theme-duration) var(--ease-out);
+}
+
+.logo:hover .logo-name {
+    letter-spacing: -0.062em;
+    transform: translateY(-1px);
+}
+
+.logo:hover .logo-caption {
+    letter-spacing: 0.28em;
+    opacity: 0.85;
+}
+
+.footer .logo:hover .logo-caption {
+    color: var(--gray-600);
+    opacity: 1;
 }
 
 .nav-links {
@@ -1687,8 +1700,8 @@ html[data-theme="dark"] .cta-section .cta-mail-link:hover {
         max-width: 100%;
     }
 
-    .logo-sub {
-        letter-spacing: 0.12em;
+    .logo-caption {
+        letter-spacing: 0.2em;
     }
 }
 
@@ -2176,7 +2189,12 @@ html[data-theme="dark"] .lead-form-field select {
         transform: none;
     }
 
-    .logo:hover .logo-mark {
+    .logo:hover .logo-name {
         transform: none;
+        letter-spacing: -0.055em;
+    }
+
+    .logo:hover .logo-caption {
+        letter-spacing: 0.26em;
     }
 }

@@ -1,7 +1,25 @@
 (function () {
     'use strict';
 
-    var STEPS = ['Contact', 'Organisatie', 'Project', 'Afronden'];
+    function currentLang() {
+        return window.ABshopsI18n ? window.ABshopsI18n.getLang() : 'nl';
+    }
+
+    function stepLabels() {
+        return window.ABshopsI18n ? window.ABshopsI18n.leadSteps(currentLang()) : ['Contact', 'Organisatie', 'Project', 'Afronden'];
+    }
+
+    function validationHint() {
+        return window.ABshopsI18n
+            ? window.ABshopsI18n.leadString(currentLang(), 'validationHint')
+            : 'Controleer de gemarkeerde velden.';
+    }
+
+    function syncProgressAria(form) {
+        var pg = form.querySelector('.lead-form-progress');
+        if (!pg || !window.ABshopsI18n) return;
+        pg.setAttribute('aria-label', window.ABshopsI18n.leadString(currentLang(), 'progressAria'));
+    }
 
     function clearErrors(stepEl) {
         stepEl.querySelectorAll('.lead-form-field.has-error').forEach(function (field) {
@@ -144,7 +162,7 @@
             var next = index + delta;
             if (next < 0 || next >= steps.length) return;
             if (delta > 0 && !validateStep(steps[index])) {
-                if (status) status.textContent = 'Controleer de gemarkeerde velden.';
+                if (status) status.textContent = validationHint();
                 return;
             }
             index = next;
@@ -168,7 +186,7 @@
                 e.preventDefault();
                 index = invalidAt;
                 showStep(form, index);
-                if (status) status.textContent = 'Controleer de gemarkeerde velden.';
+                if (status) status.textContent = validationHint();
                 return;
             }
         });
@@ -180,7 +198,7 @@
         if (!track || !labelsRow) return;
         track.innerHTML = '';
         labelsRow.innerHTML = '';
-        STEPS.forEach(function (label, i) {
+        stepLabels().forEach(function (label, i) {
             var seg = document.createElement('div');
             seg.className = 'lead-form-progress-segment';
             seg.setAttribute('data-progress-index', String(i));
@@ -189,7 +207,19 @@
             sp.textContent = label;
             labelsRow.appendChild(sp);
         });
+        syncProgressAria(form);
     }
+
+    function refreshLeadFormsI18n() {
+        document.querySelectorAll('form[data-lead-form]').forEach(function (form) {
+            var idx = parseInt(form.getAttribute('data-current-step'), 10);
+            if (isNaN(idx)) idx = 0;
+            renderProgressShell(form);
+            updateProgress(form, idx);
+        });
+    }
+
+    document.addEventListener('abshops:i18n-applied', refreshLeadFormsI18n);
 
     document.querySelectorAll('form[data-lead-form]').forEach(function (form) {
         renderProgressShell(form);

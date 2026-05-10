@@ -12,10 +12,25 @@ function bindThemeToggle() {
     var btn = document.querySelector('.theme-toggle');
     if (!btn) return;
 
+    function themeLabels() {
+        var lang = document.documentElement.lang === 'en' ? 'en' : 'nl';
+        if (lang === 'en') {
+            return {
+                toDark: 'Switch to dark theme',
+                toLight: 'Switch to light theme'
+            };
+        }
+        return {
+            toDark: 'Schakel naar donker thema',
+            toLight: 'Schakel naar licht thema'
+        };
+    }
+
     function refresh() {
         var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        var L = themeLabels();
         btn.setAttribute('aria-checked', isDark ? 'true' : 'false');
-        btn.setAttribute('aria-label', isDark ? 'Schakel naar licht thema' : 'Schakel naar donker thema');
+        btn.setAttribute('aria-label', isDark ? L.toLight : L.toDark);
     }
 
     btn.addEventListener('click', function () {
@@ -28,6 +43,8 @@ function bindThemeToggle() {
         }
         refresh();
     });
+
+    document.addEventListener('abshops:i18n-applied', refresh);
 
     refresh();
 }

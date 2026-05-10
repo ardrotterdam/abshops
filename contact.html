@@ -29,10 +29,10 @@
     }
     </script>
 </head>
-<body>
+<body data-i18n-page="contact">
     <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="logo" aria-label="ABshops — Breure Media">
+            <a href="index.html" class="logo" data-i18n="nav.logoAria" data-i18n-attr="aria-label" aria-label="ABshops — Breure Media">
                 <span class="logo-mark" aria-hidden="true"><span class="logo-monogram">AB</span></span>
                 <span class="logo-wordmark">
                     <span class="logo-title">ABshops</span>
@@ -40,61 +40,65 @@
                 </span>
             </a>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="websites.html">Websites</a>
-                <a href="webshops.html">Webshops</a>
-                <a href="ai-oplossingen.html">AI-oplossingen</a>
+                <a href="index.html" data-i18n="nav.home">Home</a>
+                <a href="websites.html" data-i18n="nav.websites">Websites</a>
+                <a href="webshops.html" data-i18n="nav.webshops">Webshops</a>
+                <a href="ai-oplossingen.html" data-i18n="nav.ai">AI-oplossingen</a>
+                <div class="lang-switch" role="group">
+                    <button type="button" class="lang-switch-btn is-active" data-lang="nl" aria-pressed="true"><span data-i18n="lang.labelNl">Nederlands</span></button>
+                    <button type="button" class="lang-switch-btn" data-lang="en" aria-pressed="false"><span data-i18n="lang.labelEn">English</span></button>
+                </div>
                 <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Schakel naar donker thema">
                     <span class="theme-toggle-thumb" aria-hidden="true">
                         <svg class="theme-toggle-icon theme-toggle-icon-sun" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2.5v2M12 19.5v2M4 12H2m20 0h-2M5.64 5.64l1.41 1.41m10.91 10.91l1.41 1.41M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41"/></svg>
                         <svg class="theme-toggle-icon theme-toggle-icon-moon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
                     </span>
                 </button>
-                <a href="contact.html" class="nav-cta nav-current">Contact</a>
+                <a href="contact.html" class="nav-cta nav-current" data-i18n="nav.contact">Contact</a>
             </div>
         </div>
     </nav>
 
     <header class="hero page-hero">
         <div class="page-hero-content">
-            <h1 class="hero-title">Laten we kennismaken</h1>
-            <p class="page-lead">Vertel kort wat je wilt bereiken — nieuwe site, migratie van een shop of een eerste AI-pilot. We lezen persoonlijk mee en plannen zo nodig een call om scope en verwachtingen scherp te krijgen.</p>
+            <h1 class="hero-title" data-i18n="contact.heroTitle">Laten we kennismaken</h1>
+            <p class="page-lead" data-i18n="contact.heroLead">Vertel kort wat je wilt bereiken — nieuwe site, migratie van een shop of een eerste AI-pilot. We lezen persoonlijk mee en plannen zo nodig een call om scope en verwachtingen scherp te krijgen.</p>
         </div>
     </header>
 
     <main class="page-main">
         <section class="content-section animate-in">
-            <h2>Direct contact</h2>
+            <h2 data-i18n="contact.directTitle">Direct contact</h2>
             <dl>
                 <div class="contact-detail">
-                    <dt>E-mail</dt>
+                    <dt data-i18n="contact.dtEmail">E-mail</dt>
                     <dd><a href="mailto:info@abshops.nl">info@abshops.nl</a></dd>
                 </div>
                 <div class="contact-detail">
-                    <dt>Adres</dt>
-                    <dd>Weena 70<br>Rotterdam<br>Nederland</dd>
+                    <dt data-i18n="contact.dtAddress">Adres</dt>
+                    <dd data-i18n="contact.addressBlock" data-i18n-html="true">Weena 70<br>Rotterdam<br>Nederland</dd>
                 </div>
                 <div class="contact-detail">
-                    <dt>Reactietijd</dt>
-                    <dd>Werkdagen reageren we doorgaans binnen één werkdag op serieuze aanvragen.</dd>
+                    <dt data-i18n="contact.dtReply">Reactietijd</dt>
+                    <dd data-i18n="contact.dtReplyText">Werkdagen reageren we doorgaans binnen één werkdag op serieuze aanvragen.</dd>
                 </div>
             </dl>
         </section>
 
         <section class="content-section animate-in">
-            <h2>Wat helpt in je eerste bericht</h2>
-            <p>Hoe concreter je startvraag, hoe gerichter we meedenken. Dit werkt goed in je mail:</p>
+            <h2 data-i18n="contact.firstMsgTitle">Wat helpt in je eerste bericht</h2>
+            <p data-i18n="contact.firstMsgIntro">Hoe concreter je startvraag, hoe gerichter we meedenken. Dit werkt goed in je mail:</p>
             <ul>
-                <li>Je bedrijf en doelgroep in één zin</li>
-                <li>Link naar je huidige site of shop (als die er is)</li>
-                <li>Wat je wilt bereiken binnen 3–6 maanden</li>
-                <li>Of er een gewenste launchdatum is</li>
+                <li data-i18n="contact.li1">Je bedrijf en doelgroep in één zin</li>
+                <li data-i18n="contact.li2">Link naar je huidige site of shop (als die er is)</li>
+                <li data-i18n="contact.li3">Wat je wilt bereiken binnen 3–6 maanden</li>
+                <li data-i18n="contact.li4">Of er een gewenste launchdatum is</li>
             </ul>
         </section>
 
         <section class="content-section animate-in" id="bericht" aria-labelledby="contact-form-title">
-            <h2 id="contact-form-title">Bericht sturen</h2>
-            <p>Vul het formulier hieronder in. Na het versturen zie je een bevestigingspagina; we reageren doorgaans binnen één werkdag.</p>
+            <h2 id="contact-form-title" data-i18n="contact.formSectionTitle">Bericht sturen</h2>
+            <p data-i18n="contact.formIntro">Vul het formulier hieronder in. Na het versturen zie je een bevestigingspagina; we reageren doorgaans binnen één werkdag.</p>
             <form class="contact-form" method="POST" action="https://formsubmit.co/info@abshops.nl">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="Nieuwe aanvraag via ABshops.nl">
@@ -102,71 +106,71 @@
                 <input type="text" name="_honey" style="display:none">
                 <div class="lead-form-grid" style="margin-top: 1.25rem;">
                     <div class="lead-form-field">
-                        <label for="cf-name">Naam *</label>
+                        <label for="cf-name" data-i18n="contact.labelName">Naam *</label>
                         <input id="cf-name" name="name" type="text" autocomplete="name" required>
                     </div>
                     <div class="lead-form-field">
-                        <label for="cf-email">E-mail *</label>
+                        <label for="cf-email" data-i18n="contact.labelEmail">E-mail *</label>
                         <input id="cf-email" name="email" type="email" autocomplete="email" required>
                     </div>
                     <div class="lead-form-field">
-                        <label for="cf-phone">Telefoon</label>
+                        <label for="cf-phone" data-i18n="contact.labelPhone">Telefoon</label>
                         <input id="cf-phone" name="phone" type="tel" autocomplete="tel">
                     </div>
                     <div class="lead-form-field">
-                        <label for="cf-subject">Onderwerp</label>
+                        <label for="cf-subject" data-i18n="contact.labelSubject">Onderwerp</label>
                         <input id="cf-subject" name="onderwerp" type="text" autocomplete="off">
                     </div>
                     <div class="lead-form-field">
-                        <label for="cf-message">Bericht *</label>
-                        <textarea id="cf-message" name="bericht" rows="6" required placeholder="Waar kunnen we je mee helpen?"></textarea>
+                        <label for="cf-message" data-i18n="contact.labelMessage">Bericht *</label>
+                        <textarea id="cf-message" name="bericht" rows="6" required data-i18n-placeholder="contact.phMessage" placeholder="Waar kunnen we je mee helpen?"></textarea>
                     </div>
                     <div class="lead-form-field">
                         <label class="lead-form-choice">
                             <input type="checkbox" name="privacy_toestemming" id="cf-consent" value="yes" required>
-                            <span>Ik ga akkoord dat ABshops mijn gegevens gebruikt om contact met mij op te nemen over dit bericht. *</span>
+                            <span data-i18n="contact.consent">Ik ga akkoord dat ABshops mijn gegevens gebruikt om contact met mij op te nemen over dit bericht. *</span>
                         </label>
                     </div>
                     <div class="lead-form-field" style="margin-top: 0.25rem;">
-                        <button type="submit" class="btn-primary">Verstuur bericht</button>
+                        <button type="submit" class="btn-primary" data-i18n="contact.submit">Verstuur bericht</button>
                     </div>
                 </div>
             </form>
         </section>
 
         <section class="content-section animate-in">
-            <h2>Diensten</h2>
-            <p>Wil je eerst lezen wat we precies leveren? Bekijk onze servicepagina's:</p>
+            <h2 data-i18n="contact.servicesTitle">Diensten</h2>
+            <p data-i18n="contact.servicesIntro">Wil je eerst lezen wat we precies leveren? Bekijk onze servicepagina's:</p>
             <div class="service-cross-links">
                 <a href="websites.html" class="service-cross-link">
-                    <h3>Premium websites</h3>
-                    <p>Design, techniek, performance en SEO-fundering.</p>
+                    <h3 data-i18n="contact.crossWebTitle">Premium websites</h3>
+                    <p data-i18n="contact.crossWebText">Design, techniek, performance en SEO-fundering.</p>
                 </a>
                 <a href="webshops.html" class="service-cross-link">
-                    <h3>Webshops</h3>
-                    <p>Conversie, checkout en schaalbare e-commerce.</p>
+                    <h3 data-i18n="contact.crossShopTitle">Webshops</h3>
+                    <p data-i18n="contact.crossShopText">Conversie, checkout en schaalbare e-commerce.</p>
                 </a>
                 <a href="ai-oplossingen.html" class="service-cross-link">
-                    <h3>AI-oplossingen</h3>
-                    <p>Automatisering en workflows met controle.</p>
+                    <h3 data-i18n="contact.crossAiTitle">AI-oplossingen</h3>
+                    <p data-i18n="contact.crossAiText">Automatisering en workflows met controle.</p>
                 </a>
             </div>
         </section>
 
         <section class="content-section animate-in">
-            <h2>Breure Media</h2>
-            <p>ABshops opereert onder de vlag van Breure Media — een compact team met focus op kwaliteit boven volume. Geen account circus: je praat met mensen die het werk ook daadwerkelijk uitvoeren.</p>
+            <h2 data-i18n="contact.bmTitle">Breure Media</h2>
+            <p data-i18n="contact.bmText">ABshops opereert onder de vlag van Breure Media — een compact team met focus op kwaliteit boven volume. Geen account circus: je praat met mensen die het werk ook daadwerkelijk uitvoeren.</p>
         </section>
 
-        <p style="margin-top: 2rem;"><a href="mailto:info@abshops.nl?subject=Introductie%20ABshops" class="btn-primary">Mail direct</a></p>
+        <p style="margin-top: 2rem;"><a href="mailto:info@abshops.nl?subject=Introductie%20ABshops" class="btn-primary" data-i18n="contact.mailDirect">Mail direct</a></p>
     </main>
 
     <section class="cta-section">
         <div class="cta-container">
-            <h2>Liever teruggebeld worden?</h2>
-            <p>Geef in je mail twee tijdvakken die uitkomen — dan stemmen we af wat het beste past.</p>
+            <h2 data-i18n="contact.ctaCallTitle">Liever teruggebeld worden?</h2>
+            <p data-i18n="contact.ctaCallLead">Geef in je mail twee tijdvakken die uitkomen — dan stemmen we af wat het beste past.</p>
             <div class="cta-buttons">
-                <a href="mailto:info@abshops.nl?subject=Terugbelverzoek" class="btn-primary">Plan via e-mail</a>
+                <a href="mailto:info@abshops.nl?subject=Terugbelverzoek" class="btn-primary" data-i18n="contact.ctaCallBtn">Plan via e-mail</a>
             </div>
         </div>
     </section>
@@ -174,27 +178,28 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-brand">
-                <a href="index.html" class="logo" aria-label="ABshops — Breure Media">
+                <a href="index.html" class="logo" data-i18n="nav.logoAria" data-i18n-attr="aria-label" aria-label="ABshops — Breure Media">
                     <span class="logo-mark" aria-hidden="true"><span class="logo-monogram">AB</span></span>
                     <span class="logo-wordmark">
                         <span class="logo-title">ABshops</span>
                         <span class="logo-sub">Breure Media</span>
                     </span>
                 </a>
-                <p>Breure Media · Premium digital solutions</p>
+                <p data-i18n="footer.tagline">Breure Media · Premium digital solutions</p>
             </div>
             <div class="footer-links">
-                <a href="websites.html">Websites</a>
-                <a href="webshops.html">Webshops</a>
-                <a href="ai-oplossingen.html">AI-oplossingen</a>
-                <a href="contact.html">Contact</a>
+                <a href="websites.html" data-i18n="nav.websites">Websites</a>
+                <a href="webshops.html" data-i18n="nav.webshops">Webshops</a>
+                <a href="ai-oplossingen.html" data-i18n="nav.ai">AI-oplossingen</a>
+                <a href="contact.html" data-i18n="nav.contact">Contact</a>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 ABshops / Breure Media. Alle rechten voorbehouden.</p>
+                <p data-i18n="footer.rights">&copy; 2026 ABshops / Breure Media. Alle rechten voorbehouden.</p>
             </div>
         </div>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

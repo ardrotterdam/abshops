@@ -445,6 +445,98 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
     transform: rotate(0deg) scale(1);
 }
 
+/* Language switch — segmented control */
+.lang-switch {
+    display: inline-flex;
+    align-items: stretch;
+    flex-shrink: 0;
+    padding: 2px;
+    border-radius: 999px;
+    border: 1px solid var(--gray-300);
+    background: var(--toggle-surface);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    gap: 2px;
+    transition:
+        border-color var(--theme-duration) var(--ease-out),
+        background-color var(--theme-duration) var(--ease-out),
+        box-shadow 0.35s var(--ease-out);
+}
+
+.lang-switch-btn {
+    appearance: none;
+    margin: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: var(--font);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    padding: 0.45rem 0.65rem;
+    border-radius: 999px;
+    line-height: 1;
+    min-width: 0;
+    transition:
+        color 0.35s var(--ease-out),
+        background-color 0.35s var(--ease-out),
+        transform 0.2s var(--ease-out),
+        box-shadow 0.35s var(--ease-out);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.lang-switch-btn span {
+    display: inline-block;
+    transition: opacity 0.25s var(--ease-out), transform 0.25s var(--ease-out);
+}
+
+.lang-switch-btn:hover:not(.is-active) {
+    color: var(--gray-700);
+}
+
+.lang-switch-btn:focus-visible {
+    outline: 2px solid var(--gray-400);
+    outline-offset: 2px;
+}
+
+.lang-switch-btn.is-active {
+    color: var(--white);
+    background: var(--black);
+    box-shadow: var(--shadow-sm);
+}
+
+html[data-theme="dark"] .lang-switch-btn.is-active {
+    color: var(--black);
+    background: var(--gray-800);
+}
+
+html[data-theme="dark"] .lang-switch-btn:not(.is-active) {
+    color: var(--gray-500);
+}
+
+html[data-theme="dark"] .lang-switch-btn:hover:not(.is-active) {
+    color: var(--gray-600);
+}
+
+body.i18n-switching > *:not(.nav) {
+    opacity: 0;
+    transform: translateY(6px);
+    filter: blur(3px);
+    pointer-events: none;
+    transition:
+        opacity 0.28s var(--ease-out),
+        transform 0.32s var(--ease-out),
+        filter 0.32s var(--ease-out);
+}
+
+body:not(.i18n-switching) > *:not(.nav) {
+    transition:
+        opacity 0.36s var(--ease-out),
+        transform 0.4s var(--ease-out),
+        filter 0.4s var(--ease-out);
+}
+
 /* Hero */
 .hero {
     --hero-pad-x: 3rem;
@@ -1366,6 +1458,11 @@ html[data-theme="dark"] .cta-section .cta-mail-link:hover {
         justify-content: flex-start;
         flex-wrap: wrap;
         gap: 0.5rem 1rem;
+    }
+
+    .lang-switch-btn {
+        padding: 0.38rem 0.5rem;
+        font-size: 0.625rem;
     }
 
     .nav-links a {

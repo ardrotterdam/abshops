@@ -30,10 +30,10 @@
     }
     </script>
 </head>
-<body>
+<body data-i18n-page="websites">
     <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="logo" aria-label="ABshops — Breure Media">
+            <a href="index.html" class="logo" data-i18n="nav.logoAria" data-i18n-attr="aria-label" aria-label="ABshops — Breure Media">
                 <span class="logo-mark" aria-hidden="true"><span class="logo-monogram">AB</span></span>
                 <span class="logo-wordmark">
                     <span class="logo-title">ABshops</span>
@@ -41,67 +41,71 @@
                 </span>
             </a>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="websites.html" class="nav-current">Websites</a>
-                <a href="webshops.html">Webshops</a>
-                <a href="ai-oplossingen.html">AI-oplossingen</a>
+                <a href="index.html" data-i18n="nav.home">Home</a>
+                <a href="websites.html" class="nav-current" data-i18n="nav.websites">Websites</a>
+                <a href="webshops.html" data-i18n="nav.webshops">Webshops</a>
+                <a href="ai-oplossingen.html" data-i18n="nav.ai">AI-oplossingen</a>
+                <div class="lang-switch" role="group">
+                    <button type="button" class="lang-switch-btn is-active" data-lang="nl" aria-pressed="true"><span data-i18n="lang.labelNl">Nederlands</span></button>
+                    <button type="button" class="lang-switch-btn" data-lang="en" aria-pressed="false"><span data-i18n="lang.labelEn">English</span></button>
+                </div>
                 <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Schakel naar donker thema">
                     <span class="theme-toggle-thumb" aria-hidden="true">
                         <svg class="theme-toggle-icon theme-toggle-icon-sun" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2.5v2M12 19.5v2M4 12H2m20 0h-2M5.64 5.64l1.41 1.41m10.91 10.91l1.41 1.41M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41"/></svg>
                         <svg class="theme-toggle-icon theme-toggle-icon-moon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
                     </span>
                 </button>
-                <a href="contact.html" class="nav-cta">Contact</a>
+                <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
             </div>
         </div>
     </nav>
 
     <header class="hero page-hero">
         <div class="page-hero-content">
-            <h1 class="hero-title">Premium websites die werken</h1>
-            <p class="page-lead">Jouw site is vaak het eerste wat klanten zien. Wij bouwen strakke, snelle en flexibele platforms die je merk ondersteunen — van positioning tot meetbare conversie.</p>
-            <p style="margin-top: 1.5rem;"><a href="#aanvraag" class="btn-primary">Vraag een gesprek aan</a></p>
+            <h1 class="hero-title" data-i18n="websites.heroTitle">Premium websites die werken</h1>
+            <p class="page-lead" data-i18n="websites.heroLead">Jouw site is vaak het eerste wat klanten zien. Wij bouwen strakke, snelle en flexibele platforms die je merk ondersteunen — van positioning tot meetbare conversie.</p>
+            <p style="margin-top: 1.5rem;"><a href="#aanvraag" class="btn-primary" data-i18n="websites.heroCta">Vraag een gesprek aan</a></p>
         </div>
     </header>
 
     <main class="page-main wide">
         <section class="content-section animate-in" id="wat-we-doen">
-            <h2>Wat je krijgt</h2>
-            <p>Geen generieke templates, maar een doorontworpen ervaring: heldere informatiearchitectuur, sterke typografie en rust in het ontwerp. Elk scherm wordt behandeld als onderdeel van een groter verhaal — zodat bezoekers snappen wie je bent en wat de volgende stap is.</p>
-            <p>We denken mee over contenthiërarchie, calls-to-action en microcopy, zodat je site niet alleen mooi is, maar ook richting geeft aan je funnel.</p>
+            <h2 data-i18n="websites.s1Title">Wat je krijgt</h2>
+            <p data-i18n="websites.s1p1">Geen generieke templates, maar een doorontworpen ervaring: heldere informatiearchitectuur, sterke typografie en rust in het ontwerp. Elk scherm wordt behandeld als onderdeel van een groter verhaal — zodat bezoekers snappen wie je bent en wat de volgende stap is.</p>
+            <p data-i18n="websites.s1p2">We denken mee over contenthiërarchie, calls-to-action en microcopy, zodat je site niet alleen mooi is, maar ook richting geeft aan je funnel.</p>
         </section>
 
         <section class="content-section animate-in">
-            <h2>Performance &amp; techniek</h2>
-            <p>Snelheid is UX en SEO tegelijk. We optimaliseren assets, caching en kritieke rendering paths waar dat nodig is. Technisch leggen we een solide basis: toegankelijkheid meenemen waar het kan, nette semantische markup en een codebase die onderhoudbaar blijft als je door groeit.</p>
+            <h2 data-i18n="websites.s2Title">Performance &amp; techniek</h2>
+            <p data-i18n="websites.s2p">Snelheid is UX en SEO tegelijk. We optimaliseren assets, caching en kritieke rendering paths waar dat nodig is. Technisch leggen we een solide basis: toegankelijkheid meenemen waar het kan, nette semantische markup en een codebase die onderhoudbaar blijft als je door groeit.</p>
             <ul>
-                <li>Snelle laadtijden en stabiele Core Web Vitals als uitgangspunt</li>
-                <li>Responsive layouts voor desktop, tablet en mobiel</li>
-                <li>Beveiliging en updates als vast onderdeel van het plaatje — geen bijzaak</li>
+                <li data-i18n="websites.s2li1">Snelle laadtijden en stabiele Core Web Vitals als uitgangspunt</li>
+                <li data-i18n="websites.s2li2">Responsive layouts voor desktop, tablet en mobiel</li>
+                <li data-i18n="websites.s2li3">Beveiliging en updates als vast onderdeel van het plaatje — geen bijzaak</li>
             </ul>
         </section>
 
         <section class="content-section animate-in" id="seo">
-            <h2>Vindbaarheid &amp; SEO</h2>
-            <p>Een premium website verdient organisch verkeer. Daarom bouwen we met zoekmachines in gedachten: logische URL-structuren, nette metadata, interne links en pagina's die antwoord geven op echte zoekvragen.</p>
-            <p>SEO is geen losstaand trucje maar samenhang met je contentstrategie — we helpen je die lijn te trekken, zodat groei duurzaam is en niet afhankelijk van een enkele tactiek.</p>
+            <h2 data-i18n="websites.s3Title">Vindbaarheid &amp; SEO</h2>
+            <p data-i18n="websites.s3p1">Een premium website verdient organisch verkeer. Daarom bouwen we met zoekmachines in gedachten: logische URL-structuren, nette metadata, interne links en pagina's die antwoord geven op echte zoekvragen.</p>
+            <p data-i18n="websites.s3p2">SEO is geen losstaand trucje maar samenhang met je contentstrategie — we helpen je die lijn te trekken, zodat groei duurzaam is en niet afhankelijk van een enkele tactiek.</p>
         </section>
 
         <section class="content-section animate-in">
-            <h2>Samenwerking</h2>
-            <p>Transparante planning, vaste momenten om feedback te verzamelen en een duidelijke launch-checklist. Je weet waar je aan toe bent: scope, mijlpalen en wat er ná live nog gebeurt (meten, bijsturen, uitbreiden).</p>
+            <h2 data-i18n="websites.s4Title">Samenwerking</h2>
+            <p data-i18n="websites.s4p">Transparante planning, vaste momenten om feedback te verzamelen en een duidelijke launch-checklist. Je weet waar je aan toe bent: scope, mijlpalen en wat er ná live nog gebeurt (meten, bijsturen, uitbreiden).</p>
         </section>
 
         <section class="content-section animate-in">
-            <h2>Ook interessant</h2>
+            <h2 data-i18n="websites.crossTitle">Ook interessant</h2>
             <div class="service-cross-links">
                 <a href="webshops.html" class="service-cross-link">
-                    <h3>Webshops</h3>
-                    <p>E-commerce met focus op conversie en schaalbare catalogi.</p>
+                    <h3 data-i18n="websites.crossShopTitle">Webshops</h3>
+                    <p data-i18n="websites.crossShopText">E-commerce met focus op conversie en schaalbare catalogi.</p>
                 </a>
                 <a href="ai-oplossingen.html" class="service-cross-link">
-                    <h3>AI-oplossingen</h3>
-                    <p>Automatisering en slimme workflows naast je website.</p>
+                    <h3 data-i18n="websites.crossAiTitle">AI-oplossingen</h3>
+                    <p data-i18n="websites.crossAiText">Automatisering en slimme workflows naast je website.</p>
                 </a>
             </div>
         </section>
@@ -110,13 +114,13 @@
             <div class="lead-form-section-inner page-main wide">
                 <div class="lead-form-card">
                     <div class="lead-form-intro">
-                        <p class="section-label">Intake</p>
-                        <h2 id="lead-form-title-web">Plan je aanvraag — premium website</h2>
-                        <p>Vul dit multi-stappen formulier in. Je gegevens worden alleen gebruikt om je aanvraag te beoordelen en persoonlijk contact op te nemen — conform je toestemming in de laatste stap.</p>
+                        <p class="section-label" data-i18n="lead.intakeLabel">Intake</p>
+                        <h2 id="lead-form-title-web" data-i18n="websites.leadTitle">Plan je aanvraag — premium website</h2>
+                        <p data-i18n="websites.leadIntro">Vul dit multi-stappen formulier in. Je gegevens worden alleen gebruikt om je aanvraag te beoordelen en persoonlijk contact op te nemen — conform je toestemming in de laatste stap.</p>
                         <ul class="lead-form-trust">
-                            <li>Reactie binnen één werkdag</li>
-                            <li>Vrijblijvend en vertrouwelijk</li>
-                            <li>Direct team, geen ticketrij</li>
+                            <li data-i18n="lead.trustWeb1">Reactie binnen één werkdag</li>
+                            <li data-i18n="lead.trustWeb2">Vrijblijvend en vertrouwelijk</li>
+                            <li data-i18n="lead.trustWeb3">Direct team, geen ticketrij</li>
                         </ul>
                     </div>
                     <form class="lead-form" data-lead-form data-service="websites" method="POST" action="https://formsubmit.co/info@abshops.nl" novalidate>
@@ -125,7 +129,7 @@
                         <input type="hidden" name="_next" value="https://abshops.nl/bedankt.html">
                         <input type="text" name="_honey" style="display:none">
                         <div class="lead-form-inner">
-                            <div class="lead-form-progress" role="group" aria-label="Stappen voortgang">
+                            <div class="lead-form-progress" role="group">
                                 <div class="lead-form-progress-track" aria-hidden="true"></div>
                                 <div class="lead-form-progress-labels"></div>
                             </div>
@@ -133,47 +137,47 @@
                                 <div class="lead-form-step" data-step="0">
                                     <div class="lead-form-grid lead-form-grid--2">
                                         <div class="lead-form-field">
-                                            <label for="lf-w-name">Naam *</label>
+                                            <label for="lf-w-name" data-i18n="lead.labelName">Naam *</label>
                                             <input id="lf-w-name" name="name" type="text" autocomplete="name" required>
-                                            <span class="lead-form-field-error">Vul je naam in.</span>
+                                            <span class="lead-form-field-error" data-i18n="lead.errName">Vul je naam in.</span>
                                         </div>
                                         <div class="lead-form-field">
-                                            <label for="lf-w-company">Bedrijf *</label>
+                                            <label for="lf-w-company" data-i18n="lead.labelCompany">Bedrijf *</label>
                                             <input id="lf-w-company" name="company" type="text" autocomplete="organization" required>
-                                            <span class="lead-form-field-error">Vul je bedrijfsnaam in.</span>
+                                            <span class="lead-form-field-error" data-i18n="lead.errCompany">Vul je bedrijfsnaam in.</span>
                                         </div>
                                         <div class="lead-form-field">
-                                            <label for="lf-w-email">E-mail *</label>
+                                            <label for="lf-w-email" data-i18n="lead.labelEmail">E-mail *</label>
                                             <input id="lf-w-email" name="email" type="email" autocomplete="email" required>
-                                            <span class="lead-form-field-error">Vul een geldig e-mailadres in.</span>
+                                            <span class="lead-form-field-error" data-i18n="lead.errEmail">Vul een geldig e-mailadres in.</span>
                                         </div>
                                         <div class="lead-form-field">
-                                            <label for="lf-w-phone">Telefoon *</label>
+                                            <label for="lf-w-phone" data-i18n="lead.labelPhone">Telefoon *</label>
                                             <input id="lf-w-phone" name="phone" type="tel" autocomplete="tel" required>
-                                            <span class="lead-form-field-error">Vul een telefoonnummer in.</span>
+                                            <span class="lead-form-field-error" data-i18n="lead.errPhone">Vul een telefoonnummer in.</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="lead-form-step" data-step="1">
                                     <div class="lead-form-grid">
                                         <div class="lead-form-field">
-                                            <label for="lf-w-business">Soort bedrijf / organisatie *</label>
+                                            <label for="lf-w-business" data-i18n="lead.labelBusiness">Soort bedrijf / organisatie *</label>
                                             <select id="lf-w-business" name="business_type" required>
-                                                <option value="" disabled selected>Kies een optie</option>
-                                                <option value="ZZP / freelancer">ZZP / freelancer</option>
-                                                <option value="MKB (tot ca. 50 fte)">MKB (tot ca. 50 fte)</option>
-                                                <option value="Middelgroot (50–250 fte)">Middelgroot (50–250 fte)</option>
-                                                <option value="Corporate / enterprise">Corporate / enterprise</option>
-                                                <option value="Non-profit / overheid">Non-profit / overheid</option>
-                                                <option value="Anders">Anders</option>
+                                                <option value="" disabled selected data-i18n="lead.selectChoose">Kies een optie</option>
+                                                <option value="ZZP / freelancer" data-i18n="lead.bizZzp">ZZP / freelancer</option>
+                                                <option value="MKB (tot ca. 50 fte)" data-i18n="lead.bizMkb">MKB (tot ca. 50 fte)</option>
+                                                <option value="Middelgroot (50–250 fte)" data-i18n="lead.bizMid">Middelgroot (50–250 fte)</option>
+                                                <option value="Corporate / enterprise" data-i18n="lead.bizCorp">Corporate / enterprise</option>
+                                                <option value="Non-profit / overheid" data-i18n="lead.bizNp">Non-profit / overheid</option>
+                                                <option value="Anders" data-i18n="lead.bizOther">Anders</option>
                                             </select>
-                                            <span class="lead-form-field-error">Maak een keuze.</span>
+                                            <span class="lead-form-field-error" data-i18n="lead.errChoose">Maak een keuze.</span>
                                         </div>
                                         <fieldset class="lead-form-field lead-form-radio-group" data-radio-group="existing_website">
-                                            <legend class="lead-form-legend">Heb je nu al een website? *</legend>
+                                            <legend class="lead-form-legend" data-i18n="lead.legendWebsite">Heb je nu al een website? *</legend>
                                             <div class="lead-form-radio-row">
-                                                <label class="lead-form-choice"><input type="radio" name="existing_website" value="yes" id="lf-w-site-y" required><span>Ja</span></label>
-                                                <label class="lead-form-choice"><input type="radio" name="existing_website" value="no" id="lf-w-site-n"><span>Nee</span></label>
+                                                <label class="lead-form-choice"><input type="radio" name="existing_website" value="yes" id="lf-w-site-y" required><span data-i18n="lead.yes">Ja</span></label>
+                                                <label class="lead-form-choice"><input type="radio" name="existing_website" value="no" id="lf-w-site-n"><span data-i18n="lead.no">Nee</span></label>
                                             </div>
                                         </fieldset>
                                     </div>
@@ -181,39 +185,39 @@
                                 <div class="lead-form-step" data-step="2">
                                     <div class="lead-form-grid">
                                         <div class="lead-form-field">
-                                            <label for="lf-w-budget">Budgetindicatie *</label>
+                                            <label for="lf-w-budget" data-i18n="lead.labelBudget">Budgetindicatie *</label>
                                             <select id="lf-w-budget" name="budget" required>
-                                                <option value="" disabled selected>Kies een bandbreedte</option>
-                                                <option value="Nog te bepalen / in gesprek">Nog te bepalen / in gesprek</option>
-                                                <option value="Tot circa € 5.000">Tot circa € 5.000</option>
-                                                <option value="€ 5.000 – € 15.000">€ 5.000 – € 15.000</option>
-                                                <option value="€ 15.000 – € 40.000">€ 15.000 – € 40.000</option>
-                                                <option value="€ 40.000 – € 100.000">€ 40.000 – € 100.000</option>
-                                                <option value="€ 100.000+">€ 100.000+</option>
+                                                <option value="" disabled selected data-i18n="lead.selectBudget">Kies een bandbreedte</option>
+                                                <option value="Nog te bepalen / in gesprek" data-i18n="lead.budTbd">Nog te bepalen / in gesprek</option>
+                                                <option value="Tot circa € 5.000" data-i18n="lead.bud5k">Tot circa € 5.000</option>
+                                                <option value="€ 5.000 – € 15.000" data-i18n="lead.bud515">€ 5.000 – € 15.000</option>
+                                                <option value="€ 15.000 – € 40.000" data-i18n="lead.bud1540">€ 15.000 – € 40.000</option>
+                                                <option value="€ 40.000 – € 100.000" data-i18n="lead.bud40100">€ 40.000 – € 100.000</option>
+                                                <option value="€ 100.000+" data-i18n="lead.bud100">€ 100.000+</option>
                                             </select>
-                                            <span class="lead-form-field-error">Maak een keuze.</span>
+                                            <span class="lead-form-field-error" data-i18n="lead.errChoose">Maak een keuze.</span>
                                         </div>
                                         <div class="lead-form-field">
-                                            <label for="lf-w-timeline">Gewenste timing *</label>
+                                            <label for="lf-w-timeline" data-i18n="lead.labelTimeline">Gewenste timing *</label>
                                             <select id="lf-w-timeline" name="timeline" required>
-                                                <option value="" disabled selected>Kies een optie</option>
-                                                <option value="Zo snel mogelijk">Zo snel mogelijk</option>
-                                                <option value="Binnen 1–2 maanden">Binnen 1–2 maanden</option>
-                                                <option value="Binnen 3–6 maanden">Binnen 3–6 maanden</option>
-                                                <option value="Geen harde deadline">Geen harde deadline</option>
-                                                <option value="Alleen oriënteren">Alleen oriënteren</option>
+                                                <option value="" disabled selected data-i18n="lead.selectTimeline">Kies een optie</option>
+                                                <option value="Zo snel mogelijk" data-i18n="lead.timeAsap">Zo snel mogelijk</option>
+                                                <option value="Binnen 1–2 maanden" data-i18n="lead.time12">Binnen 1–2 maanden</option>
+                                                <option value="Binnen 3–6 maanden" data-i18n="lead.time36">Binnen 3–6 maanden</option>
+                                                <option value="Geen harde deadline" data-i18n="lead.timeFlex">Geen harde deadline</option>
+                                                <option value="Alleen oriënteren" data-i18n="lead.timeExplore">Alleen oriënteren</option>
                                             </select>
-                                            <span class="lead-form-field-error">Maak een keuze.</span>
+                                            <span class="lead-form-field-error" data-i18n="lead.errChoose">Maak een keuze.</span>
                                         </div>
                                         <div class="lead-form-field lead-form-check-group" data-goals-group>
-                                            <span class="lead-form-legend">Waar wil je mee vooruit? * <span class="hint">Eén of meer opties</span></span>
+                                            <span class="lead-form-legend"><span data-i18n="lead.goalsLegend">Waar wil je mee vooruit? *</span> <span class="hint" data-i18n="lead.goalsHint">Eén of meer opties</span></span>
                                             <div class="lead-form-check-grid">
-                                                <label class="lead-form-choice"><input type="checkbox" name="goals[]" value="strategie" id="lf-w-g1"><span>Strategie &amp; positioning</span></label>
-                                                <label class="lead-form-choice"><input type="checkbox" name="goals[]" value="leads" id="lf-w-g2"><span>Leads &amp; conversie</span></label>
-                                                <label class="lead-form-choice"><input type="checkbox" name="goals[]" value="seo" id="lf-w-g3"><span>Vindbaarheid (SEO)</span></label>
-                                                <label class="lead-form-choice"><input type="checkbox" name="goals[]" value="performance" id="lf-w-g4"><span>Performance &amp; techniek</span></label>
-                                                <label class="lead-form-choice"><input type="checkbox" name="goals[]" value="ecommerce" id="lf-w-g5"><span>E-commerce / shop-laag</span></label>
-                                                <label class="lead-form-choice"><input type="checkbox" name="goals[]" value="ai" id="lf-w-g6"><span>AI / automatisering</span></label>
+                                                <label class="lead-form-choice"><input type="checkbox" name="goals[]" value="strategie" id="lf-w-g1"><span data-i18n="lead.goalStrat">Strategie &amp; positioning</span></label>
+                                                <label class="lead-form-choice"><input type="checkbox" name="goals[]" value="leads" id="lf-w-g2"><span data-i18n="lead.goalLeads">Leads &amp; conversie</span></label>
+                                                <label class="lead-form-choice"><input type="checkbox" name="goals[]" value="seo" id="lf-w-g3"><span data-i18n="lead.goalSeo">Vindbaarheid (SEO)</span></label>
+                                                <label class="lead-form-choice"><input type="checkbox" name="goals[]" value="performance" id="lf-w-g4"><span data-i18n="lead.goalPerf">Performance &amp; techniek</span></label>
+                                                <label class="lead-form-choice"><input type="checkbox" name="goals[]" value="ecommerce" id="lf-w-g5"><span data-i18n="lead.goalEcoWeb">E-commerce / shop-laag</span></label>
+                                                <label class="lead-form-choice"><input type="checkbox" name="goals[]" value="ai" id="lf-w-g6"><span data-i18n="lead.goalAi">AI / automatisering</span></label>
                                             </div>
                                         </div>
                                     </div>
@@ -221,25 +225,25 @@
                                 <div class="lead-form-step" data-step="3">
                                     <div class="lead-form-grid">
                                         <div class="lead-form-field">
-                                            <label for="lf-w-notes">Extra context <span class="hint">Optioneel — links, concurrenten, referenties</span></label>
-                                            <textarea id="lf-w-notes" name="notes" rows="4" placeholder="Alles wat helpt om je vraag scherp te krijgen…"></textarea>
+                                            <label for="lf-w-notes"><span data-i18n="lead.labelNotes">Extra context</span> <span class="hint" data-i18n="lead.notesHintWeb">Optioneel — links, concurrenten, referenties</span></label>
+                                            <textarea id="lf-w-notes" name="notes" rows="4" data-i18n-placeholder="lead.phNotesWeb" placeholder="Alles wat helpt om je vraag scherp te krijgen…"></textarea>
                                         </div>
                                         <div class="lead-form-field">
                                             <label class="lead-form-choice">
                                                 <input type="checkbox" name="consent" id="lf-w-consent" value="yes" required>
-                                                <span>Ik ga akkoord dat ABshops mijn gegevens gebruikt om contact op te nemen over deze aanvraag. *</span>
+                                                <span data-i18n="lead.consent">Ik ga akkoord dat ABshops mijn gegevens gebruikt om contact op te nemen over deze aanvraag. *</span>
                                             </label>
-                                            <span class="lead-form-field-error">Bevestig dit om door te gaan.</span>
+                                            <span class="lead-form-field-error" data-i18n="lead.errConsent">Bevestig dit om door te gaan.</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <p class="lead-form-status" role="alert" aria-live="polite"></p>
                             <div class="lead-form-actions">
-                                <button type="button" class="btn-lead-back" hidden>Vorige stap</button>
+                                <button type="button" class="btn-lead-back" hidden data-i18n="lead.back">Vorige stap</button>
                                 <div class="lead-form-actions-right">
-                                    <button type="button" class="btn-lead-next btn-primary">Volgende</button>
-                                    <button type="submit" class="btn-lead-submit btn-primary" hidden>Verstuur aanvraag</button>
+                                    <button type="button" class="btn-lead-next btn-primary" data-i18n="lead.next">Volgende</button>
+                                    <button type="submit" class="btn-lead-submit btn-primary" hidden data-i18n="lead.submit">Verstuur aanvraag</button>
                                 </div>
                             </div>
                         </div>
@@ -251,10 +255,10 @@
 
     <section class="cta-section">
         <div class="cta-container">
-            <h2>Plan een introductie</h2>
-            <p>We bespreken graag je merk, doelgroep en technische wensen — vrijblijvend.</p>
+            <h2 data-i18n="websites.ctaTitle">Plan een introductie</h2>
+            <p data-i18n="websites.ctaLead">We bespreken graag je merk, doelgroep en technische wensen — vrijblijvend.</p>
             <div class="cta-buttons">
-                <a href="#aanvraag" class="btn-primary">Start je aanvraag</a>
+                <a href="#aanvraag" class="btn-primary" data-i18n="websites.ctaBtn">Start je aanvraag</a>
             </div>
         </div>
     </section>
@@ -262,27 +266,28 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-brand">
-                <a href="index.html" class="logo" aria-label="ABshops — Breure Media">
+                <a href="index.html" class="logo" data-i18n="nav.logoAria" data-i18n-attr="aria-label" aria-label="ABshops — Breure Media">
                     <span class="logo-mark" aria-hidden="true"><span class="logo-monogram">AB</span></span>
                     <span class="logo-wordmark">
                         <span class="logo-title">ABshops</span>
                         <span class="logo-sub">Breure Media</span>
                     </span>
                 </a>
-                <p>Breure Media · Premium digital solutions</p>
+                <p data-i18n="footer.tagline">Breure Media · Premium digital solutions</p>
             </div>
             <div class="footer-links">
-                <a href="websites.html">Websites</a>
-                <a href="webshops.html">Webshops</a>
-                <a href="ai-oplossingen.html">AI-oplossingen</a>
-                <a href="contact.html">Contact</a>
+                <a href="websites.html" data-i18n="nav.websites">Websites</a>
+                <a href="webshops.html" data-i18n="nav.webshops">Webshops</a>
+                <a href="ai-oplossingen.html" data-i18n="nav.ai">AI-oplossingen</a>
+                <a href="contact.html" data-i18n="nav.contact">Contact</a>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 ABshops / Breure Media. Alle rechten voorbehouden.</p>
+                <p data-i18n="footer.rights">&copy; 2026 ABshops / Breure Media. Alle rechten voorbehouden.</p>
             </div>
         </div>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
     <script src="lead-form.js"></script>
 </body>

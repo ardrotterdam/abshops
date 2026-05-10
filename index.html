@@ -37,10 +37,10 @@
     }
     </script>
 </head>
-<body>
+<body data-i18n-page="index">
     <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="logo" aria-label="ABshops — Breure Media">
+            <a href="index.html" class="logo" data-i18n="nav.logoAria" data-i18n-attr="aria-label" aria-label="ABshops — Breure Media">
                 <span class="logo-mark" aria-hidden="true"><span class="logo-monogram">AB</span></span>
                 <span class="logo-wordmark">
                     <span class="logo-title">ABshops</span>
@@ -48,57 +48,61 @@
                 </span>
             </a>
             <div class="nav-links">
-                <a href="index.html" class="nav-current">Home</a>
-                <a href="websites.html">Websites</a>
-                <a href="webshops.html">Webshops</a>
-                <a href="ai-oplossingen.html">AI-oplossingen</a>
+                <a href="index.html" class="nav-current" data-i18n="nav.home">Home</a>
+                <a href="websites.html" data-i18n="nav.websites">Websites</a>
+                <a href="webshops.html" data-i18n="nav.webshops">Webshops</a>
+                <a href="ai-oplossingen.html" data-i18n="nav.ai">AI-oplossingen</a>
+                <div class="lang-switch" role="group">
+                    <button type="button" class="lang-switch-btn is-active" data-lang="nl" aria-pressed="true"><span data-i18n="lang.labelNl">Nederlands</span></button>
+                    <button type="button" class="lang-switch-btn" data-lang="en" aria-pressed="false"><span data-i18n="lang.labelEn">English</span></button>
+                </div>
                 <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Schakel naar donker thema">
                     <span class="theme-toggle-thumb" aria-hidden="true">
                         <svg class="theme-toggle-icon theme-toggle-icon-sun" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2.5v2M12 19.5v2M4 12H2m20 0h-2M5.64 5.64l1.41 1.41m10.91 10.91l1.41 1.41M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41"/></svg>
                         <svg class="theme-toggle-icon theme-toggle-icon-moon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
                     </span>
                 </button>
-                <a href="contact.html" class="nav-cta">Contact</a>
+                <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
             </div>
         </div>
     </nav>
 
     <section class="hero">
         <div class="hero-content">
-            <p class="hero-eyebrow">Breure Media · Rotterdam</p>
-            <h1 class="hero-title">Digital excellence.<br>Delivered.</h1>
-            <p class="hero-subtitle">Premium websites, webshops en AI-oplossingen voor ondernemers die verder denken — onderdeel van Breure Media, Rotterdam.</p>
-            <a href="contact.html" class="btn-primary">Start je project</a>
+            <p class="hero-eyebrow" data-i18n="index.heroEyebrow">Breure Media · Rotterdam</p>
+            <h1 class="hero-title" data-i18n="index.heroTitle" data-i18n-html="true">Digitale excellentie.<br>Geleverd.</h1>
+            <p class="hero-subtitle" data-i18n="index.heroSubtitle">Premium websites, webshops en AI-oplossingen voor ondernemers die verder denken — onderdeel van Breure Media, Rotterdam.</p>
+            <a href="contact.html" class="btn-primary" data-i18n="index.ctaPrimary">Start je project</a>
         </div>
     </section>
 
     <section id="diensten" class="services">
         <div class="services-container">
-            <div class="section-label">Expertise</div>
+            <div class="section-label" data-i18n="index.sectionExpertise">Expertise</div>
 
             <div class="services-grid">
                 <a href="websites.html" class="service-card animate-in" style="text-decoration: none; color: inherit; display: block;">
                     <div class="service-number">01</div>
-                    <h3>Premium websites</h3>
-                    <p>Van eerste idee tot schaalbaar platform: merk, UX en techniek in één lijn — inclusief fundament voor vindbaarheid.</p>
+                    <h3 data-i18n="index.svc1Title">Premium websites</h3>
+                    <p data-i18n="index.svc1Text">Van eerste idee tot schaalbaar platform: merk, UX en techniek in één lijn — inclusief fundament voor vindbaarheid.</p>
                 </a>
 
                 <a href="webshops.html" class="service-card animate-in" style="text-decoration: none; color: inherit; display: block;">
                     <div class="service-number">02</div>
-                    <h3>Webshops &amp; e-commerce</h3>
-                    <p>Checkout die converteert, snelle laadtijden en een koopervaring die vertrouwen uitstraalt — gebouwd om te verkopen.</p>
+                    <h3 data-i18n="index.svc2Title">Webshops &amp; e-commerce</h3>
+                    <p data-i18n="index.svc2Text">Checkout die converteert, snelle laadtijden en een koopervaring die vertrouwen uitstraalt — gebouwd om te verkopen.</p>
                 </a>
 
                 <a href="websites.html#seo" class="service-card animate-in" style="text-decoration: none; color: inherit; display: block;">
                     <div class="service-number">03</div>
-                    <h3>SEO &amp; groei</h3>
-                    <p>Organisch verkeer is onderdeel van het ontwerp: structuur, content en performance die zoekmachines én gebruikers waarderen.</p>
+                    <h3 data-i18n="index.svc3Title">SEO &amp; groei</h3>
+                    <p data-i18n="index.svc3Text">Organisch verkeer is onderdeel van het ontwerp: structuur, content en performance die zoekmachines én gebruikers waarderen.</p>
                 </a>
 
                 <a href="ai-oplossingen.html" class="service-card animate-in" style="text-decoration: none; color: inherit; display: block;">
                     <div class="service-number">04</div>
-                    <h3>AI-oplossingen</h3>
-                    <p>Praktische automatisering en slimme flows — altijd met controle, kwaliteit en jouw merk voorop.</p>
+                    <h3 data-i18n="index.svc4Title">AI-oplossingen</h3>
+                    <p data-i18n="index.svc4Text">Praktische automatisering en slimme flows — altijd met controle, kwaliteit en jouw merk voorop.</p>
                 </a>
             </div>
         </div>
@@ -107,58 +111,58 @@
     <section class="features">
         <div class="features-container">
             <div class="feature-item animate-in">
-                <h3>Fast</h3>
-                <p>Geoptimaliseerd voor performance. Elke milliseconde telt.</p>
+                <h3 data-i18n="index.feat1Title">Snel</h3>
+                <p data-i18n="index.feat1Text">Geoptimaliseerd voor performance. Elke milliseconde telt.</p>
             </div>
             <div class="feature-divider"></div>
             <div class="feature-item animate-in">
-                <h3>Secure</h3>
-                <p>Enterprise-grade beveiliging. Standaard, geen optie.</p>
+                <h3 data-i18n="index.feat2Title">Veilig</h3>
+                <p data-i18n="index.feat2Text">Enterprise-grade beveiliging. Standaard, geen optie.</p>
             </div>
             <div class="feature-divider"></div>
             <div class="feature-item animate-in">
-                <h3>Scalable</h3>
-                <p>Groei mee met je ambities. Zonder compromissen.</p>
+                <h3 data-i18n="index.feat3Title">Schaalbaar</h3>
+                <p data-i18n="index.feat3Text">Groei mee met je ambities. Zonder compromissen.</p>
             </div>
         </div>
     </section>
 
     <section id="aanpak" class="approach">
         <div class="approach-container">
-            <div class="section-label">Approach</div>
-            <h2>Van idee tot impact</h2>
+            <div class="section-label" data-i18n="index.approachLabel">Werkwijze</div>
+            <h2 data-i18n="index.approachTitle">Van idee tot impact</h2>
 
             <div class="approach-grid">
                 <div class="approach-step">
                     <div class="step-header">
                         <span class="step-num">01</span>
-                        <h3>Discovery</h3>
+                        <h3 data-i18n="index.step1Title">Discovery</h3>
                     </div>
-                    <p>We beginnen met luisteren. Jouw doelen, uitdagingen en ambities vormen het fundament.</p>
+                    <p data-i18n="index.step1Text">We beginnen met luisteren. Jouw doelen, uitdagingen en ambities vormen het fundament.</p>
                 </div>
 
                 <div class="approach-step">
                     <div class="step-header">
                         <span class="step-num">02</span>
-                        <h3>Strategy</h3>
+                        <h3 data-i18n="index.step2Title">Strategy</h3>
                     </div>
-                    <p>Data-gedreven planning. We vertalen inzichten naar een concrete roadmap.</p>
+                    <p data-i18n="index.step2Text">Data-gedreven planning. We vertalen inzichten naar een concrete roadmap.</p>
                 </div>
 
                 <div class="approach-step">
                     <div class="step-header">
                         <span class="step-num">03</span>
-                        <h3>Execution</h3>
+                        <h3 data-i18n="index.step3Title">Execution</h3>
                     </div>
-                    <p>Ontwikkeling met oog voor detail. Clean code, modern design, getest op alle devices.</p>
+                    <p data-i18n="index.step3Text">Ontwikkeling met oog voor detail. Clean code, modern design, getest op alle devices.</p>
                 </div>
 
                 <div class="approach-step">
                     <div class="step-header">
                         <span class="step-num">04</span>
-                        <h3>Growth</h3>
+                        <h3 data-i18n="index.step4Title">Growth</h3>
                     </div>
-                    <p>Lancering is het begin. We optimaliseren, meten en verbeteren continu.</p>
+                    <p data-i18n="index.step4Text">Lancering is het begin. We optimaliseren, meten en verbeteren continu.</p>
                 </div>
             </div>
         </div>
@@ -168,25 +172,25 @@
         <div class="stats-container">
             <div class="stat-item animate-in">
                 <div class="stat-number">8+</div>
-                <div class="stat-label">Jaar ervaring</div>
+                <div class="stat-label" data-i18n="index.statYears">Jaar ervaring</div>
             </div>
             <div class="stat-item animate-in">
                 <div class="stat-number">100%</div>
-                <div class="stat-label">Focus op kwaliteit</div>
+                <div class="stat-label" data-i18n="index.statQuality">Focus op kwaliteit</div>
             </div>
             <div class="stat-item animate-in">
                 <div class="stat-number">NL</div>
-                <div class="stat-label">Rotterdam &amp; omgeving</div>
+                <div class="stat-label" data-i18n="index.statRegion">Rotterdam &amp; omgeving</div>
             </div>
         </div>
     </section>
 
     <section class="cta-section">
         <div class="cta-container">
-            <h2>Klaar om te starten?</h2>
-            <p>Vertel kort over je merk en je doelen — we plannen graag een vrijblijvend gesprek.</p>
+            <h2 data-i18n="index.ctaTitle">Klaar om te starten?</h2>
+            <p data-i18n="index.ctaLead">Vertel kort over je merk en je doelen — we plannen graag een vrijblijvend gesprek.</p>
             <div class="cta-buttons">
-                <a href="contact.html" class="btn-primary">Naar contact</a>
+                <a href="contact.html" class="btn-primary" data-i18n="index.ctaBtn">Naar contact</a>
             </div>
             <div class="contact-info">
                 <p><a href="mailto:info@abshops.nl" class="cta-mail-link">info@abshops.nl</a> · Weena 70, Rotterdam</p>
@@ -197,27 +201,28 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-brand">
-                <a href="index.html" class="logo" aria-label="ABshops — Breure Media">
+                <a href="index.html" class="logo" data-i18n="nav.logoAria" data-i18n-attr="aria-label" aria-label="ABshops — Breure Media">
                     <span class="logo-mark" aria-hidden="true"><span class="logo-monogram">AB</span></span>
                     <span class="logo-wordmark">
                         <span class="logo-title">ABshops</span>
                         <span class="logo-sub">Breure Media</span>
                     </span>
                 </a>
-                <p>Breure Media · Premium digital solutions</p>
+                <p data-i18n="footer.tagline">Breure Media · Premium digital solutions</p>
             </div>
             <div class="footer-links">
-                <a href="websites.html">Websites</a>
-                <a href="webshops.html">Webshops</a>
-                <a href="ai-oplossingen.html">AI-oplossingen</a>
-                <a href="contact.html">Contact</a>
+                <a href="websites.html" data-i18n="nav.websites">Websites</a>
+                <a href="webshops.html" data-i18n="nav.webshops">Webshops</a>
+                <a href="ai-oplossingen.html" data-i18n="nav.ai">AI-oplossingen</a>
+                <a href="contact.html" data-i18n="nav.contact">Contact</a>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 ABshops / Breure Media. Alle rechten voorbehouden.</p>
+                <p data-i18n="footer.rights">&copy; 2026 ABshops / Breure Media. Alle rechten voorbehouden.</p>
             </div>
         </div>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

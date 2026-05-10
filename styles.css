@@ -443,6 +443,7 @@ html[data-theme="dark"] .theme-toggle-icon-sun {
 html[data-theme="dark"] .theme-toggle-icon-moon {
     opacity: 1;
     transform: rotate(0deg) scale(1);
+    fill: var(--white);
 }
 
 /* Language switch — segmented control */

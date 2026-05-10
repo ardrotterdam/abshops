@@ -752,6 +752,36 @@ html[data-theme="dark"] .btn-primary:hover {
     opacity: 0.5;
 }
 
+h2.section-label {
+    margin-top: 0;
+}
+
+.page-hero-meta {
+    margin-top: 1rem;
+    font-size: 0.98rem;
+    color: var(--gray-600);
+    line-height: 1.6;
+}
+
+.hero-inline-link {
+    color: var(--black);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+}
+
+.hero-inline-link:hover {
+    opacity: 0.85;
+}
+
+html[data-theme="dark"] .page-hero-meta {
+    color: var(--gray-500);
+}
+
+html[data-theme="dark"] .hero-inline-link {
+    color: var(--gray-800);
+}
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
@@ -835,9 +865,28 @@ html[data-theme="dark"] .btn-primary:hover {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
     gap: 3rem;
+}
+
+.features-heading {
+    flex: 0 0 100%;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .feature-item {
@@ -1018,6 +1067,46 @@ html[data-theme="dark"] .stat-number {
 
 html[data-theme="dark"] .stat-label {
     color: var(--gray-500);
+}
+
+/* Trust positioning (SEO / conversion) */
+.trust-signal {
+    padding: clamp(4rem, 9vw, 6rem) 3rem;
+    background: var(--gray-50);
+    border-top: 1px solid var(--gray-200);
+    border-bottom: 1px solid var(--gray-200);
+    transition: var(--transition);
+}
+
+.trust-signal-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.trust-signal-inner .section-label {
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.trust-signal-inner .section-label::before {
+    display: none;
+}
+
+.trust-signal-text {
+    color: var(--gray-600);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin: 0 0 2rem;
+}
+
+.trust-signal-cta {
+    display: inline-flex;
+}
+
+html[data-theme="dark"] .trust-signal {
+    background: var(--gray-100);
+    border-color: var(--gray-200);
 }
 
 /* CTA Section */

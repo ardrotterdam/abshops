@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <meta name="description" content="Neem contact op met ABshops (Breure Media) in Rotterdam: websites, webshops en AI-oplossingen. Mail info@abshops.nl of plan een vrijblijvend gesprek.">
-    <meta name="keywords" content="contact ABshops, Breure Media Rotterdam, webshop advies, website offerte">
     <meta name="author" content="ABshops">
     <meta property="og:title" content="Contact | ABshops">
     <meta property="og:description" content="Rotterdam · info@abshops.nl · Weena 70. We reageren persoonlijk en snel op je bericht.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://abshops.nl/contact.html">
+    <meta property="og:image" content="https://abshops.nl/og-abshops.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ABshops — contact digitale agency Rotterdam">
     <meta property="og:locale" content="nl_NL">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact | ABshops">
+    <meta name="twitter:description" content="Rotterdam · info@abshops.nl · Weena 70. We reageren persoonlijk en snel op je bericht.">
+    <meta name="twitter:image" content="https://abshops.nl/og-abshops.png">
     <title>Contact &amp; offerte | ABshops — Breure Media Rotterdam</title>
     <link rel="canonical" href="https://abshops.nl/contact.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,10 +30,36 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ContactPage",
-        "name": "Contact ABshops",
-        "url": "https://abshops.nl/contact.html",
-        "isPartOf": { "@type": "WebSite", "name": "ABshops", "url": "https://abshops.nl/" }
+        "@graph": [
+            {
+                "@type": "ContactPage",
+                "@id": "https://abshops.nl/contact.html#contactpage",
+                "name": "Contact — ABshops (Breure Media)",
+                "description": "Neem contact op voor websites, webshops en AI-oplossingen. Rotterdam, Nederland en Europa.",
+                "url": "https://abshops.nl/contact.html",
+                "inLanguage": "nl",
+                "mainEntity": {
+                    "@type": "Organization",
+                    "name": "ABshops",
+                    "alternateName": "Breure Media",
+                    "url": "https://abshops.nl/",
+                    "email": "info@abshops.nl",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Weena 70",
+                        "addressLocality": "Rotterdam",
+                        "addressCountry": "NL"
+                    }
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://abshops.nl/" },
+                    { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://abshops.nl/contact.html" }
+                ]
+            }
+        ]
     }
     </script>
 </head>
@@ -188,6 +222,7 @@
                 <p data-i18n="footer.tagline">Breure Media · Premium digital solutions</p>
             </div>
             <div class="footer-links">
+                <a href="index.html" data-i18n="nav.home">Home</a>
                 <a href="websites.html" data-i18n="nav.websites">Websites</a>
                 <a href="webshops.html" data-i18n="nav.webshops">Webshops</a>
                 <a href="ai-oplossingen.html" data-i18n="nav.ai">AI-oplossingen</a>
@@ -199,7 +234,7 @@
         </div>
     </footer>
 
-    <script src="i18n.js"></script>
-    <script src="script.js"></script>
+    <script src="i18n.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

@@ -248,10 +248,16 @@
         statYears: 'Jaar ervaring',
         statQuality: 'Focus op kwaliteit',
         statRegion: 'Rotterdam & omgeving',
+        statsHeading: 'ABshops in cijfers',
         ctaTitle: 'Klaar om te starten?',
         ctaLead:
             'Vertel kort over je merk en je doelen — we plannen graag een vrijblijvend gesprek.',
-        ctaBtn: 'Naar contact'
+        ctaBtn: 'Naar contact',
+        featuresLabel: 'Waarom ABshops',
+        trustLabel: 'Rotterdam & Europa',
+        trustBody:
+            'ABshops (Breure Media) is een digitale agency uit Rotterdam: premium website- en webshopontwikkeling, AI-automatisering, SEO en digitale strategie — voor ondernemers in Nederland en Europa die kwaliteit boven shortcuts kiezen.',
+        trustCta: 'Vraag een vrijblijvende intake aan'
     };
 
     DICT.en.index = {
@@ -298,9 +304,15 @@
         statYears: 'Years of experience',
         statQuality: 'Commitment to quality',
         statRegion: 'Rotterdam & region',
+        statsHeading: 'ABshops at a glance',
         ctaTitle: 'Ready to start?',
         ctaLead: 'Tell us briefly about your brand and goals — we would love to schedule a no-obligation call.',
-        ctaBtn: 'Contact'
+        ctaBtn: 'Contact',
+        featuresLabel: 'Why ABshops',
+        trustLabel: 'Rotterdam & Europe',
+        trustBody:
+            'ABshops (Breure Media) is a Rotterdam-based digital agency: premium website and webshop development, AI automation, SEO and digital strategy — for founders in the Netherlands and Europe who value quality over shortcuts.',
+        trustCta: 'Request a no-obligation intake'
     };
 
     /* ——— Contact ——— */
@@ -440,12 +452,15 @@
         crossShopText: 'E-commerce met focus op conversie en schaalbare catalogi.',
         crossAiTitle: 'AI-oplossingen',
         crossAiText: 'Automatisering en slimme workflows naast je website.',
+        crossContact: 'Vragen over planning, scope of samenwerking?',
         leadTitle: 'Plan je aanvraag — premium website',
         leadIntro:
             'Vul dit multi-stappen formulier in. Je gegevens worden alleen gebruikt om je aanvraag te beoordelen en persoonlijk contact op te nemen — conform je toestemming in de laatste stap.',
         ctaTitle: 'Plan een introductie',
         ctaLead: 'We bespreken graag je merk, doelgroep en technische wensen — vrijblijvend.',
-        ctaBtn: 'Start je aanvraag'
+        ctaBtn: 'Start je aanvraag',
+        contactHeroAside: 'Liever eerst even sparren via mail?',
+        contactHeroLink: 'Neem contact op'
     };
 
     DICT.en.websites = {
@@ -482,12 +497,15 @@
         crossShopText: 'E-commerce focused on conversion and scalable catalogs.',
         crossAiTitle: 'AI solutions',
         crossAiText: 'Automation and smart workflows alongside your website.',
+        crossContact: 'Questions about scope, timing or collaboration?',
         leadTitle: 'Submit your request — premium website',
         leadIntro:
             'Complete this multi-step form. Your details are used only to review your request and contact you personally — as confirmed by your consent in the final step.',
         ctaTitle: 'Book an introduction',
         ctaLead: 'We would love to discuss your brand, audience and technical needs — no obligation.',
-        ctaBtn: 'Start your request'
+        ctaBtn: 'Start your request',
+        contactHeroAside: 'Prefer to align by email first?',
+        contactHeroLink: 'Contact'
     };
 
     /* ——— Webshops ——— */
@@ -523,12 +541,15 @@
         crossWebText: 'Corporate sites en campagnes naast je shop.',
         crossAiTitle: 'AI-oplossingen',
         crossAiText: 'Supportflows en automatisering rondom orders.',
+        crossContact: 'Vragen over groei, integraties of doorlooptijd?',
         leadTitle: 'Plan je aanvraag — premium webshop',
         leadIntro:
             'Vertel ons over je assortiment, verkeer en ambities. We volgen hetzelfde professionele intake-proces als bij onze website-projecten, afgestemd op e-commerce.',
         ctaTitle: 'Jouw volgende groeistap',
         ctaLead: 'Vertel ons over je assortiment, kanalen en ambitie — we denken met je mee.',
-        ctaBtn: 'Start je aanvraag'
+        ctaBtn: 'Start je aanvraag',
+        contactHeroAside: 'Liever eerst even sparren via mail?',
+        contactHeroLink: 'Neem contact op'
     };
 
     DICT.en.webshops = {
@@ -563,12 +584,15 @@
         crossWebText: 'Corporate sites and campaigns alongside your shop.',
         crossAiTitle: 'AI solutions',
         crossAiText: 'Support flows and automation around orders.',
+        crossContact: 'Questions about growth, integrations or lead time?',
         leadTitle: 'Submit your request — premium webshop',
         leadIntro:
             'Tell us about assortment, traffic and ambitions. We follow the same professional intake as our website projects, tailored to e-commerce.',
         ctaTitle: 'Your next growth step',
         ctaLead: 'Tell us about assortment, channels and ambition — we will think along.',
-        ctaBtn: 'Start your request'
+        ctaBtn: 'Start your request',
+        contactHeroAside: 'Prefer to align by email first?',
+        contactHeroLink: 'Contact'
     };
 
     /* ——— AI ——— */
@@ -607,12 +631,15 @@
         crossWebText: 'AI-features ingebed in je publieke site waar het zinvol is.',
         crossShopTitle: 'Webshops',
         crossShopText: 'Productadvies, zoekhulp en post-sale flows die converteren.',
+        crossContact: 'Twijfel je tussen pilot, security of EU-data?',
         leadTitle: 'Plan je aanvraag — AI & automatisering',
         leadIntro:
             'Beschrijf kort je proces, volumes en risico’s. We gebruiken dezelfde intake-flow om snel te bepalen of een pilot zinvol is — transparant en zonder marketingdruk.',
         ctaTitle: 'Ontdek wat haalbaar is',
         ctaLead: 'In een kort traject brengen we samen kansen en randvoorwaarden in kaart.',
-        ctaBtn: 'Start je aanvraag'
+        ctaBtn: 'Start je aanvraag',
+        contactHeroAside: 'Liever eerst even sparren via mail?',
+        contactHeroLink: 'Neem contact op'
     };
 
     DICT.en.ai = {
@@ -650,12 +677,15 @@
         crossWebText: 'Embed AI features in your public site where it makes sense.',
         crossShopTitle: 'Webshops',
         crossShopText: 'Product guidance, search assist and post-sale flows that convert.',
+        crossContact: 'Unsure about pilots, security or EU data residency?',
         leadTitle: 'Submit your request — AI & automation',
         leadIntro:
             'Briefly describe process, volumes and risks. We use the same intake flow to see quickly whether a pilot makes sense — transparent and without hype.',
         ctaTitle: 'Discover what is feasible',
         ctaLead: 'In a short trajectory we map opportunities and constraints together.',
-        ctaBtn: 'Start your request'
+        ctaBtn: 'Start your request',
+        contactHeroAside: 'Prefer to align by email first?',
+        contactHeroLink: 'Contact'
     };
 
     /* ——— Bedankt ——— */
@@ -781,6 +811,11 @@
         var ogDesc = t(lang, prefix + 'ogDesc');
         var ogD = document.querySelector('meta[property="og:description"]');
         if (ogD && ogDesc) ogD.setAttribute('content', ogDesc);
+
+        var twTitle = document.querySelector('meta[name="twitter:title"]');
+        if (twTitle && ogTitle) twTitle.setAttribute('content', ogTitle);
+        var twDesc = document.querySelector('meta[name="twitter:description"]');
+        if (twDesc && ogDesc) twDesc.setAttribute('content', ogDesc);
 
         var ogLoc = document.querySelector('meta[property="og:locale"]');
         if (ogLoc) {

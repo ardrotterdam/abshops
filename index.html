@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <meta name="description" content="ABshops (Breure Media): premium websites, webshops en AI-oplossingen vanuit Rotterdam. Snel, veilig en schaalbaar — voor ondernemers die digitale groei serieus nemen.">
-    <meta name="keywords" content="premium website, webshop Rotterdam, e-commerce, AI consultancy, Breure Media, ABshops">
     <meta name="author" content="ABshops">
     <meta property="og:title" content="ABshops — Premium websites, webshops & AI">
     <meta property="og:description" content="Digitale excellentie voor groeiende merken. Websites, webshops en AI-oplossingen met focus op conversie en performance.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://abshops.nl/">
+    <meta property="og:image" content="https://abshops.nl/og-abshops.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ABshops — Breure Media, digitale agency Rotterdam">
     <meta property="og:locale" content="nl_NL">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ABshops — Premium websites, webshops & AI">
+    <meta name="twitter:description" content="Digitale excellentie voor groeiende merken. Websites, webshops en AI-oplossingen met focus op conversie en performance.">
+    <meta name="twitter:image" content="https://abshops.nl/og-abshops.png">
     <title>ABshops | Premium websites, webshops & AI-oplossingen — Breure Media</title>
     <link rel="canonical" href="https://abshops.nl/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,18 +30,49 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "ABshops",
-        "alternateName": "Breure Media",
-        "description": "Premium digitale oplossingen: websites, webshops en AI.",
-        "url": "https://abshops.nl/",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Weena 70",
-            "addressLocality": "Rotterdam",
-            "addressCountry": "NL"
-        },
-        "areaServed": "NL"
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://abshops.nl/#organization",
+                "name": "ABshops",
+                "alternateName": "Breure Media",
+                "url": "https://abshops.nl/",
+                "email": "info@abshops.nl",
+                "description": "Digitale agency uit Rotterdam: premium websites, webshops, AI-automatisering, SEO en digitale strategie voor Nederland en Europa.",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Weena 70",
+                    "addressLocality": "Rotterdam",
+                    "addressCountry": "NL"
+                },
+                "areaServed": [
+                    { "@type": "Country", "name": "Netherlands" },
+                    { "@type": "Place", "name": "Europe" }
+                ],
+                "makesOffer": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website development", "url": "https://abshops.nl/websites.html" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Webshop development", "url": "https://abshops.nl/webshops.html" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI automation", "url": "https://abshops.nl/ai-oplossingen.html" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Digital strategy" } }
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://abshops.nl/#website",
+                "name": "ABshops",
+                "alternateName": "Breure Media",
+                "url": "https://abshops.nl/",
+                "inLanguage": "nl",
+                "publisher": { "@id": "https://abshops.nl/#organization" }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://abshops.nl/" }
+                ]
+            }
+        ]
     }
     </script>
 </head>
@@ -78,7 +117,7 @@
 
     <section id="diensten" class="services">
         <div class="services-container">
-            <div class="section-label" data-i18n="index.sectionExpertise">Expertise</div>
+            <h2 class="section-label" data-i18n="index.sectionExpertise">Expertise</h2>
 
             <div class="services-grid">
                 <a href="websites.html" class="service-card animate-in" style="text-decoration: none; color: inherit; display: block;">
@@ -108,8 +147,9 @@
         </div>
     </section>
 
-    <section class="features">
+    <section class="features" aria-labelledby="features-heading">
         <div class="features-container">
+            <h2 id="features-heading" class="section-label features-heading" data-i18n="index.featuresLabel">Waarom ABshops</h2>
             <div class="feature-item animate-in">
                 <h3 data-i18n="index.feat1Title">Snel</h3>
                 <p data-i18n="index.feat1Text">Geoptimaliseerd voor performance. Elke milliseconde telt.</p>
@@ -168,7 +208,8 @@
         </div>
     </section>
 
-    <section class="stats">
+    <section class="stats" aria-labelledby="stats-heading">
+        <h2 id="stats-heading" class="visually-hidden" data-i18n="index.statsHeading">ABshops in cijfers</h2>
         <div class="stats-container">
             <div class="stat-item animate-in">
                 <div class="stat-number">8+</div>
@@ -182,6 +223,14 @@
                 <div class="stat-number">NL</div>
                 <div class="stat-label" data-i18n="index.statRegion">Rotterdam &amp; omgeving</div>
             </div>
+        </div>
+    </section>
+
+    <section class="trust-signal">
+        <div class="trust-signal-inner">
+            <h2 class="section-label" data-i18n="index.trustLabel">Rotterdam &amp; Europa</h2>
+            <p class="trust-signal-text" data-i18n="index.trustBody">ABshops (Breure Media) is een digitale agency uit Rotterdam: premium website- en webshopontwikkeling, AI-automatisering, SEO en digitale strategie — voor ondernemers in Nederland en Europa die kwaliteit boven shortcuts kiezen.</p>
+            <a href="contact.html" class="btn-primary trust-signal-cta" data-i18n="index.trustCta">Vraag een vrijblijvende intake aan</a>
         </div>
     </section>
 
@@ -211,6 +260,7 @@
                 <p data-i18n="footer.tagline">Breure Media · Premium digital solutions</p>
             </div>
             <div class="footer-links">
+                <a href="index.html" data-i18n="nav.home">Home</a>
                 <a href="websites.html" data-i18n="nav.websites">Websites</a>
                 <a href="webshops.html" data-i18n="nav.webshops">Webshops</a>
                 <a href="ai-oplossingen.html" data-i18n="nav.ai">AI-oplossingen</a>
@@ -222,7 +272,7 @@
         </div>
     </footer>
 
-    <script src="i18n.js"></script>
-    <script src="script.js"></script>
+    <script src="i18n.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

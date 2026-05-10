@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <meta name="description" content="Premium webshops en e-commerce door ABshops (Breure Media): conversie, checkout, performance en schaalbare catalogi. Rotterdam en heel Nederland.">
-    <meta name="keywords" content="webshop laten bouwen, e-commerce Rotterdam, premium webshop, checkout optimalisatie, ABshops">
     <meta name="author" content="ABshops">
     <meta property="og:title" content="Premium webshops & e-commerce | ABshops">
     <meta property="og:description" content="Verkoop online met een store die snel is, vertrouwen uitstraalt en meegroeit met je assortiment.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://abshops.nl/webshops.html">
+    <meta property="og:image" content="https://abshops.nl/og-abshops.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ABshops — premium webshops en e-commerce Rotterdam">
     <meta property="og:locale" content="nl_NL">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Premium webshops & e-commerce | ABshops">
+    <meta name="twitter:description" content="Verkoop online met een store die snel is, vertrouwen uitstraalt en meegroeit met je assortiment.">
+    <meta name="twitter:image" content="https://abshops.nl/og-abshops.png">
     <title>Premium webshops &amp; e-commerce | ABshops — Breure Media</title>
     <link rel="canonical" href="https://abshops.nl/webshops.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,11 +30,33 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Premium webshops",
-        "description": "Servicepagina e-commerce ABshops.",
-        "url": "https://abshops.nl/webshops.html",
-        "isPartOf": { "@type": "WebSite", "name": "ABshops", "url": "https://abshops.nl/" }
+        "@graph": [
+            {
+                "@type": "Service",
+                "@id": "https://abshops.nl/webshops.html#service",
+                "name": "Premium webshop development",
+                "description": "E-commerce met focus op conversie, checkout, performance en schaalbare catalogi. Webshops door ABshops (Breure Media), Rotterdam en Nederland.",
+                "url": "https://abshops.nl/webshops.html",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "ABshops",
+                    "alternateName": "Breure Media",
+                    "url": "https://abshops.nl/",
+                    "email": "info@abshops.nl"
+                },
+                "areaServed": [
+                    { "@type": "Country", "name": "Netherlands" },
+                    { "@type": "Place", "name": "Europe" }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://abshops.nl/" },
+                    { "@type": "ListItem", "position": 2, "name": "Webshops", "item": "https://abshops.nl/webshops.html" }
+                ]
+            }
+        ]
     }
     </script>
 </head>
@@ -65,6 +95,7 @@
             <h1 class="hero-title" data-i18n="webshops.heroTitle">Webshops die verkopen</h1>
             <p class="page-lead" data-i18n="webshops.heroLead">E-commerce draait om vertrouwen, snelheid en een checkout zonder frictie. ABshops ontwerpt en realiseert premium webshops die zijn gebouwd om omzet te maken — met ruimte om uit te breiden naarmate je assortiment groeit.</p>
             <p style="margin-top: 1.5rem;"><a href="#aanvraag" class="btn-primary" data-i18n="webshops.heroCta">Laten we je store bespreken</a></p>
+            <p class="page-hero-meta"><span data-i18n="webshops.contactHeroAside">Liever eerst even sparren via mail?</span> <a href="contact.html" class="hero-inline-link" data-i18n="webshops.contactHeroLink">Neem contact op</a></p>
         </div>
     </header>
 
@@ -107,6 +138,7 @@
                     <p data-i18n="webshops.crossAiText">Supportflows en automatisering rondom orders.</p>
                 </a>
             </div>
+            <p class="cross-contact-lead page-hero-meta" style="margin-top: 1.5rem;"><span data-i18n="webshops.crossContact">Vragen over groei, integraties of doorlooptijd?</span> <a href="contact.html" class="hero-inline-link" data-i18n="webshops.contactHeroLink">Neem contact op</a></p>
         </section>
 
         <section class="lead-form-section animate-in" id="aanvraag" aria-labelledby="lead-form-title-shop">
@@ -275,6 +307,7 @@
                 <p data-i18n="footer.tagline">Breure Media · Premium digital solutions</p>
             </div>
             <div class="footer-links">
+                <a href="index.html" data-i18n="nav.home">Home</a>
                 <a href="websites.html" data-i18n="nav.websites">Websites</a>
                 <a href="webshops.html" data-i18n="nav.webshops">Webshops</a>
                 <a href="ai-oplossingen.html" data-i18n="nav.ai">AI-oplossingen</a>
@@ -286,8 +319,8 @@
         </div>
     </footer>
 
-    <script src="i18n.js"></script>
-    <script src="script.js"></script>
-    <script src="lead-form.js"></script>
+    <script src="i18n.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="lead-form.js" defer></script>
 </body>
 </html>

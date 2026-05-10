@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <meta name="description" content="AI-oplossingen voor bedrijven door ABshops (Breure Media): slimme automatisering, assistenten en workflows — veilig, meetbaar en merkconsistent. Rotterdam.">
-    <meta name="keywords" content="AI consultancy, automatisering bedrijf, AI Rotterdam, Breure Media, intelligente workflows">
     <meta name="author" content="ABshops">
     <meta property="og:title" content="AI-oplossingen voor organisaties | ABshops">
     <meta property="og:description" content="Praktische AI: minder handwerk, betere antwoorden, schaalbare processen — met menselijke controle.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://abshops.nl/ai-oplossingen.html">
+    <meta property="og:image" content="https://abshops.nl/og-abshops.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ABshops — AI-automatisering en digitale agency Rotterdam">
     <meta property="og:locale" content="nl_NL">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI-oplossingen voor organisaties | ABshops">
+    <meta name="twitter:description" content="Praktische AI: minder handwerk, betere antwoorden, schaalbare processen — met menselijke controle.">
+    <meta name="twitter:image" content="https://abshops.nl/og-abshops.png">
     <title>AI-oplossingen &amp; automatisering | ABshops — Breure Media</title>
     <link rel="canonical" href="https://abshops.nl/ai-oplossingen.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,11 +30,33 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "AI-oplossingen",
-        "description": "Servicepagina AI ABshops.",
-        "url": "https://abshops.nl/ai-oplossingen.html",
-        "isPartOf": { "@type": "WebSite", "name": "ABshops", "url": "https://abshops.nl/" }
+        "@graph": [
+            {
+                "@type": "Service",
+                "@id": "https://abshops.nl/ai-oplossingen.html#service",
+                "name": "AI automation and AI solutions",
+                "description": "Praktische AI-automatisering, assistenten en workflows — veilig en meetbaar. ABshops (Breure Media), Rotterdam, Nederland en Europa.",
+                "url": "https://abshops.nl/ai-oplossingen.html",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "ABshops",
+                    "alternateName": "Breure Media",
+                    "url": "https://abshops.nl/",
+                    "email": "info@abshops.nl"
+                },
+                "areaServed": [
+                    { "@type": "Country", "name": "Netherlands" },
+                    { "@type": "Place", "name": "Europe" }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://abshops.nl/" },
+                    { "@type": "ListItem", "position": 2, "name": "AI-oplossingen", "item": "https://abshops.nl/ai-oplossingen.html" }
+                ]
+            }
+        ]
     }
     </script>
 </head>
@@ -65,6 +95,7 @@
             <h1 class="hero-title" data-i18n="ai.heroTitle">AI die het werk ondersteunt</h1>
             <p class="page-lead" data-i18n="ai.heroLead">AI is pas waardevol als het past bij je processen, data en merk. ABshops ontwerpt en implementeert oplossingen die repetitieve taken verminderen, teams ondersteunen en schaal geven — altijd met heldere grenzen en kwaliteitscontrole.</p>
             <p style="margin-top: 1.5rem;"><a href="#aanvraag" class="btn-primary" data-i18n="ai.heroCta">Spreek AI voor jouw organisatie door</a></p>
+            <p class="page-hero-meta"><span data-i18n="ai.contactHeroAside">Liever eerst even sparren via mail?</span> <a href="contact.html" class="hero-inline-link" data-i18n="ai.contactHeroLink">Neem contact op</a></p>
         </div>
     </header>
 
@@ -107,6 +138,7 @@
                     <p data-i18n="ai.crossShopText">Productadvies, zoekhulp en post-sale flows die converteren.</p>
                 </a>
             </div>
+            <p class="cross-contact-lead page-hero-meta" style="margin-top: 1.5rem;"><span data-i18n="ai.crossContact">Twijfel je tussen pilot, security of EU-data?</span> <a href="contact.html" class="hero-inline-link" data-i18n="ai.contactHeroLink">Neem contact op</a></p>
         </section>
 
         <section class="lead-form-section animate-in" id="aanvraag" aria-labelledby="lead-form-title-ai">
@@ -275,6 +307,7 @@
                 <p data-i18n="footer.tagline">Breure Media · Premium digital solutions</p>
             </div>
             <div class="footer-links">
+                <a href="index.html" data-i18n="nav.home">Home</a>
                 <a href="websites.html" data-i18n="nav.websites">Websites</a>
                 <a href="webshops.html" data-i18n="nav.webshops">Webshops</a>
                 <a href="ai-oplossingen.html" data-i18n="nav.ai">AI-oplossingen</a>
@@ -286,8 +319,8 @@
         </div>
     </footer>
 
-    <script src="i18n.js"></script>
-    <script src="script.js"></script>
-    <script src="lead-form.js"></script>
+    <script src="i18n.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="lead-form.js" defer></script>
 </body>
 </html>

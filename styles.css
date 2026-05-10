@@ -785,7 +785,7 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         justify-content: space-between;
         gap: 1rem;
         flex-shrink: 0;
-        padding-bottom: 0.75rem;
+        padding-bottom: clamp(0.875rem, 3vw, 1.35rem);
     }
 
     .mobile-nav-logo {
@@ -864,9 +864,9 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: clamp(0.25rem, 2vw, 0.65rem);
+        gap: clamp(0.55rem, 3vw, 1.05rem);
         margin: 0;
-        padding: 0.35rem 0 1.25rem;
+        padding: clamp(0.75rem, 4vw, 1.75rem) 0 clamp(1.35rem, 5vw, 2.25rem);
     }
 
     .mobile-nav:not(.mobile-nav-is-open) .mobile-nav-primary-link {
@@ -904,7 +904,7 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         display: block;
         text-decoration: none;
         color: rgba(255, 255, 255, 0.88);
-        padding: clamp(0.45rem, 2vw, 0.72rem) 0;
+        padding: clamp(0.5rem, 2.25vw, 0.85rem) 0;
         margin: 0;
         border: none;
         -webkit-tap-highlight-color: transparent;
@@ -919,9 +919,9 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
     .mobile-nav-link-label {
         font-family: var(--font-display);
         font-weight: 700;
-        font-size: clamp(2.625rem, 12vw, 3.5rem);
-        letter-spacing: 0.045em;
-        line-height: 1.06;
+        font-size: clamp(1.875rem, 9vw, 2.375rem);
+        letter-spacing: 0.032em;
+        line-height: 1.12;
         text-transform: uppercase;
         color: inherit;
         display: block;
@@ -930,7 +930,7 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
 
     .mobile-nav-primary-link:hover .mobile-nav-link-label,
     .mobile-nav-primary-link:focus-visible .mobile-nav-link-label {
-        letter-spacing: 0.058em;
+        letter-spacing: 0.042em;
     }
 
     .mobile-nav-primary-link:focus-visible {
@@ -955,7 +955,7 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
     .mobile-nav-footer {
         flex-shrink: 0;
         margin-top: auto;
-        padding-top: 1.15rem;
+        padding-top: clamp(1.35rem, 4.5vw, 2rem);
         border-top: 1px solid rgba(255, 255, 255, 0.12);
     }
 
@@ -1022,7 +1022,7 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
     }
 
     .mobile-nav-trust {
-        margin-top: 0.95rem;
+        margin-top: clamp(1rem, 3.5vw, 1.35rem);
         font-size: 0.625rem;
         line-height: 1.65;
         font-weight: 500;

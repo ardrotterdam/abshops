@@ -724,6 +724,8 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         z-index: 1100;
         pointer-events: none;
         visibility: hidden;
+        overflow-x: hidden;
+        max-width: 100vw;
         transition:
             visibility 0s linear 0.48s,
             pointer-events 0s linear 0.48s;
@@ -762,11 +764,14 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         flex-direction: column;
         min-height: 100%;
         min-height: 100dvh;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
         overflow-x: hidden;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
         overscroll-behavior: contain;
-        padding: 0 clamp(1.25rem, 5vw, 2rem) max(env(safe-area-inset-bottom), 1.25rem);
+        padding: 0 clamp(1.125rem, 4.5vw, 1.75rem) max(env(safe-area-inset-bottom), 1.25rem);
         padding-top: max(env(safe-area-inset-top), 0.65rem);
         background: #000;
         color: #fff;
@@ -846,6 +851,9 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         display: flex;
         flex-direction: column;
         min-height: 0;
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
         transform: translate3d(0, 0.65rem, 0);
         opacity: 0;
         transition:
@@ -864,9 +872,12 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: clamp(0.55rem, 3vw, 1.05rem);
+        gap: clamp(0.5rem, 2.75vw, 0.95rem);
         margin: 0;
         padding: clamp(0.75rem, 4vw, 1.75rem) 0 clamp(1.35rem, 5vw, 2.25rem);
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
     }
 
     .mobile-nav:not(.mobile-nav-is-open) .mobile-nav-primary-link {
@@ -904,9 +915,12 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         display: block;
         text-decoration: none;
         color: rgba(255, 255, 255, 0.88);
-        padding: clamp(0.5rem, 2.25vw, 0.85rem) 0;
+        padding: clamp(0.45rem, 2vw, 0.75rem) 0;
         margin: 0;
         border: none;
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
         -webkit-tap-highlight-color: transparent;
         transition: color 0.4s var(--ease-nav);
     }
@@ -919,18 +933,24 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
     .mobile-nav-link-label {
         font-family: var(--font-display);
         font-weight: 700;
-        font-size: clamp(1.875rem, 9vw, 2.375rem);
-        letter-spacing: 0.032em;
-        line-height: 1.12;
+        font-size: clamp(1.625rem, 7.15vw, 2rem);
+        letter-spacing: 0.026em;
+        line-height: 1.22;
         text-transform: uppercase;
         color: inherit;
         display: block;
+        max-width: 100%;
+        text-align: left;
+        overflow-wrap: anywhere;
+        word-break: normal;
+        hyphens: manual;
+        -webkit-hyphens: manual;
         transition: letter-spacing 0.5s var(--ease-nav);
     }
 
     .mobile-nav-primary-link:hover .mobile-nav-link-label,
     .mobile-nav-primary-link:focus-visible .mobile-nav-link-label {
-        letter-spacing: 0.042em;
+        letter-spacing: 0.03em;
     }
 
     .mobile-nav-primary-link:focus-visible {
@@ -957,6 +977,10 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         margin-top: auto;
         padding-top: clamp(1.35rem, 4.5vw, 2rem);
         border-top: 1px solid rgba(255, 255, 255, 0.12);
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .mobile-nav-footer .mobile-nav-controls {

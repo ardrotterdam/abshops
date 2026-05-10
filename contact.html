@@ -79,6 +79,48 @@
             </ul>
         </section>
 
+        <section class="content-section animate-in" id="bericht" aria-labelledby="contact-form-title">
+            <h2 id="contact-form-title">Bericht sturen</h2>
+            <p>Vul het formulier hieronder in. Na het versturen zie je een bevestigingspagina; we reageren doorgaans binnen één werkdag.</p>
+            <form class="contact-form" method="POST" action="https://formsubmit.co/info@abshops.nl">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Nieuwe aanvraag via ABshops.nl">
+                <input type="hidden" name="_next" value="https://abshops.nl/bedankt.html">
+                <input type="text" name="_honey" style="display:none">
+                <div class="lead-form-grid" style="margin-top: 1.25rem;">
+                    <div class="lead-form-field">
+                        <label for="cf-name">Naam *</label>
+                        <input id="cf-name" name="name" type="text" autocomplete="name" required>
+                    </div>
+                    <div class="lead-form-field">
+                        <label for="cf-email">E-mail *</label>
+                        <input id="cf-email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="lead-form-field">
+                        <label for="cf-phone">Telefoon</label>
+                        <input id="cf-phone" name="phone" type="tel" autocomplete="tel">
+                    </div>
+                    <div class="lead-form-field">
+                        <label for="cf-subject">Onderwerp</label>
+                        <input id="cf-subject" name="onderwerp" type="text" autocomplete="off">
+                    </div>
+                    <div class="lead-form-field">
+                        <label for="cf-message">Bericht *</label>
+                        <textarea id="cf-message" name="bericht" rows="6" required placeholder="Waar kunnen we je mee helpen?"></textarea>
+                    </div>
+                    <div class="lead-form-field">
+                        <label class="lead-form-choice">
+                            <input type="checkbox" name="privacy_toestemming" id="cf-consent" value="yes" required>
+                            <span>Ik ga akkoord dat ABshops mijn gegevens gebruikt om contact met mij op te nemen over dit bericht. *</span>
+                        </label>
+                    </div>
+                    <div class="lead-form-field" style="margin-top: 0.25rem;">
+                        <button type="submit" class="btn-primary">Verstuur bericht</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
         <section class="content-section animate-in">
             <h2>Diensten</h2>
             <p>Wil je eerst lezen wat we precies leveren? Bekijk onze servicepagina's:</p>

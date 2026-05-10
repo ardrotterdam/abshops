@@ -1,17 +1,7 @@
 (function () {
     'use strict';
 
-    var SERVICE_LABELS = {
-        websites: 'Premium websites',
-        webshops: 'Webshops & e-commerce',
-        ai: 'AI-oplossingen'
-    };
-
     var STEPS = ['Contact', 'Organisatie', 'Project', 'Afronden'];
-
-    function getServiceLabel(service) {
-        return SERVICE_LABELS[service] || 'ABshops aanvraag';
-    }
 
     function clearErrors(stepEl) {
         stepEl.querySelectorAll('.lead-form-field.has-error').forEach(function (field) {
@@ -93,58 +83,11 @@
         return ok;
     }
 
-    function collectData(form) {
-        var data = {
-            service: form.getAttribute('data-service') || '',
-            serviceLabel: getServiceLabel(form.getAttribute('data-service') || ''),
-            name: (form.querySelector('[name="name"]') || {}).value || '',
-            company: (form.querySelector('[name="company"]') || {}).value || '',
-            email: (form.querySelector('[name="email"]') || {}).value || '',
-            phone: (form.querySelector('[name="phone"]') || {}).value || '',
-            businessType: (form.querySelector('[name="business_type"]') || {}).value || '',
-            existingSite: '',
-            budget: (form.querySelector('[name="budget"]') || {}).value || '',
-            timeline: (form.querySelector('[name="timeline"]') || {}).value || '',
-            goals: [],
-            notes: (form.querySelector('[name="notes"]') || {}).value || ''
-        };
-
-        var siteRadio = form.querySelector('input[name="existing_website"]:checked');
-        if (siteRadio) data.existingSite = siteRadio.value;
-
-        form.querySelectorAll('input[name="goals[]"]:checked').forEach(function (cb) {
-            var label = form.querySelector('label[for="' + cb.id + '"]');
-            data.goals.push(label ? label.textContent.trim() : cb.value);
-        });
-
-        return data;
-    }
-
-    function buildSummaryText(data) {
-        var lines = [
-            'Aanvraag — ' + data.serviceLabel,
-            '---',
-            'Naam: ' + data.name,
-            'Bedrijf: ' + data.company,
-            'E-mail: ' + data.email,
-            'Telefoon: ' + data.phone,
-            'Type organisatie: ' + data.businessType,
-            'Bestaande website: ' + (data.existingSite === 'yes' ? 'Ja' : data.existingSite === 'no' ? 'Nee' : '—'),
-            'Budget: ' + data.budget,
-            'Timeline: ' + data.timeline,
-            'Doelen: ' + (data.goals.length ? data.goals.join(', ') : '—'),
-            'Extra opmerkingen:',
-            data.notes.trim() || '—'
-        ];
-        return lines.join('\n');
-    }
-
-    function buildMailtoHref(data) {
-        var subject = encodeURIComponent(
-            'Aanvraag ' + data.serviceLabel + ' — ' + (data.company || data.name || 'ABshops')
-        );
-        var body = encodeURIComponent(buildSummaryText(data));
-        return 'mailto:info@abshops.nl?subject=' + subject + '&body=' + body;
+    function validateAllSteps(form, steps) {
+        for (var i = 0; i < steps.length; i++) {
+            if (!validateStep(steps[i])) return i;
+        }
+        return -1;
     }
 
     function updateProgress(form, index) {
@@ -220,43 +163,13 @@
         }
 
         form.addEventListener('submit', function (e) {
-            e.preventDefault();
-            if (!validateStep(steps[index])) {
+            var invalidAt = validateAllSteps(form, steps);
+            if (invalidAt !== -1) {
+                e.preventDefault();
+                index = invalidAt;
+                showStep(form, index);
                 if (status) status.textContent = 'Controleer de gemarkeerde velden.';
                 return;
-            }
-
-            var data = collectData(form);
-            var summary = buildSummaryText(data);
-            var successEl = form.querySelector('.lead-form-success');
-            var mailLink = form.querySelector('[data-lead-mailto]');
-            var copyBtn = form.querySelector('[data-lead-copy]');
-
-            if (mailLink) mailLink.setAttribute('href', buildMailtoHref(data));
-
-            if (copyBtn) {
-                copyBtn.onclick = function () {
-                    if (navigator.clipboard && navigator.clipboard.writeText) {
-                        navigator.clipboard.writeText(summary).then(function () {
-                            copyBtn.textContent = 'Gekopieerd';
-                            setTimeout(function () {
-                                copyBtn.textContent = 'Kopieer tekst';
-                            }, 2200);
-                        });
-                    }
-                };
-            }
-
-            form.classList.add('is-sent');
-            if (successEl) {
-                successEl.hidden = false;
-                var okTitle = successEl.querySelector('h3');
-                if (okTitle) {
-                    okTitle.setAttribute('tabindex', '-1');
-                    try {
-                        okTitle.focus();
-                    } catch (ignore) { /* empty */ }
-                }
             }
         });
     }

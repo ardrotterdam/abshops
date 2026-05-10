@@ -105,7 +105,11 @@
                             <li>Concrete vervolgstap binnen één werkdag</li>
                         </ul>
                     </div>
-                    <form class="lead-form" data-lead-form data-service="ai" novalidate>
+                    <form class="lead-form" data-lead-form data-service="ai" method="POST" action="https://formsubmit.co/info@abshops.nl" novalidate>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Nieuwe aanvraag via ABshops.nl">
+                        <input type="hidden" name="_next" value="https://abshops.nl/bedankt.html">
+                        <input type="text" name="_honey" style="display:none">
                         <div class="lead-form-inner">
                             <div class="lead-form-progress" role="group" aria-label="Stappen voortgang">
                                 <div class="lead-form-progress-track" aria-hidden="true"></div>
@@ -223,14 +227,6 @@
                                     <button type="button" class="btn-lead-next btn-primary">Volgende</button>
                                     <button type="submit" class="btn-lead-submit btn-primary" hidden>Verstuur aanvraag</button>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="lead-form-success" hidden tabindex="-1">
-                            <h3>Bedankt — je aanvraag staat klaar</h3>
-                            <p>Open je e-mailapp om alles in één keer te versturen naar <a href="mailto:info@abshops.nl">info@abshops.nl</a>, of kopieer de samenvatting als je liever zelf een bericht opstelt.</p>
-                            <div class="lead-form-success-actions">
-                                <a class="btn-primary btn-lead-mailto" data-lead-mailto href="#">Open e-mail</a>
-                                <button type="button" class="btn-lead-secondary" data-lead-copy>Kopieer tekst</button>
                             </div>
                         </div>
                     </form>

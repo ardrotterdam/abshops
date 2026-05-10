@@ -9,7 +9,7 @@
 
     var trigger = document.querySelector('.mobile-nav-trigger');
     var backdrop = root.querySelector('.mobile-nav-backdrop');
-    var panel = root.querySelector('.mobile-nav-panel');
+    var closeBtn = root.querySelector('.mobile-nav-close');
     var mq = window.matchMedia('(max-width: 768px)');
 
     function navigationalAnchors() {
@@ -19,7 +19,7 @@
     function firstFocusTarget() {
         var links = navigationalAnchors();
         if (links.length) return links[0];
-        return panel || root;
+        return closeBtn || root;
     }
 
     function setOpen(open) {
@@ -74,6 +74,8 @@
     });
 
     if (backdrop) backdrop.addEventListener('click', closeNav);
+
+    if (closeBtn) closeBtn.addEventListener('click', closeNav);
 
     if (trigger) {
         trigger.addEventListener('click', function () {

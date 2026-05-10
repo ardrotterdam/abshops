@@ -25,6 +25,7 @@
         logoAria: 'ABshops — Breure Media',
         mobileOpen: 'Hoofdmenu openen',
         mobileClose: 'Menu sluiten',
+        mobileDialogSr: 'Menu',
         mobileDialog: 'Hoofdnavigatie',
         mobileTrust:
             'Premium websites, webshops en AI-oplossingen vanuit Rotterdam.',
@@ -42,6 +43,7 @@
         logoAria: 'ABshops — Breure Media',
         mobileOpen: 'Open main menu',
         mobileClose: 'Close menu',
+        mobileDialogSr: 'Menu',
         mobileDialog: 'Primary navigation',
         mobileTrust:
             'Premium websites, webshops and AI solutions from Rotterdam.',

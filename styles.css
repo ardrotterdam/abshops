@@ -646,12 +646,13 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         padding-bottom: 1rem;
     }
 
-    .nav-links-desktop {
-        display: none;
+    /* Higher specificity + !important so later `.nav-links { … }` rules (e.g. ≤640px) never resurrect the desktop strip */
+    .nav .nav-container > .nav-links.nav-links-desktop {
+        display: none !important;
     }
 
-    .mobile-nav-trigger {
-        display: inline-flex;
+    .nav .nav-container > button.mobile-nav-trigger {
+        display: inline-flex !important;
         align-items: center;
         justify-content: center;
         width: 2.875rem;

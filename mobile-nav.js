@@ -35,9 +35,19 @@
         window.requestAnimationFrame(function () {
             if (open) {
                 var t = firstFocusTarget();
-                if (t && typeof t.focus === 'function') t.focus({ preventScroll: true });
+                if (t && typeof t.focus === 'function') {
+                    try {
+                        t.focus({ preventScroll: true });
+                    } catch (err) {
+                        t.focus();
+                    }
+                }
             } else if (trigger) {
-                trigger.focus({ preventScroll: true });
+                try {
+                    trigger.focus({ preventScroll: true });
+                } catch (err2) {
+                    trigger.focus();
+                }
             }
         });
     }

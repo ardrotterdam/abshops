@@ -19,20 +19,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Nav background on scroll
+// Nav background on scroll (theme-aware via CSS variables)
 const nav = document.querySelector('.nav');
 if (nav) {
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
+    const syncNavScrollState = () => {
+        nav.dataset.scrolled = window.pageYOffset > 50 ? 'true' : '';
+    };
 
-        if (currentScroll > 50) {
-            nav.style.background = 'rgba(255, 255, 255, 0.95)';
-            nav.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
-        } else {
-            nav.style.background = 'rgba(255, 255, 255, 0.8)';
-            nav.style.boxShadow = 'none';
-        }
-    });
+    syncNavScrollState();
+    window.addEventListener('scroll', syncNavScrollState, { passive: true });
 }
 
 // Intersection Observer for fade-in animations

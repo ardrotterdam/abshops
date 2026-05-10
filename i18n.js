@@ -27,7 +27,11 @@
         mobileClose: 'Menu sluiten',
         mobileDialog: 'Hoofdnavigatie',
         mobileTrust:
-            'Premium websites, webshops en AI-oplossingen vanuit Rotterdam.'
+            'Premium websites, webshops en AI-oplossingen vanuit Rotterdam.',
+        mobileSubtitleWebsites: 'Premium bedrijfswebsites',
+        mobileSubtitleWebshops: 'Shopify & e-commerce',
+        mobileSubtitleAi: 'AI automatisering & agents',
+        mobileSubtitleContact: 'Start uw project'
     };
     DICT.en.nav = {
         home: 'Home',
@@ -40,7 +44,11 @@
         mobileClose: 'Close menu',
         mobileDialog: 'Primary navigation',
         mobileTrust:
-            'Premium websites, webshops and AI solutions from Rotterdam.'
+            'Premium websites, webshops and AI solutions from Rotterdam.',
+        mobileSubtitleWebsites: 'Premium corporate websites',
+        mobileSubtitleWebshops: 'Shopify & e-commerce',
+        mobileSubtitleAi: 'AI automation & agents',
+        mobileSubtitleContact: 'Start your project'
     };
 
     DICT.nl.footer = {

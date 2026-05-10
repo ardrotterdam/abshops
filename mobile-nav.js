@@ -9,11 +9,17 @@
 
     var trigger = document.querySelector('.mobile-nav-trigger');
     var backdrop = root.querySelector('.mobile-nav-backdrop');
-    var closeBtn = root.querySelector('.mobile-nav-close');
+    var panel = root.querySelector('.mobile-nav-panel');
     var mq = window.matchMedia('(max-width: 768px)');
 
     function navigationalAnchors() {
         return Array.prototype.slice.call(root.querySelectorAll('a.mobile-nav-primary-link'));
+    }
+
+    function firstFocusTarget() {
+        var links = navigationalAnchors();
+        if (links.length) return links[0];
+        return panel || root;
     }
 
     function setOpen(open) {
@@ -28,9 +34,10 @@
 
         window.requestAnimationFrame(function () {
             if (open) {
-                if (closeBtn) closeBtn.focus();
+                var t = firstFocusTarget();
+                if (t && typeof t.focus === 'function') t.focus({ preventScroll: true });
             } else if (trigger) {
-                trigger.focus();
+                trigger.focus({ preventScroll: true });
             }
         });
     }
@@ -56,12 +63,7 @@
         a.addEventListener('click', closeNav);
     });
 
-    var ctaLink = root.querySelector('a.mobile-nav-cta');
-    if (ctaLink) ctaLink.addEventListener('click', closeNav);
-
     if (backdrop) backdrop.addEventListener('click', closeNav);
-
-    if (closeBtn) closeBtn.addEventListener('click', closeNav);
 
     if (trigger) {
         trigger.addEventListener('click', function () {

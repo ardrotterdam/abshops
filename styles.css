@@ -367,7 +367,7 @@ html[data-theme="dark"] ::selection {
 
 .nav-links {
     display: flex;
-    gap: clamp(1.25rem, 3vw, 2rem);
+    gap: clamp(1.42rem, 3.4vw, 2.35rem);
     align-items: center;
 }
 
@@ -1602,7 +1602,7 @@ html[data-theme="dark"] .cta-section .cta-mail-link:hover {
     }
     
     .nav-links {
-        gap: 1.5rem;
+        gap: 1.75rem;
     }
     
     .hero {
@@ -1651,7 +1651,7 @@ html[data-theme="dark"] .cta-section .cta-mail-link:hover {
         width: 100%;
         justify-content: flex-start;
         flex-wrap: wrap;
-        gap: 0.5rem 1rem;
+        gap: 0.55rem 1.2rem;
     }
 
     .lang-switch-btn {

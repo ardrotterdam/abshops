@@ -57,7 +57,10 @@ if ('fonts' in document) {
     Promise.all([
         document.fonts.load('400 1rem Inter'),
         document.fonts.load('600 1rem Inter'),
-        document.fonts.load('300 3rem Inter')
+        document.fonts.load('300 3rem Inter'),
+        document.fonts.load('600 1rem Syne'),
+        document.fonts.load('700 1rem Syne'),
+        document.fonts.load('800 0.6rem Syne')
     ]).then(() => {
         document.body.classList.add('fonts-loaded');
     });

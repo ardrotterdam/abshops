@@ -843,6 +843,35 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         display: block;
     }
 
+    /* Explicit contrast: body/link color must not inherit onto icon buttons */
+    html:not([data-theme="dark"]) .nav-mobile-actions .theme-toggle {
+        color: rgba(255, 255, 255, 0.94);
+        border-color: rgba(255, 255, 255, 0.32);
+    }
+
+    html:not([data-theme="dark"]) .nav-mobile-actions .theme-toggle-icon-moon {
+        fill: rgba(255, 255, 255, 0.94);
+    }
+
+    html:not([data-theme="dark"]) .nav .nav-container .mobile-nav-trigger {
+        color: rgba(255, 255, 255, 0.95);
+        border-color: rgba(255, 255, 255, 0.28);
+    }
+
+    html[data-theme="dark"] .nav-mobile-actions .theme-toggle {
+        color: rgba(10, 10, 10, 0.88);
+        border-color: rgba(10, 10, 10, 0.16);
+    }
+
+    html[data-theme="dark"] .nav-mobile-actions .theme-toggle-icon-moon {
+        fill: rgba(10, 10, 10, 0.88);
+    }
+
+    html[data-theme="dark"] .nav .nav-container .mobile-nav-trigger {
+        color: rgba(10, 10, 10, 0.88);
+        border-color: rgba(10, 10, 10, 0.12);
+    }
+
     .mobile-nav-trigger:hover {
         background: rgba(255, 255, 255, 0.05);
         border-color: rgba(255, 255, 255, 0.22);

@@ -683,20 +683,72 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
     .nav-mobile-actions {
         display: flex;
         align-items: center;
-        gap: 0.35rem;
+        gap: 0.4rem;
         margin-left: auto;
         flex-shrink: 0;
         min-width: 0;
     }
 
-    /* NL / EN — readable, high-contrast segmented control */
+    /* NL / EN — mobile-only; explicit contrast (dark header vs light header) */
     .nav-mobile-actions .lang-switch.lang-switch--compact {
+        flex-shrink: 0;
         padding: 3px;
         gap: 3px;
         border-radius: 999px;
-        border: 1px solid var(--nav-lang-border);
-        background: var(--nav-lang-bg);
-        box-shadow: var(--nav-lang-inner-highlight), 0 1px 2px rgba(0, 0, 0, 0.06);
+        border-width: 1px;
+        border-style: solid;
+        transition:
+            background-color var(--nav-transition-duration) var(--ease-nav),
+            border-color var(--nav-transition-duration) var(--ease-nav),
+            box-shadow var(--nav-transition-duration) var(--ease-nav);
+    }
+
+    /* Light page / dark nav strip */
+    html:not([data-theme="dark"]) .nav-mobile-actions .lang-switch.lang-switch--compact {
+        background: #0a0a0a;
+        border-color: rgba(255, 255, 255, 0.22);
+        box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.07),
+            0 1px 3px rgba(0, 0, 0, 0.35);
+    }
+
+    html:not([data-theme="dark"]) .nav-mobile-actions .lang-switch--compact .lang-switch-btn {
+        color: rgba(255, 255, 255, 0.5);
+        background: transparent;
+    }
+
+    html:not([data-theme="dark"]) .nav-mobile-actions .lang-switch--compact .lang-switch-btn:hover:not(.is-active) {
+        color: rgba(255, 255, 255, 0.92);
+    }
+
+    html:not([data-theme="dark"]) .nav-mobile-actions .lang-switch--compact .lang-switch-btn.is-active {
+        background: #ffffff;
+        color: #0a0a0a;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.28);
+    }
+
+    /* Dark page / light nav strip */
+    html[data-theme="dark"] .nav-mobile-actions .lang-switch.lang-switch--compact {
+        background: #f4f4f6;
+        border-color: rgba(10, 10, 10, 0.14);
+        box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.98),
+            0 1px 2px rgba(0, 0, 0, 0.06);
+    }
+
+    html[data-theme="dark"] .nav-mobile-actions .lang-switch--compact .lang-switch-btn {
+        color: rgba(10, 10, 10, 0.4);
+        background: transparent;
+    }
+
+    html[data-theme="dark"] .nav-mobile-actions .lang-switch--compact .lang-switch-btn:hover:not(.is-active) {
+        color: rgba(10, 10, 10, 0.82);
+    }
+
+    html[data-theme="dark"] .nav-mobile-actions .lang-switch--compact .lang-switch-btn.is-active {
+        background: #0a0a0a;
+        color: #ffffff;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.18);
     }
 
     .nav-mobile-actions .lang-switch--compact .lang-switch-btn {
@@ -708,21 +760,20 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         letter-spacing: 0.06em;
         line-height: 1;
         border-radius: 999px;
-        color: var(--nav-lang-pill-inactive);
-    }
-
-    .nav-mobile-actions .lang-switch--compact .lang-switch-btn.is-active {
-        color: var(--nav-lang-pill-active-fg);
-        background: var(--nav-lang-pill-active-bg);
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
-    }
-
-    .nav-mobile-actions .lang-switch--compact .lang-switch-btn:hover:not(.is-active) {
-        color: var(--nav-lang-pill-inactive-hover);
+        transition:
+            color calc(var(--nav-transition-duration) * 0.75) var(--ease-nav),
+            background-color calc(var(--nav-transition-duration) * 0.75) var(--ease-nav),
+            box-shadow 0.35s var(--ease-nav),
+            transform 0.22s var(--ease-nav);
     }
 
     .nav-mobile-actions .lang-switch--compact .lang-switch-btn:active:not(.is-active) {
         transform: translateY(0);
+    }
+
+    .nav-mobile-actions .lang-switch--compact .lang-switch-btn:focus-visible {
+        outline: 2px solid var(--nav-focus-ring);
+        outline-offset: 2px;
     }
 
     /* Theme — icon-only circular control */

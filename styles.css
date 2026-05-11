@@ -269,6 +269,11 @@ html[data-theme="dark"] ::selection {
     gap: 1.5rem;
 }
 
+/* Mobile-only header strip: language + theme + menu (hidden on desktop) */
+.nav-mobile-actions {
+    display: none;
+}
+
 /* Logo — typographic wordmark (nav: inverted strip tokens; footer: page theme) */
 .logo {
     display: inline-flex;
@@ -624,6 +629,18 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
     box-shadow: var(--shadow-sm);
 }
 
+.lang-switch--compact {
+    flex-shrink: 0;
+    padding: 1px;
+    gap: 1px;
+}
+
+.lang-switch--compact .lang-switch-btn {
+    padding: 0.3rem 0.4rem;
+    font-size: 0.59375rem;
+    letter-spacing: 0.05em;
+}
+
 /* --- Mobile navigation (fullscreen luxury overlay — fixed monochrome palette) --- */
 
 .mobile-nav-trigger {
@@ -647,13 +664,22 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         display: none !important;
     }
 
-    .nav .nav-container > button.mobile-nav-trigger {
+    .nav-mobile-actions {
+        display: flex;
+        align-items: center;
+        gap: clamp(0.28rem, 2vw, 0.5rem);
+        margin-left: auto;
+        flex-shrink: 0;
+        min-width: 0;
+    }
+
+    .nav .nav-container .mobile-nav-trigger {
         display: inline-flex !important;
         align-items: center;
         justify-content: center;
         width: 2.875rem;
         height: 2.875rem;
-        margin-left: auto;
+        margin-left: 0;
         padding: 0;
         border: 1px solid var(--nav-header-border);
         border-radius: 50%;
@@ -983,70 +1009,8 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         box-sizing: border-box;
     }
 
-    .mobile-nav-footer .mobile-nav-controls {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 0.75rem;
-        flex-wrap: wrap;
-    }
-
-    .mobile-nav-panel .lang-switch {
-        border-color: rgba(255, 255, 255, 0.18);
-        background: rgba(255, 255, 255, 0.04);
-        box-shadow: none;
-    }
-
-    .mobile-nav-panel .lang-switch-btn {
-        color: rgba(255, 255, 255, 0.62);
-    }
-
-    .mobile-nav-panel .lang-switch-btn:hover:not(.is-active) {
-        color: rgba(255, 255, 255, 0.88);
-    }
-
-    .mobile-nav-panel .lang-switch-btn.is-active {
-        color: #0a0a0a;
-        background: rgba(255, 255, 255, 0.92);
-        box-shadow: none;
-    }
-
-    .mobile-nav-panel .lang-switch-btn:focus-visible {
-        outline-color: rgba(255, 255, 255, 0.65);
-    }
-
-    .lang-switch--mobile .lang-switch-btn {
-        padding: 0.4rem 0.58rem;
-        font-size: 0.625rem;
-    }
-
-    .mobile-nav-panel .theme-toggle {
-        border-color: rgba(255, 255, 255, 0.22);
-        background: rgba(255, 255, 255, 0.06);
-        color: rgba(255, 255, 255, 0.85);
-    }
-
-    .mobile-nav-panel .theme-toggle:hover {
-        border-color: rgba(255, 255, 255, 0.38);
-        box-shadow: none;
-    }
-
-    .mobile-nav-panel .theme-toggle-thumb {
-        background: rgba(255, 255, 255, 0.94);
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
-    }
-
-    .mobile-nav-panel .theme-toggle:focus-visible {
-        outline-color: rgba(255, 255, 255, 0.75);
-    }
-
-    .mobile-nav-panel .theme-toggle-icon-moon {
-        fill: rgba(26, 26, 26, 0.92);
-        stroke: none;
-    }
-
     .mobile-nav-trust {
-        margin-top: clamp(1rem, 3.5vw, 1.35rem);
+        margin-top: 0;
         font-size: 0.625rem;
         line-height: 1.65;
         font-weight: 500;
@@ -1054,6 +1018,31 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         text-transform: uppercase;
         color: rgba(255, 255, 255, 0.42);
         max-width: 22rem;
+    }
+
+    @media (max-width: 380px) {
+        .nav-mobile-actions {
+            gap: 0.2rem;
+        }
+
+        .nav .nav-container .mobile-nav-trigger {
+            width: 2.5625rem;
+            height: 2.5625rem;
+        }
+
+        .lang-switch--compact .lang-switch-btn {
+            padding: 0.24rem 0.3rem;
+            font-size: 0.53125rem;
+        }
+
+        .nav-mobile-actions .theme-toggle {
+            width: 2.6875rem;
+            height: 1.5rem;
+        }
+
+        html[data-theme="dark"] .nav-mobile-actions .theme-toggle-thumb {
+            transform: translateY(-50%) translateX(1.0625rem);
+        }
     }
 }
 
@@ -2175,6 +2164,14 @@ html[data-theme="dark"] .cta-section .cta-mail-link:hover {
 
     .logo-caption {
         letter-spacing: 0.2em;
+    }
+}
+
+/* Keep main header on one row on phone; `.nav-container` uses wrap ≤640px for other pages/layouts */
+@media (max-width: 768px) {
+    .nav .nav-container {
+        flex-wrap: nowrap;
+        row-gap: 0;
     }
 }
 

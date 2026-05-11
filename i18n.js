@@ -906,6 +906,21 @@
                     var isOn = code === active;
                     btn.setAttribute('aria-pressed', isOn ? 'true' : 'false');
                     btn.classList.toggle('is-active', isOn);
+                    var nameKey =
+                        code === 'en'
+                            ? 'lang.labelEn'
+                            : code === 'nl'
+                              ? 'lang.labelNl'
+                              : null;
+                    if (nameKey) {
+                        if (btn.querySelector('[data-i18n]')) {
+                            btn.removeAttribute('aria-label');
+                        } else {
+                            var aria = t(active, nameKey);
+                            if (!aria && active !== DEFAULT_LANG) aria = t(DEFAULT_LANG, nameKey);
+                            if (aria) btn.setAttribute('aria-label', aria);
+                        }
+                    }
                 });
                 var grpAria = t(active, 'lang.groupAria');
                 if (grpAria) root.setAttribute('aria-label', grpAria);

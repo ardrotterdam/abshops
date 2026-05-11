@@ -867,9 +867,12 @@
             if (!val && lang !== DEFAULT_LANG) val = t(DEFAULT_LANG, key);
             if (!val) return;
 
-            var useHtml = el.getAttribute('data-i18n-html') === 'true';
-            if (useHtml) el.innerHTML = val;
-            else el.textContent = val;
+            var suppressText = el.getAttribute('data-i18n-suppress-text') === 'true';
+            if (!suppressText) {
+                var useHtml = el.getAttribute('data-i18n-html') === 'true';
+                if (useHtml) el.innerHTML = val;
+                else el.textContent = val;
+            }
 
             var attrs = el.getAttribute('data-i18n-attr');
             if (attrs) {

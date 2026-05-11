@@ -631,14 +631,6 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
 
 .lang-switch--compact {
     flex-shrink: 0;
-    padding: 1px;
-    gap: 1px;
-}
-
-.lang-switch--compact .lang-switch-btn {
-    padding: 0.3rem 0.4rem;
-    font-size: 0.59375rem;
-    letter-spacing: 0.05em;
 }
 
 /* --- Mobile navigation (fullscreen luxury overlay — fixed monochrome palette) --- */
@@ -664,21 +656,120 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         display: none !important;
     }
 
+    .nav .logo-caption,
+    .mobile-nav-logo .logo-caption {
+        display: none !important;
+    }
+
+    .nav .logo-lockup {
+        gap: 0;
+    }
+
+    .nav .logo-name {
+        font-size: 1.0625rem;
+        letter-spacing: -0.05em;
+    }
+
+    .mobile-nav-logo .logo-name {
+        font-size: 1.0625rem;
+    }
+
+    .nav .logo {
+        flex: 0 1 auto;
+        min-width: 0;
+        max-width: min(7rem, 36vw);
+    }
+
     .nav-mobile-actions {
         display: flex;
         align-items: center;
-        gap: clamp(0.28rem, 2vw, 0.5rem);
+        gap: 0.35rem;
         margin-left: auto;
         flex-shrink: 0;
         min-width: 0;
+    }
+
+    /* NL / EN — readable, high-contrast segmented control */
+    .nav-mobile-actions .lang-switch.lang-switch--compact {
+        padding: 3px;
+        gap: 3px;
+        border-radius: 999px;
+        border: 1px solid var(--nav-lang-border);
+        background: var(--nav-lang-bg);
+        box-shadow: var(--nav-lang-inner-highlight), 0 1px 2px rgba(0, 0, 0, 0.06);
+    }
+
+    .nav-mobile-actions .lang-switch--compact .lang-switch-btn {
+        margin: 0;
+        padding: 0.4rem 0.52rem;
+        min-width: 2.125rem;
+        font-size: 0.6875rem;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        line-height: 1;
+        border-radius: 999px;
+        color: var(--nav-lang-pill-inactive);
+    }
+
+    .nav-mobile-actions .lang-switch--compact .lang-switch-btn.is-active {
+        color: var(--nav-lang-pill-active-fg);
+        background: var(--nav-lang-pill-active-bg);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    }
+
+    .nav-mobile-actions .lang-switch--compact .lang-switch-btn:hover:not(.is-active) {
+        color: var(--nav-lang-pill-inactive-hover);
+    }
+
+    .nav-mobile-actions .lang-switch--compact .lang-switch-btn:active:not(.is-active) {
+        transform: translateY(0);
+    }
+
+    /* Theme — icon-only circular control */
+    .nav-mobile-actions .theme-toggle {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        border: 1px solid var(--nav-theme-track-border);
+        background: transparent;
+    }
+
+    .nav-mobile-actions .theme-toggle-thumb {
+        left: 50%;
+        top: 50%;
+        width: 1.1rem;
+        height: 1.1rem;
+        padding: 0;
+        background: transparent !important;
+        box-shadow: none !important;
+        border-radius: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    html[data-theme="dark"] .nav-mobile-actions .theme-toggle-thumb {
+        transform: translate(-50%, -50%);
+    }
+
+    .nav-mobile-actions .theme-toggle-icon {
+        width: 1.05rem;
+        height: 1.05rem;
+    }
+
+    .nav-mobile-actions .theme-toggle:hover {
+        border-color: var(--nav-theme-track-border-hover);
+        background: rgba(255, 255, 255, 0.04);
+    }
+
+    html[data-theme="dark"] .nav-mobile-actions .theme-toggle:hover {
+        background: rgba(10, 10, 10, 0.05);
     }
 
     .nav .nav-container .mobile-nav-trigger {
         display: inline-flex !important;
         align-items: center;
         justify-content: center;
-        width: 2.875rem;
-        height: 2.875rem;
+        width: 2.5rem;
+        height: 2.5rem;
         margin-left: 0;
         padding: 0;
         border: 1px solid var(--nav-header-border);
@@ -686,6 +777,8 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         background: transparent;
         color: var(--nav-logo-title);
         cursor: pointer;
+        font-size: 0;
+        line-height: 0;
         -webkit-tap-highlight-color: transparent;
         transition:
             border-color 0.45s var(--ease-nav),
@@ -693,6 +786,10 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
             color 0.45s var(--ease-nav),
             transform 0.38s var(--ease-spring),
             box-shadow 0.55s var(--ease-nav);
+    }
+
+    .nav .nav-container .mobile-nav-trigger > svg {
+        display: block;
     }
 
     .mobile-nav-trigger:hover {
@@ -1022,26 +1119,27 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
 
     @media (max-width: 380px) {
         .nav-mobile-actions {
-            gap: 0.2rem;
+            gap: 0.25rem;
+        }
+
+        .nav .logo {
+            max-width: min(6.5rem, 33vw);
         }
 
         .nav .nav-container .mobile-nav-trigger {
-            width: 2.5625rem;
-            height: 2.5625rem;
-        }
-
-        .lang-switch--compact .lang-switch-btn {
-            padding: 0.24rem 0.3rem;
-            font-size: 0.53125rem;
+            width: 2.375rem;
+            height: 2.375rem;
         }
 
         .nav-mobile-actions .theme-toggle {
-            width: 2.6875rem;
-            height: 1.5rem;
+            width: 2.375rem;
+            height: 2.375rem;
         }
 
-        html[data-theme="dark"] .nav-mobile-actions .theme-toggle-thumb {
-            transform: translateY(-50%) translateX(1.0625rem);
+        .nav-mobile-actions .lang-switch--compact .lang-switch-btn {
+            padding: 0.32rem 0.4rem;
+            min-width: 1.95rem;
+            font-size: 0.625rem;
         }
     }
 }
@@ -2116,7 +2214,7 @@ html[data-theme="dark"] .cta-section .cta-mail-link:hover {
         gap: 0.55rem 1.2rem;
     }
 
-    .lang-switch-btn {
+    .nav-links .lang-switch .lang-switch-btn {
         padding: 0.38rem 0.5rem;
         font-size: 0.625rem;
     }
@@ -2160,6 +2258,10 @@ html[data-theme="dark"] .cta-section .cta-mail-link:hover {
 
     .logo {
         max-width: 100%;
+    }
+
+    .nav .logo {
+        max-width: min(7rem, 38vw);
     }
 
     .logo-caption {

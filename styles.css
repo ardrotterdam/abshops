@@ -1878,22 +1878,6 @@ html[data-theme="dark"] .cred-band {
     background: linear-gradient(145deg, #14151c 0%, #0a0b10 50%, #14151c 100%);
 }
 
-.footer-legal {
-    font-size: 0.75rem;
-    line-height: 1.55;
-    color: var(--gray-500);
-    max-width: 36rem;
-    margin-top: 0.85rem;
-}
-
-.footer-brand-trade {
-    font-size: 0.6875rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--gray-400);
-    margin-top: 0.35rem;
-}
-
 html[data-theme="dark"] .stat-number {
     color: var(--gray-900);
 }
@@ -2043,7 +2027,7 @@ html[data-theme="dark"] .cta-section .cta-mail-link:hover {
 
 /* Footer */
 .footer {
-    padding: clamp(3.5rem, 8vw, 5rem) 3rem 2.25rem;
+    padding: clamp(2.6rem, 5.5vw, 3.75rem) 3rem 1.5rem;
     background: var(--white);
     border-top: 1px solid var(--gray-200);
     transition: var(--transition);
@@ -2064,76 +2048,135 @@ html[data-theme="dark"] .cta-section .cta-mail-link:hover {
 .footer-container {
     max-width: 1320px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 3.5vw, 2.25rem);
+}
+
+.footer-main {
     display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-areas:
-        "brand links"
-        "bottom bottom";
-    gap: 2.5rem 3rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(1.75rem, 4vw, 3rem);
     align-items: start;
 }
 
-.footer-brand {
-    grid-area: brand;
-    margin-bottom: 0;
+.footer-col-brand {
+    min-width: 0;
 }
 
-.footer-brand p {
+.footer-tagline {
     color: var(--gray-500);
     font-size: 0.875rem;
-    margin-top: 0.85rem;
-    max-width: 18rem;
-    line-height: 1.55;
+    margin-top: 1rem;
+    max-width: 22rem;
+    line-height: 1.6;
     letter-spacing: 0.01em;
 }
 
-.footer-links {
-    grid-area: links;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 1.75rem;
-    margin-bottom: 0;
-    justify-content: flex-end;
-    align-items: center;
+.footer-col-label {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--gray-400);
+    margin: 0 0 1rem;
 }
 
-.footer-links a {
+.footer-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.footer-nav-list a {
     color: var(--gray-600);
     text-decoration: none;
-    font-size: 0.8125rem;
-    font-weight: 600;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
     transition: color 0.25s var(--ease-out);
 }
 
-.footer-links a:hover {
+.footer-nav-list a:hover {
     color: var(--black);
 }
 
+.footer-address {
+    font-style: normal;
+    margin: 0;
+}
+
+.footer-address p {
+    margin: 0 0 0.45rem;
+    color: var(--gray-500);
+    font-size: 0.875rem;
+    line-height: 1.55;
+}
+
+.footer-address p:last-child {
+    margin-bottom: 0;
+}
+
+.footer-mail {
+    display: inline-block;
+    color: var(--gray-600);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition:
+        color 0.25s var(--ease-out),
+        border-color 0.25s var(--ease-out);
+}
+
+.footer-mail:hover {
+    color: var(--black);
+    border-bottom-color: var(--gray-300);
+}
+
+html[data-theme="dark"] .footer-mail:hover {
+    border-bottom-color: var(--gray-600);
+}
+
 .footer-bottom {
-    grid-area: bottom;
-    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.65rem 2rem;
+    padding-top: clamp(1.1rem, 2.5vw, 1.5rem);
     border-top: 1px solid var(--gray-200);
 }
 
-.footer-bottom p {
+.footer-copyright {
     color: var(--gray-500);
     font-size: 0.8125rem;
     letter-spacing: 0.02em;
+    margin: 0;
+}
+
+.footer-trade-line {
+    margin: 0;
+    font-size: 0.6875rem;
+    line-height: 1.45;
+    letter-spacing: 0.055em;
+    color: var(--gray-400);
+    opacity: 0.88;
+    max-width: 28rem;
+    text-align: right;
 }
 
 @media (max-width: 768px) {
-    .footer-container {
+    .footer-main {
         grid-template-columns: 1fr;
-        grid-template-areas:
-            "brand"
-            "links"
-            "bottom";
+        gap: 1.75rem;
     }
 
-    .footer-links {
-        justify-content: flex-start;
+    .footer-trade-line {
+        text-align: left;
     }
 }
 
@@ -2422,9 +2465,8 @@ html[data-theme="dark"] .cta-section .cta-mail-link:hover {
         gap: 3rem;
     }
     
-    .footer-links {
+    .footer-bottom {
         flex-direction: column;
-        gap: 1rem;
         align-items: flex-start;
     }
 

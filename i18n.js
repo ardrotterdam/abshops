@@ -54,19 +54,23 @@
     };
 
     DICT.nl.footer = {
-        tagline: 'ABshops · Digitale commerce studio Rotterdam',
-        brandTrade:
-            'Breure Media is een aparte handelsnaam voor creatieve en media-uitgaven.',
-        legal:
-            'ABshops is een handelsnaam en bedrijfsonderdeel binnen de onderneming van Ard Breure — ingeschreven bij de Kamer van Koophandel. Vestigingsadres: Weena 70, Rotterdam.',
+        tagline: 'ABshops — digitale commerce studio uit Rotterdam.',
+        navLabel: 'Navigatie',
+        navAria: 'Footernavigatie',
+        contactLabel: 'Contact',
+        contactCity: 'Rotterdam, Nederland',
+        contactStreet: 'Weena 70',
+        tradeLine: 'ABshops is een handelsnaam van Ard Breure.',
         rights: '© 2026 ABshops. Alle rechten voorbehouden.'
     };
     DICT.en.footer = {
-        tagline: 'ABshops · Digital commerce studio Rotterdam',
-        brandTrade:
-            'Breure Media is a separate trade name for creative publishing and media work.',
-        legal:
-            'ABshops is a trade name operating within Ard Breure’s business (KvK registered). Address: Weena 70, Rotterdam.',
+        tagline: 'ABshops — digital commerce studio based in Rotterdam.',
+        navLabel: 'Navigation',
+        navAria: 'Footer navigation',
+        contactLabel: 'Contact',
+        contactCity: 'Rotterdam, Netherlands',
+        contactStreet: 'Weena 70',
+        tradeLine: 'ABshops is a trade name of Ard Breure.',
         rights: '© 2026 ABshops. All rights reserved.'
     };
 

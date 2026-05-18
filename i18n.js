@@ -21,6 +21,7 @@
         websites: 'Websites',
         webshops: 'Webshops',
         ai: 'Automatisering',
+        insights: 'Insights',
         contact: 'Contact',
         logoAria: 'ABshops',
         mobileOpen: 'Hoofdmenu openen',
@@ -32,6 +33,7 @@
         mobileSubtitleWebsites: 'Premium bedrijfswebsites',
         mobileSubtitleWebshops: 'Shopify & e-commerce',
         mobileSubtitleAi: 'AI automatisering & agents',
+        mobileSubtitleInsights: 'AI, ecommerce & digitale groei',
         mobileSubtitleContact: 'Start uw project'
     };
     DICT.en.nav = {
@@ -39,6 +41,7 @@
         websites: 'Websites',
         webshops: 'Webshops',
         ai: 'Automation',
+        insights: 'Insights',
         contact: 'Contact',
         logoAria: 'ABshops',
         mobileOpen: 'Open main menu',
@@ -50,6 +53,7 @@
         mobileSubtitleWebsites: 'Premium corporate websites',
         mobileSubtitleWebshops: 'Shopify & e-commerce',
         mobileSubtitleAi: 'AI automation & agents',
+        mobileSubtitleInsights: 'AI, ecommerce & digital growth',
         mobileSubtitleContact: 'Start your project'
     };
 
@@ -243,6 +247,8 @@
         ogDesc:
             'Websites, Shopify en ecommerce, SEO en praktische digitale inrichting — menselijk geleid, technisch strak.',
         heroEyebrow: 'Digitale commerce studio · Rotterdam',
+        heroImgAlt:
+            'Premium AI-assisted ecommerce workspace van ABshops voor websites, Shopify en digitale automatisering',
         heroTitle: 'Moderne websites, Shopify-webshops<br> en workflows die online groei dragen.',
         heroSubtitle:
             'ABshops helpt ondernemers en teams met webdesign, ecommerce op Shopify, SEO en digitale inrichting — menselijk geleid, technisch strak, met slimme tooling waar het echt tijd bespaart.',
@@ -307,7 +313,15 @@
         trustLabel: 'Vanuit Rotterdam, voor ondernemers in Nederland',
         trustBody:
             'ABshops is een digitale commerce studio gericht op websites, Shopify-webshops, SEO en digitale bedrijfsinrichting. Geen brede full-service belofte — wel samenhang tussen het kanaal waar klanten je vinden en de techniek die dagelijks moet werken.',
-        trustCta: 'Vraag een vrijblijvende intake aan'
+        trustCta: 'Vraag een vrijblijvende intake aan',
+        insightsTeaserEyebrow: 'Insights',
+        insightsTeaserTitle: 'Praktische kennis voor digitale groei',
+        insightsTeaserLead:
+            'Korte, bedrijfsgerichte notities over AI-workflows, Shopify, websites en automatisering — geschreven vanuit het werk van een digitale commerce studio, geen technieuws-feed.',
+        insightsTeaserLi1: 'AI & automatisering die je team echt tijd bespaart',
+        insightsTeaserLi2: 'Ecommerce, Shopify en conversiegerichte web',
+        insightsTeaserLi3: 'Moderne infrastructuur (o.a. hosting, tooling, samenwerking)',
+        insightsTeaserCta: 'Naar Insights'
     };
 
     DICT.en.index = {
@@ -318,6 +332,8 @@
         ogDesc:
             'Websites, Shopify and ecommerce, SEO and practical digital setup — human-led, engineered well.',
         heroEyebrow: 'Digital commerce studio · Rotterdam',
+        heroImgAlt:
+            'Premium AI-assisted ecommerce workspace by ABshops for websites, Shopify and digital automation',
         heroTitle: 'Modern websites, Shopify stores<br> and workflows built for growth.',
         heroSubtitle:
             'ABshops helps founders and teams with web design, Shopify ecommerce, SEO and digital foundations — human-led delivery with tooling only where it saves real time.',
@@ -382,7 +398,15 @@
         trustLabel: 'From Rotterdam, for Dutch founders',
         trustBody:
             'ABshops is a digital commerce studio focused on websites, Shopify, SEO and digital infrastructure — not a vague full-service promise. We connect how customers find you with the systems that must run every day.',
-        trustCta: 'Request a no-obligation intake'
+        trustCta: 'Request a no-obligation intake',
+        insightsTeaserEyebrow: 'Insights',
+        insightsTeaserTitle: 'Practical notes on digital growth',
+        insightsTeaserLead:
+            'Short, business-focused writing on AI workflows, Shopify, websites and automation — from the perspective of a digital commerce studio, not a tech news feed.',
+        insightsTeaserLi1: 'AI & automation that saves your team real time',
+        insightsTeaserLi2: 'Ecommerce, Shopify and conversion-focused web',
+        insightsTeaserLi3: 'Modern infrastructure (hosting, tooling, collaboration)',
+        insightsTeaserCta: 'Explore Insights'
     };
 
     /* ——— Contact ——— */
@@ -544,8 +568,12 @@
         crossShopText: 'E-commerce met focus op conversie en schaalbare catalogi.',
         crossAiTitle: 'Automatisering & workflows',
         crossAiText: 'Praktische workflows naast je website.',
+        crossInsightsTitle: 'Insights',
+        crossInsightsText: 'Webdevelopment, performance en SEO vanuit de praktijk.',
         crossInfraTitle: 'Digitale bedrijfsinrichting',
         crossInfraText: 'Google Workspace, domeinen, DNS en hosting.',
+        crossInsightsTitle: 'Insights',
+        crossInsightsText: 'Praktische artikelen over web, SEO en moderne workflows.',
         crossContact: 'Vragen over planning, scope of samenwerking?',
         leadTitle: 'Plan je aanvraag — website',
         leadIntro:
@@ -591,8 +619,12 @@
         crossShopText: 'E-commerce focused on conversion and scalable catalogs.',
         crossAiTitle: 'Automation & workflows',
         crossAiText: 'Practical workflows alongside your website.',
+        crossInsightsTitle: 'Insights',
+        crossInsightsText: 'Web development, performance and SEO from the field.',
         crossInfraTitle: 'Digital infrastructure',
         crossInfraText: 'Google Workspace, domains, DNS and hosting.',
+        crossInsightsTitle: 'Insights',
+        crossInsightsText: 'Practical articles on web, SEO and modern workflows.',
         crossContact: 'Questions about scope, timing or collaboration?',
         leadTitle: 'Submit your request — website',
         leadIntro:
@@ -638,6 +670,8 @@
         crossWebText: 'SEO-vriendelijke sites en campagnepagina’s naast je shop.',
         crossAiTitle: 'Automatisering & workflows',
         crossAiText: 'Supportflows en automatisering rondom orders.',
+        crossInsightsTitle: 'Insights',
+        crossInsightsText: 'Shopify, ecommerce SEO en digitale groei — praktisch uitgelegd.',
         crossContact: 'Vragen over groei, integraties of doorlooptijd?',
         leadTitle: 'Plan je aanvraag — Shopify-webshop',
         leadIntro:
@@ -681,6 +715,8 @@
         crossWebText: 'SEO-minded sites and landing pages alongside your shop.',
         crossAiTitle: 'Automation & workflows',
         crossAiText: 'Support flows and automation around orders.',
+        crossInsightsTitle: 'Insights',
+        crossInsightsText: 'Shopify, ecommerce SEO and digital growth — explained practically.',
         crossContact: 'Questions about growth, integrations or lead time?',
         leadTitle: 'Submit your request — Shopify store',
         leadIntro:
@@ -731,6 +767,8 @@
         crossShopTitle: 'Shopify & ecommerce',
         crossShopText:
             'Shop-UX, zoekfuncties en flows ná de koop — daar waar ondersteuning het verschil maakt.',
+        crossInsightsTitle: 'Insights',
+        crossInsightsText: 'AI-workflows, agents en automatisering voor teams — geen hype.',
         crossContact: 'Twijfel je tussen pilot, security of EU-data?',
         leadTitle: 'Plan je aanvraag — automatisering & workflows',
         leadIntro:
@@ -777,6 +815,8 @@
         crossWebText: 'Public sites and landing pages aligned with internal workflows.',
         crossShopTitle: 'Shopify & ecommerce',
         crossShopText: 'Shop UX, search and post-purchase flows — where support matters.',
+        crossInsightsTitle: 'Insights',
+        crossInsightsText: 'AI workflows, agents and automation for teams — no hype.',
         crossContact: 'Unsure about pilots, security or EU data residency?',
         leadTitle: 'Submit your request — automation & workflows',
         leadIntro:
@@ -786,6 +826,246 @@
         ctaBtn: 'Start your request',
         contactHeroAside: 'Prefer to align by email first?',
         contactHeroLink: 'Contact'
+    };
+
+    /* ——— Insights hub ——— */
+    DICT.nl.insights = {
+        metaTitle: 'Insights | ABshops — AI, Shopify, websites & digitale groei',
+        metaDesc:
+            'Praktische insights voor ondernemers: AI-workflows, Shopify & ecommerce, webdevelopment en automatisering — geschreven door ABshops, digitale commerce studio Rotterdam.',
+        ogTitle: 'Insights | ABshops',
+        ogDesc:
+            'Expertkennis voor digitale groei: AI voor bedrijven, Shopify, websites en automation — geen technieuws.',
+        breadcrumbHome: 'Home',
+        breadcrumbCurrent: 'Insights',
+        heroTitle: 'Insights voor digitale commerce en slimme workflows',
+        heroLead:
+            'Korte, werkbare notities over AI voor teams, Shopify en ecommerce, moderne websites en automation — geschreven vanuit projectpraktijk. Gericht op Nederlandse ondernemers en MKB-teams die web en shop serieus inzetten.',
+        topicsLabel: 'Thema’s',
+        topicAiTitle: 'AI & automatisering',
+        topicAiDesc:
+            'Workflows, agents en tooling — met menselijke regie, privacybewust en geschikt voor echte operatie.',
+        topicShopifyTitle: 'Shopify & ecommerce',
+        topicShopifyDesc:
+            'Catalogi, conversie, SEO en operationele workflows rond je shop.',
+        topicWebTitle: 'Webdevelopment',
+        topicWebDesc:
+            'Performance, SEO-architectuur, moderne hosting en samenwerking in development.',
+        scopeTitle: 'Waar we schrijfvoer voor verzamelen',
+        scopeIntro:
+            'Deze sectie groeit met artikelen die aansluiten op hoe ABshops werkt. Typische onderwerpen:',
+        scopeLi1: 'AI-workflows en agents voor support, content en operations',
+        scopeLi2: 'Shopify-automation en schaalbare ecommerce-processen',
+        scopeLi3: 'Cursor en andere AI-development tooling waar het veilig kan',
+        scopeLi4: 'Ecommerce SEO, interne links en product-/categorystructuur',
+        scopeLi5: 'Google Workspace, Vercel en infrastructuurkeuzes voor kleine teams',
+        bridgeTitle: 'Liever direct sparren?',
+        bridgeLead:
+            'Insights zijn geen vervanging voor een intake — ze helpen wel om taal en verwachtingen scherp te krijgen voordat je een traject start.',
+        bridgeCta: 'Neem contact op',
+        crossSvcTitle: 'Gerelateerde diensten',
+        crossWebTitle: 'Websites',
+        crossWebText: 'Webdesign, SEO en performance.',
+        crossShopTitle: 'Webshops',
+        crossShopText: 'Shopify-specialist voor groeiende shops.',
+        crossAiTitle: 'Automatisering',
+        crossAiText: 'Workflows en pilots met duidelijke grenzen.'
+    };
+
+    DICT.en.insights = {
+        metaTitle: 'Insights | ABshops — AI, Shopify, websites & digital growth',
+        metaDesc:
+            'Practical insights for founders: AI workflows, Shopify & ecommerce, web development and automation — by ABshops, digital commerce studio Rotterdam.',
+        ogTitle: 'Insights | ABshops',
+        ogDesc:
+            'Expert notes on digital growth: business AI, Shopify, websites and automation — not tech headlines.',
+        breadcrumbHome: 'Home',
+        breadcrumbCurrent: 'Insights',
+        heroTitle: 'Insights for digital commerce and pragmatic workflows',
+        heroLead:
+            'Short, actionable notes on AI for teams, Shopify and ecommerce, modern websites and automation — grounded in delivery work. Written for Dutch SMBs and founders who rely on web and shop day to day.',
+        topicsLabel: 'Topics',
+        topicAiTitle: 'AI & automation',
+        topicAiDesc:
+            'Workflows, agents and tooling — human-led, privacy-aware and fit for real operations.',
+        topicShopifyTitle: 'Shopify & ecommerce',
+        topicShopifyDesc:
+            'Catalogs, conversion, SEO and operational workflows around your store.',
+        topicWebTitle: 'Web development',
+        topicWebDesc:
+            'Performance, SEO architecture, modern hosting and engineering collaboration.',
+        scopeTitle: 'What we publish toward',
+        scopeIntro:
+            'This hub grows with articles aligned to how ABshops delivers work. Typical angles:',
+        scopeLi1: 'AI workflows and agents for support, content and operations',
+        scopeLi2: 'Shopify automation and scalable ecommerce processes',
+        scopeLi3: 'Cursor and other AI dev tooling where it is safe and justified',
+        scopeLi4: 'Ecommerce SEO, internal linking and product/category structure',
+        scopeLi5: 'Google Workspace, Vercel and infrastructure choices for small teams',
+        bridgeTitle: 'Prefer a conversation?',
+        bridgeLead:
+            'Insights do not replace an intake — they help align language and expectations before you start a project.',
+        bridgeCta: 'Contact',
+        crossSvcTitle: 'Related services',
+        crossWebTitle: 'Websites',
+        crossWebText: 'Web design, SEO and performance.',
+        crossShopTitle: 'Webshops',
+        crossShopText: 'Shopify expertise for growing stores.',
+        crossAiTitle: 'Automation',
+        crossAiText: 'Workflows and pilots with clear guardrails.'
+    };
+
+    /* ——— Insights: AI & automation ——— */
+    DICT.nl.insightsAi = {
+        metaTitle: 'AI & automatisering voor bedrijven | Insights ABshops',
+        metaDesc:
+            'Praktische AI-workflows, agents en automatisering voor MKB — menselijk geleid, gericht op Shopify, websites en operations. Geen AI-nieuws.',
+        ogTitle: 'AI & automatisering | Insights ABshops',
+        ogDesc:
+            'Hoe teams AI en workflows praktisch inzetten — met regie, kwaliteit en privacy.',
+        breadcrumbHub: 'Insights',
+        breadcrumbCurrent: 'AI & automatisering',
+        heroTitle: 'AI & automatisering voor teams die moeten leveren',
+        heroLead:
+            'Geen futuristische praat — wel patronen die we zien in echte trajecten: sneller itereren met review, standaardiseren van repetitief werk en agents alleen daar waar het proces dat dragelijk maakt.',
+        s1Title: 'Waar AI het meeste waarde geeft',
+        s1p:
+            'Sterke use cases zijn vaak ondersteunend: conceptteksten die een mens finisht, tickets bundelen voor je servicedesk, interne Q&amp;A over je productdata of bulk-varianten van SEO-blauwdrukken controleren. Het verschil zit in grenzen: wat mag nooit zonder check, en waar mag het systeem voorstellen?',
+        s2Title: 'Agents en tooling in de praktijk',
+        s2p:
+            'Van Cursor tot geïntegreerde LLM’s: tooling kiezen we op risico, retention van data en hoe makkelijk jouw team eigenaar blijft. EU-first en transparante logging zijn geen detail — vooral als klantdata of orderinformatie in de buurt komt.',
+        s3Title: 'Samenhang met ecommerce en web',
+        s3p:
+            'Automation voor een Shopify-shop gaat vaak over content, klantvragen en Operations ná de koop. Websites profiteren van dezelfde discipline: minder handwerk in structuur en metadata, meer tijd voor inhoud die concurrentie aankan.',
+        hubLink: 'Alle Insights',
+        svcLink: 'Automatisering & workflows — diensten'
+    };
+
+    DICT.en.insightsAi = {
+        metaTitle: 'AI & automation for businesses | ABshops Insights',
+        metaDesc:
+            'Practical AI workflows, agents and automation for SMBs — human-led, focused on Shopify, websites and operations. Not AI hype headlines.',
+        ogTitle: 'AI & automation | ABshops Insights',
+        ogDesc:
+            'How teams adopt AI and workflows with ownership, quality and privacy.',
+        breadcrumbHub: 'Insights',
+        breadcrumbCurrent: 'AI & automation',
+        heroTitle: 'AI & automation for teams that ship',
+        heroLead:
+            'No futurist keynote — patterns we see in delivery: faster iteration with review, standardizing repetitive work and agents only where the process can absorb it.',
+        s1Title: 'Where AI earns its keep',
+        s1p:
+            'Strong use cases are usually supportive: draft copy a human finishes, triage for support, internal Q&amp;A over product data or reviewing SEO brief variants at scale. The difference is guardrails: what must never ship without a check, and where may the system propose?',
+        s2Title: 'Agents and tooling in practice',
+        s2p:
+            'From Cursor to integrated LLMs: we choose tooling based on risk, data retention and whether your team keeps ownership. EU-first posture and clear logging matter — especially near customer or order data.',
+        s3Title: 'How this connects to ecommerce and web',
+        s3p:
+            'Automation around Shopify often targets content, customer questions and post-purchase ops. Websites benefit from the same discipline: less manual structure and metadata work, more time for content that competes.',
+        hubLink: 'All Insights',
+        svcLink: 'Automation & workflows — services'
+    };
+
+    /* ——— Insights: Shopify & ecommerce ——— */
+    DICT.nl.insightsShopify = {
+        metaTitle: 'Shopify & ecommerce insights | ABshops',
+        metaDesc:
+            'Shopify, conversie en ecommerce SEO — praktische insights voor ondernemers die willen groeien met een schaalbare shop.',
+        ogTitle: 'Shopify & ecommerce | Insights ABshops',
+        ogDesc:
+            'Thema’s rond catalogi, checkout, SEO en automation voor webshops.',
+        breadcrumbHub: 'Insights',
+        breadcrumbCurrent: 'Shopify & ecommerce',
+        heroTitle: 'Shopify & ecommerce — schaalbaar verkopen',
+        heroLead:
+            'Artikelen hier focussen op wat je shop dagelijks beter maakt: navigatie en collections, checkout-rust, SEO voor categorieën en koppelingen met fulfillment — niet op gadget-plugins.',
+        s1Title: 'Conversie en catalogilogica',
+        s1p:
+            'Het grootste werk zit vaak in heldere hiërarchie: welke collecties leiden waar, hoe varianten en filters samenwerken en waar je intern linkt vanuit content. Dat is het verschil tussen een shop die “live staat” en een shop die verkocht onder druk.',
+        s2Title: 'Ecommerce SEO als systeem',
+        s2p:
+            'Technische basis, interne links en unieke waarde per pagina — vooral bij concurrentische niches. We schrijven over hoe je structuren bouwt die nog werken als je assortiment groeit.',
+        s3Title: 'Automation naast je storefront',
+        s3p:
+            'Van orderflows tot contentupdates: waar repetitief werk eerlijk kan worden ondersteund (met review), frees je tijd voor merchandising en campagnes.',
+        hubLink: 'Alle Insights',
+        svcLink: 'Webshops — diensten'
+    };
+
+    DICT.en.insightsShopify = {
+        metaTitle: 'Shopify & ecommerce insights | ABshops',
+        metaDesc:
+            'Shopify, conversion and ecommerce SEO — practical insights for founders scaling a serious store.',
+        ogTitle: 'Shopify & ecommerce | ABshops Insights',
+        ogDesc:
+            'Catalogs, checkout, SEO and automation around ecommerce.',
+        breadcrumbHub: 'Insights',
+        breadcrumbCurrent: 'Shopify & ecommerce',
+        heroTitle: 'Shopify & ecommerce — scalable selling',
+        heroLead:
+            'Notes focus on what improves your store day to day: navigation and collections, calm checkout, category SEO and fulfillment-aware workflows — not gadget plugins.',
+        s1Title: 'Conversion and catalog logic',
+        s1p:
+            'Most leverage comes from clear hierarchy: how collections route shoppers, how variants and filters cooperate and where content internally links into the catalog. That split separates “live” stores from stores that sell under pressure.',
+        s2Title: 'Ecommerce SEO as a system',
+        s2p:
+            'Technical foundations, internal linking and unique value per URL — especially in competitive niches. We write about structures that survive assortment growth.',
+        s3Title: 'Automation beside your storefront',
+        s3p:
+            'From order flows to content updates: where repetitive work can be honestly supported (with review), you recover time for merchandising and campaigns.',
+        hubLink: 'All Insights',
+        svcLink: 'Webshops — services'
+    };
+
+    /* ——— Insights: Webdevelopment ——— */
+    DICT.nl.insightsWeb = {
+        metaTitle: 'Webdevelopment insights | ABshops — performance & SEO',
+        metaDesc:
+            'Moderne websites: performance, SEO, Vercel/Next.js en samenwerking — praktische webdevelopment-insights van ABshops Rotterdam.',
+        ogTitle: 'Webdevelopment | Insights ABshops',
+        ogDesc:
+            'Techniek en vindbaarheid die bij elkaar horen — geschreven voor ondernemers en teams.',
+        breadcrumbHub: 'Insights',
+        breadcrumbCurrent: 'Webdevelopment',
+        heroTitle: 'Webdevelopment dat vindbaarheid en snelheid vasthoudt',
+        heroLead:
+            'Van semantische structuur tot deployment: onderwerpen die passen bij premium sites en landingpages — inclusief tooling zoals Vercel waar dat klopt voor jouw risico en onderhoud.',
+        s1Title: 'Performance is onderdeel van SEO en UX',
+        s1p:
+            'Core Web Vitals, asset-strategie en caching zijn geen “laatste stap”. We delen hoe je budgets vastlegt en hoe je voorkomt dat marketing en tech langs elkaar heen werken.',
+        s2Title: 'Samenwerken met AI-development tooling',
+        s2p:
+            'Tools zoals Cursor kunnen prototyping en refactors versnellen — mits je review, tests en security niet uit het oog verliest. Insights hier beschrijven werkpatronen, geen tool-hype.',
+        s3Title: 'Infrastructuur voor kleine teams',
+        s3p:
+            'Google Workspace, domeinen, DNS en hosting: keuzes die je site betrouwbaar houden terwijl je door groeit.',
+        hubLink: 'Alle Insights',
+        svcLink: 'Websites — diensten'
+    };
+
+    DICT.en.insightsWeb = {
+        metaTitle: 'Web development insights | ABshops — performance & SEO',
+        metaDesc:
+            'Modern websites: performance, SEO, Vercel/Next.js and collaboration — practical notes from ABshops Rotterdam.',
+        ogTitle: 'Web development | ABshops Insights',
+        ogDesc:
+            'Engineering and discoverability that belong together — for founders and teams.',
+        breadcrumbHub: 'Insights',
+        breadcrumbCurrent: 'Web development',
+        heroTitle: 'Web development that keeps discoverability and speed',
+        heroLead:
+            'From semantic structure to deployment: topics aligned with premium sites and landing pages — including tooling such as Vercel when it fits your maintenance model.',
+        s1Title: 'Performance is SEO and UX together',
+        s1p:
+            'Core Web Vitals, asset strategy and caching are not a “final polish”. We share how to set budgets and avoid marketing and engineering drifting apart.',
+        s2Title: 'Working with AI-assisted development',
+        s2p:
+            'Tools like Cursor can speed prototyping and refactors — if review, tests and security stay non-negotiable. These notes describe workflows, not gadget hype.',
+        s3Title: 'Infrastructure for small teams',
+        s3p:
+            'Google Workspace, domains, DNS and hosting: choices that keep your site reliable as you grow.',
+        hubLink: 'All Insights',
+        svcLink: 'Websites — services'
     };
 
     /* ——— Bedankt ——— */
@@ -822,7 +1102,21 @@
         if (body && body.getAttribute('data-i18n-page')) {
             return body.getAttribute('data-i18n-page');
         }
-        var path = (window.location.pathname || '').split('/').pop() || 'index.html';
+        var rawPath = window.location.pathname || '';
+        var path = rawPath.replace(/\\/g, '/');
+        var segs = path.split('/').filter(function (s) {
+            return s.length > 0;
+        });
+        var ix = segs.indexOf('insights');
+        if (ix !== -1) {
+            var sub = segs[ix + 1];
+            if (!sub || sub === 'index.html') return 'insights';
+            if (sub === 'ai-automation') return 'insightsAi';
+            if (sub === 'shopify-ecommerce') return 'insightsShopify';
+            if (sub === 'webdevelopment') return 'insightsWeb';
+            return 'insights';
+        }
+        var pathTail = segs.length ? segs[segs.length - 1] : '';
         var map = {
             '': 'index',
             index: 'index',
@@ -833,7 +1127,7 @@
             'ai-oplossingen.html': 'ai',
             'bedankt.html': 'bedankt'
         };
-        return map[path] || 'index';
+        return map[pathTail] || 'index';
     }
 
     function getRaw(lang, path) {

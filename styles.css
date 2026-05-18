@@ -1926,6 +1926,212 @@ html[data-theme="dark"] .trust-signal {
     border-color: var(--gray-200);
 }
 
+/* Homepage Insights teaser */
+.insights-teaser {
+    padding: clamp(3.25rem, 8vw, 5rem) 3rem;
+    background: var(--white);
+    border-top: 1px solid var(--gray-200);
+    border-bottom: 1px solid var(--gray-200);
+    transition: var(--transition);
+}
+
+.insights-teaser-inner {
+    max-width: 920px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem 2.5rem;
+    align-items: start;
+}
+
+@media (min-width: 768px) {
+    .insights-teaser-inner {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.85fr);
+    }
+}
+
+.insights-teaser-eyebrow {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin: 0 0 0.5rem;
+}
+
+.insights-teaser-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.35rem, 3vw, 1.75rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+    color: var(--gray-900);
+}
+
+.insights-teaser-lead {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    color: var(--gray-600);
+    margin: 0 0 1.25rem;
+}
+
+.insights-teaser-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.insights-teaser-list li {
+    position: relative;
+    padding-left: 1.15rem;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: var(--gray-600);
+    margin-bottom: 0.45rem;
+}
+
+.insights-teaser-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--gray-400);
+}
+
+.insights-teaser-aside {
+    padding-top: 0.25rem;
+}
+
+.insights-teaser-cta {
+    display: inline-flex;
+}
+
+html[data-theme="dark"] .insights-teaser {
+    background: var(--gray-50);
+    border-color: var(--gray-200);
+}
+
+html[data-theme="dark"] .insights-teaser-title {
+    color: var(--gray-900);
+}
+
+/* Insights hub & articles */
+.insights-breadcrumb {
+    font-size: 0.8125rem;
+    color: var(--gray-500);
+    margin: 0 0 1.25rem;
+}
+
+.insights-breadcrumb a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.insights-breadcrumb a:hover {
+    color: var(--gray-900);
+}
+
+.insights-breadcrumb-sep {
+    margin: 0 0.35em;
+    opacity: 0.65;
+}
+
+.insights-topics-label {
+    margin-bottom: 1rem;
+}
+
+.insights-topic-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+    .insights-topic-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.insights-topic-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 1.35rem 1.25rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 2px;
+    background: var(--white);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.insights-topic-card:hover {
+    border-color: var(--gray-300);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+}
+
+.insights-topic-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.insights-topic-card p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--gray-600);
+    margin: 0;
+}
+
+html[data-theme="dark"] .insights-topic-card {
+    background: var(--gray-50);
+    border-color: var(--gray-200);
+}
+
+.insights-scope-list {
+    margin: 0.75rem 0 0;
+    padding-left: 1.15rem;
+}
+
+.insights-scope-list li {
+    margin-bottom: 0.4rem;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: var(--gray-600);
+}
+
+.insights-bridge {
+    margin-top: 2.5rem;
+    padding: 1.5rem 1.35rem;
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: 2px;
+}
+
+.insights-bridge h2 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+}
+
+.insights-bridge p {
+    margin: 0 0 1rem;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: var(--gray-600);
+}
+
+html[data-theme="dark"] .insights-bridge {
+    background: var(--gray-100);
+    border-color: var(--gray-200);
+}
+
 /* CTA Section */
 .cta-section {
     padding: clamp(6rem, 14vw, 11rem) 3rem;

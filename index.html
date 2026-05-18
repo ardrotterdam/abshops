@@ -36,6 +36,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="abshops-premium-workspace-hero.webp" imagesizes="(max-width: 900px) min(92vw, 1080px) 42vw" fetchpriority="high">
     <script src="theme.js"></script>
     <link rel="stylesheet" href="styles.css?v=20260510">
 
@@ -153,6 +154,7 @@
                 <a href="websites.html" data-i18n="nav.websites">Websites</a>
                 <a href="webshops.html" data-i18n="nav.webshops">Webshops</a>
                 <a href="ai-oplossingen.html" data-i18n="nav.ai">Automatisering</a>
+                <a href="insights/" data-i18n="nav.insights">Insights</a>
                 <div class="lang-switch" role="group">
                     <button type="button" class="lang-switch-btn is-active" data-lang="nl" aria-pressed="true"><span data-i18n="lang.labelNl">Nederlands</span></button>
                     <button type="button" class="lang-switch-btn" data-lang="en" aria-pressed="false"><span data-i18n="lang.labelEn">English</span></button>
@@ -189,6 +191,7 @@
                     <a href="websites.html" class="mobile-nav-primary-link"><span class="mobile-nav-link-label" data-i18n="nav.websites">Websites</span></a>
                     <a href="webshops.html" class="mobile-nav-primary-link"><span class="mobile-nav-link-label" data-i18n="nav.webshops">Webshops</span></a>
                     <a href="ai-oplossingen.html" class="mobile-nav-primary-link"><span class="mobile-nav-link-label" data-i18n="nav.ai">Automatisering</span></a>
+                    <a href="insights/" class="mobile-nav-primary-link"><span class="mobile-nav-link-label" data-i18n="nav.insights">Insights</span></a>
                     <a href="contact.html" class="mobile-nav-primary-link"><span class="mobile-nav-link-label" data-i18n="nav.contact">Contact</span></a>
                 </nav>
                 <footer class="mobile-nav-footer">
@@ -198,12 +201,32 @@
         </div>
     </div>
 
-    <section class="hero">
-        <div class="hero-content">
-            <p class="hero-eyebrow" data-i18n="index.heroEyebrow">Digitale commerce studio · Rotterdam</p>
-            <h1 class="hero-title" data-i18n="index.heroTitle" data-i18n-html="true">Moderne websites, Shopify-webshops<br> en workflows die online groei dragen.</h1>
-            <p class="hero-subtitle" data-i18n="index.heroSubtitle">ABshops helpt ondernemers en teams met webdesign, ecommerce op Shopify, SEO en digitale inrichting — menselijk geleid, technisch strak, met slimme tooling waar het echt tijd bespaart.</p>
-            <a href="contact.html" class="btn-primary" data-i18n="index.ctaPrimary">Start je project</a>
+    <section class="hero hero--home" aria-labelledby="hero-heading">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <p class="hero-eyebrow" data-i18n="index.heroEyebrow">Digitale commerce studio · Rotterdam</p>
+                <h1 id="hero-heading" class="hero-title" data-i18n="index.heroTitle" data-i18n-html="true">Moderne websites, Shopify-webshops<br> en workflows die online groei dragen.</h1>
+                <p class="hero-subtitle" data-i18n="index.heroSubtitle">ABshops helpt ondernemers en teams met webdesign, ecommerce op Shopify, SEO en digitale inrichting — menselijk geleid, technisch strak, met slimme tooling waar het echt tijd bespaart.</p>
+                <a href="contact.html" class="btn-primary" data-i18n="index.ctaPrimary">Start je project</a>
+            </div>
+            <figure class="hero-visual">
+                <div class="hero-visual-frame">
+                    <img
+                        class="hero-visual-img"
+                        src="abshops-premium-workspace-hero.webp"
+                        width="1920"
+                        height="1081"
+                        sizes="(max-width: 900px) min(92vw, 1080px) 42vw"
+                        decoding="async"
+                        loading="eager"
+                        fetchpriority="high"
+                        alt="Premium AI-assisted ecommerce workspace van ABshops voor websites, Shopify en digitale automatisering"
+                        data-i18n="index.heroImgAlt"
+                        data-i18n-suppress-text="true"
+                        data-i18n-attr="alt"
+                    >
+                </div>
+            </figure>
         </div>
     </section>
 
@@ -261,6 +284,24 @@
             <div class="feature-item animate-in">
                 <h3 data-i18n="index.feat5Title">Praktische slimme workflows</h3>
                 <p data-i18n="index.feat5Text">Waar tooling repetitief werk kan ondersteunen, bouwen we dat gericht in — mét review door jouw team.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="insights-teaser" aria-labelledby="insights-teaser-heading">
+        <div class="insights-teaser-inner">
+            <div>
+                <p class="insights-teaser-eyebrow" data-i18n="index.insightsTeaserEyebrow">Insights</p>
+                <h2 id="insights-teaser-heading" class="insights-teaser-title" data-i18n="index.insightsTeaserTitle">Praktische kennis voor digitale groei</h2>
+                <p class="insights-teaser-lead" data-i18n="index.insightsTeaserLead">Korte notities over AI-workflows, Shopify, websites en automatisering.</p>
+                <ul class="insights-teaser-list">
+                    <li data-i18n="index.insightsTeaserLi1">AI &amp; automatisering die je team echt tijd bespaart</li>
+                    <li data-i18n="index.insightsTeaserLi2">Ecommerce, Shopify en conversiegerichte web</li>
+                    <li data-i18n="index.insightsTeaserLi3">Moderne infrastructuur (o.a. hosting, tooling, samenwerking)</li>
+                </ul>
+            </div>
+            <div class="insights-teaser-aside">
+                <a href="insights/" class="btn-primary insights-teaser-cta" data-i18n="index.insightsTeaserCta">Naar Insights</a>
             </div>
         </div>
     </section>
@@ -362,6 +403,7 @@
                         <li><a href="websites.html" data-i18n="nav.websites">Websites</a></li>
                         <li><a href="webshops.html" data-i18n="nav.webshops">Webshops</a></li>
                         <li><a href="ai-oplossingen.html" data-i18n="nav.ai">Automatisering</a></li>
+                        <li><a href="insights/" data-i18n="nav.insights">Insights</a></li>
                         <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
                     </ul>
                 </nav>

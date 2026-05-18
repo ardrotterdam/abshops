@@ -1496,7 +1496,7 @@ html[data-theme="dark"] .hero.hero--home .hero-visual-frame {
 
 .workflow-infographic-inner {
     width: 100%;
-    max-width: min(1120px, 100%);
+    max-width: min(1240px, 100%);
     margin: 0 auto;
     padding: 0;
     text-align: center;
@@ -1517,7 +1517,7 @@ html[data-theme="dark"] .hero.hero--home .hero-visual-frame {
     font-size: clamp(0.9375rem, 1.35vw, 1.0625rem);
     line-height: 1.62;
     color: var(--gray-600);
-    margin: 0 auto 2.25rem;
+    margin: 0 auto 2.5rem;
     max-width: 36rem;
 }
 

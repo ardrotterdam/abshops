@@ -428,6 +428,13 @@ html[data-theme="dark"] ::selection {
     opacity: 1;
 }
 
+/* Mid-width desktops: avoid horizontal clip (body overflow-x) hiding middle nav items */
+@media (min-width: 769px) and (max-width: 1180px) {
+    .nav-links.nav-links-desktop {
+        gap: clamp(0.85rem, 1.9vw, 1.55rem);
+    }
+}
+
 .nav-cta {
     background: var(--nav-cta-bg);
     color: var(--nav-cta-fg) !important;

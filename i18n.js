@@ -1129,6 +1129,7 @@
             '': 'index',
             index: 'index',
             'index.html': 'index',
+            'insights.html': 'insights',
             'contact.html': 'contact',
             'websites.html': 'websites',
             'webshops.html': 'webshops',

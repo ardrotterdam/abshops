@@ -1676,6 +1676,28 @@ html[data-theme="dark"] .hero-inline-link {
     background: linear-gradient(180deg, transparent, var(--gray-200), transparent);
 }
 
+.features-container.features-grid .features-heading {
+    grid-column: 1 / -1;
+    margin-bottom: 0.25rem;
+}
+
+.features-container.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 1.75rem 1.5rem;
+    align-items: stretch;
+}
+
+.features-container.features-grid .feature-divider {
+    display: none;
+}
+
+.features-container.features-grid .feature-item {
+    flex: initial;
+    text-align: left;
+    padding: 1.5rem 1.35rem;
+}
+
 /* Approach */
 .approach {
     padding: clamp(5rem, 12vw, 9rem) 3rem;
@@ -1804,6 +1826,72 @@ html[data-theme="dark"] .hero-inline-link {
 
 html[data-theme="dark"] .stats {
     background: linear-gradient(145deg, #14151c 0%, #0a0b10 50%, #14151c 100%);
+}
+
+/* Homepage credibility band (replaces empty stats) */
+.cred-band {
+    padding: clamp(4.5rem, 10vw, 7rem) 3rem;
+    background: var(--black);
+    color: var(--white);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.cred-band::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-shine);
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.cred-band-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2.25rem 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.cred-band-item h3 {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.65rem;
+    line-height: 1.25;
+}
+
+.cred-band-item p {
+    font-size: 0.9rem;
+    color: var(--gray-400);
+    line-height: 1.65;
+    margin: 0;
+}
+
+html[data-theme="dark"] .cred-band {
+    background: linear-gradient(145deg, #14151c 0%, #0a0b10 50%, #14151c 100%);
+}
+
+.footer-legal {
+    font-size: 0.75rem;
+    line-height: 1.55;
+    color: var(--gray-500);
+    max-width: 36rem;
+    margin-top: 0.85rem;
+}
+
+.footer-brand-trade {
+    font-size: 0.6875rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--gray-400);
+    margin-top: 0.35rem;
 }
 
 html[data-theme="dark"] .stat-number {
@@ -2269,6 +2357,10 @@ html[data-theme="dark"] .cta-section .cta-mail-link:hover {
     }
     
     .stats {
+        padding: 4rem 2rem;
+    }
+
+    .cred-band {
         padding: 4rem 2rem;
     }
     

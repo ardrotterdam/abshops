@@ -20,15 +20,15 @@
         home: 'Home',
         websites: 'Websites',
         webshops: 'Webshops',
-        ai: 'AI-oplossingen',
+        ai: 'Automatisering',
         contact: 'Contact',
-        logoAria: 'ABshops — Breure Media',
+        logoAria: 'ABshops',
         mobileOpen: 'Hoofdmenu openen',
         mobileClose: 'Menu sluiten',
         mobileDialogSr: 'Menu',
         mobileDialog: 'Hoofdnavigatie',
         mobileTrust:
-            'Premium websites, webshops en AI-oplossingen vanuit Rotterdam.',
+            'Websites, Shopify-webshops en digitale workflows — Rotterdam.',
         mobileSubtitleWebsites: 'Premium bedrijfswebsites',
         mobileSubtitleWebshops: 'Shopify & e-commerce',
         mobileSubtitleAi: 'AI automatisering & agents',
@@ -38,15 +38,15 @@
         home: 'Home',
         websites: 'Websites',
         webshops: 'Webshops',
-        ai: 'AI solutions',
+        ai: 'Automation',
         contact: 'Contact',
-        logoAria: 'ABshops — Breure Media',
+        logoAria: 'ABshops',
         mobileOpen: 'Open main menu',
         mobileClose: 'Close menu',
         mobileDialogSr: 'Menu',
         mobileDialog: 'Primary navigation',
         mobileTrust:
-            'Premium websites, webshops and AI solutions from Rotterdam.',
+            'Websites, Shopify stores and digital workflows — Rotterdam.',
         mobileSubtitleWebsites: 'Premium corporate websites',
         mobileSubtitleWebshops: 'Shopify & e-commerce',
         mobileSubtitleAi: 'AI automation & agents',
@@ -54,12 +54,20 @@
     };
 
     DICT.nl.footer = {
-        tagline: 'Breure Media · Premium digital solutions',
-        rights: '© 2026 ABshops / Breure Media. Alle rechten voorbehouden.'
+        tagline: 'ABshops · Digitale commerce studio Rotterdam',
+        brandTrade:
+            'Breure Media is een aparte handelsnaam voor creatieve en media-uitgaven.',
+        legal:
+            'ABshops is een handelsnaam en bedrijfsonderdeel binnen de onderneming van Ard Breure — ingeschreven bij de Kamer van Koophandel. Vestigingsadres: Weena 70, Rotterdam.',
+        rights: '© 2026 ABshops. Alle rechten voorbehouden.'
     };
     DICT.en.footer = {
-        tagline: 'Breure Media · Premium digital solutions',
-        rights: '© 2026 ABshops / Breure Media. All rights reserved.'
+        tagline: 'ABshops · Digital commerce studio Rotterdam',
+        brandTrade:
+            'Breure Media is a separate trade name for creative publishing and media work.',
+        legal:
+            'ABshops is a trade name operating within Ard Breure’s business (KvK registered). Address: Weena 70, Rotterdam.',
+        rights: '© 2026 ABshops. All rights reserved.'
     };
 
     DICT.nl.lang = {
@@ -224,127 +232,165 @@
 
     /* ——— Index ——— */
     DICT.nl.index = {
-        metaTitle: 'ABshops | Premium websites, webshops & AI-oplossingen — Breure Media',
+        metaTitle: 'ABshops | Websites, Shopify & digitale workflows — Rotterdam',
         metaDesc:
-            'ABshops (Breure Media): premium websites, webshops en AI-oplossingen vanuit Rotterdam. Snel, veilig en schaalbaar — voor ondernemers die digitale groei serieus nemen.',
-        ogTitle: 'ABshops — Premium websites, webshops & AI',
+            'ABshops uit Rotterdam: moderne websites, Shopify-webshops, SEO en workflows met slimme tooling voor ondernemers die online willen groeien. Website laten maken Rotterdam · Shopify specialist.',
+        ogTitle: 'ABshops — Digitale commerce studio Rotterdam',
         ogDesc:
-            'Digitale excellentie voor groeiende merken. Websites, webshops en AI-oplossingen met focus op conversie en performance.',
-        heroEyebrow: 'Breure Media · Rotterdam',
-        heroTitle: 'Digitale excellentie.<br>Geleverd.',
+            'Websites, Shopify en ecommerce, SEO en praktische digitale inrichting — menselijk geleid, technisch strak.',
+        heroEyebrow: 'Digitale commerce studio · Rotterdam',
+        heroTitle: 'Moderne websites, Shopify-webshops<br> en workflows die online groei dragen.',
         heroSubtitle:
-            'Premium websites, webshops en AI-oplossingen voor ondernemers die verder denken — onderdeel van Breure Media, Rotterdam.',
-        ctaPrimary: 'Start je project',
-        sectionExpertise: 'Expertise',
-        svc1Title: 'Premium websites',
+            'ABshops helpt ondernemers en teams met webdesign, ecommerce op Shopify, SEO en digitale inrichting — menselijk geleid, technisch strak, met slimme tooling waar het echt tijd bespaart.',
+        ctaPrimary: 'Plan een vrijblijvend gesprek',
+        sectionExpertise: 'Vier duidelijke pijlers',
+        svc1Title: 'Websites & platforms',
         svc1Text:
-            'Van eerste idee tot schaalbaar platform: merk, UX en techniek in één lijn — inclusief fundament voor vindbaarheid.',
-        svc2Title: 'Webshops & e-commerce',
+            'Modern webdesign en snelle, responsive sites — met SEO-vriendelijke structuur en Next.js / Vercel waar dat bij jouw traject past.',
+        svc2Title: 'Shopify & ecommerce',
         svc2Text:
-            'Checkout die converteert, snelle laadtijden en een koopervaring die vertrouwen uitstraalt — gebouwd om te verkopen.',
-        svc3Title: 'SEO & groei',
+            'Shopify inrichten, catalogi en navigatie scherp zetten, conversie verbeteren en workflows rond affiliate of omnichannel helder trekken.',
+        svc3Title: 'Automatisering & workflows',
         svc3Text:
-            'Organisch verkeer is onderdeel van het ontwerp: structuur, content en performance die zoekmachines én gebruikers waarderen.',
-        svc4Title: 'AI-oplossingen',
+            'Praktische workflows met ondersteunende automatisering — van content tot operations — altijd met menselijke regie en duidelijke kwaliteitsgrenzen.',
+        svc4Title: 'Digitale bedrijfsinrichting',
         svc4Text:
-            'Praktische automatisering en slimme flows — altijd met controle, kwaliteit en jouw merk voorop.',
-        feat1Title: 'Snel',
-        feat1Text: 'Geoptimaliseerd voor performance. Elke milliseconde telt.',
-        feat2Title: 'Veilig',
-        feat2Text: 'Enterprise-grade beveiliging. Standaard, geen optie.',
-        feat3Title: 'Schaalbaar',
-        feat3Text: 'Groei mee met je ambities. Zonder compromissen.',
-        approachLabel: 'Werkwijze',
-        approachTitle: 'Van idee tot impact',
-        step1Title: 'Discovery',
-        step1Text: 'We beginnen met luisteren. Jouw doelen, uitdagingen en ambities vormen het fundament.',
-        step2Title: 'Strategy',
-        step2Text: 'Data-gedreven planning. We vertalen inzichten naar een concrete roadmap.',
-        step3Title: 'Execution',
+            'Google Workspace en mail voor het team, domeinen en DNS, hosting en deployment — de technische basis zodat je site en shop betrouwbaar draaien.',
+        feat1Title: 'Ecommerce-ervaring',
+        feat1Text:
+            'Van checkout-gedrag tot catalogilogica: we bouwen shops om verkocht te worden, niet alleen om live te staan.',
+        feat2Title: 'Diepte in Shopify',
+        feat2Text:
+            'Themes, collections, navigatie en conversie-elementen — afgestemd op jouw assortiment en groei.',
+        feat3Title: 'SEO in het fundament',
+        feat3Text:
+            'Structuur, interne links en performance worden onderdeel van het ontwerp, niet een lapmiddel achteraf.',
+        feat4Title: 'Moderne deployment',
+        feat4Text:
+            'Heldere hosting- en releaseworkflows — onder andere Next.js en Vercel waar dat bij jouw site past.',
+        feat5Title: 'Praktische slimme workflows',
+        feat5Text:
+            'Waar tooling repetitief werk kan ondersteunen, bouwen we dat gericht in — mét review door jouw team.',
+        approachLabel: 'Hoe wij werken',
+        approachTitle: 'Menselijk geleid. Slimme tooling waar het helpt.',
+        step1Title: 'Intake & scherp ritme',
+        step1Text:
+            'We starten met jouw doelen, funnel en constraints — geen voorgeschreven pakket. Scope en mijlpalen leggen we vast voordat we bouwen.',
+        step2Title: 'Ontwerp & stack-keuze',
+        step2Text:
+            'Design en techniek kiezen we passend bij vindbaarheid, onderhoud en groei — inclusief SEO-architectuur en performancebudget.',
+        step3Title: 'Bouwen met controle',
         step3Text:
-            'Ontwikkeling met oog voor detail. Clean code, modern design, getest op alle devices.',
-        step4Title: 'Growth',
-        step4Text: 'Lancering is het begin. We optimaliseren, meten en verbeteren continu.',
-        statYears: 'Jaar ervaring',
-        statQuality: 'Focus op kwaliteit',
-        statRegion: 'Rotterdam & omgeving',
-        statsHeading: 'ABshops in cijfers',
+            'Ontwikkeling met previews en kwaliteitschecks. Waar workflows repetitief werk eerlijk reduceren, zetten we tooling gericht in — altijd met review waar nodig.',
+        step4Title: 'Live, meten, bijsturen',
+        step4Text:
+            'Na launch volgen monitoring en gerichte verbeteringen: conversie, snelheid of automation — evidence-based, niet op gevoel.',
+        credHeading: 'Werken met ABshops',
+        cred1Title: 'Heldere scope en mijlpalen',
+        cred1Text:
+            'Je weet vooraf wat er geleverd wordt, waar feedbackmomenten zitten en wat livegang inhoudt — inclusief een korte overlap voor nazorg.',
+        cred2Title: 'EU-first en privacybewust',
+        cred2Text:
+            'We kiezen configuraties en verwerkers die passen bij jouw risico — met name bij mail, analytics en workflows die klantdata raken.',
+        cred3Title: 'Rechtstreeks met mensen die bouwen',
+        cred3Text:
+            'Geen eindeloze accountlagen: je spreekt met het team dat je traject uitvoert, van eerste gesprek tot doorlopende optimalisatie.',
         ctaTitle: 'Klaar om te starten?',
         ctaLead:
             'Vertel kort over je merk en je doelen — we plannen graag een vrijblijvend gesprek.',
         ctaBtn: 'Naar contact',
         featuresLabel: 'Waarom ABshops',
-        trustLabel: 'Rotterdam & Europa',
+        trustLabel: 'Vanuit Rotterdam, voor ondernemers in Nederland',
         trustBody:
-            'ABshops (Breure Media) is een digitale agency uit Rotterdam: premium website- en webshopontwikkeling, AI-automatisering, SEO en digitale strategie — voor ondernemers in Nederland en Europa die kwaliteit boven shortcuts kiezen.',
+            'ABshops is een digitale commerce studio gericht op websites, Shopify-webshops, SEO en digitale bedrijfsinrichting. Geen brede full-service belofte — wel samenhang tussen het kanaal waar klanten je vinden en de techniek die dagelijks moet werken.',
         trustCta: 'Vraag een vrijblijvende intake aan'
     };
 
     DICT.en.index = {
-        metaTitle: 'ABshops | Premium websites, webshops & AI solutions — Breure Media',
+        metaTitle: 'ABshops | Websites, Shopify & digital workflows — Rotterdam',
         metaDesc:
-            'ABshops (Breure Media): premium websites, webshops and AI solutions from Rotterdam. Fast, secure and scalable — for founders who take digital growth seriously.',
-        ogTitle: 'ABshops — Premium websites, webshops & AI',
+            'ABshops from Rotterdam: modern websites, Shopify stores, SEO and workflows with careful tooling for teams that want to grow online.',
+        ogTitle: 'ABshops — Digital commerce studio Rotterdam',
         ogDesc:
-            'Digital excellence for growing brands. Websites, webshops and AI solutions focused on conversion and performance.',
-        heroEyebrow: 'Breure Media · Rotterdam',
-        heroTitle: 'Digital excellence.<br>Delivered.',
+            'Websites, Shopify and ecommerce, SEO and practical digital setup — human-led, engineered well.',
+        heroEyebrow: 'Digital commerce studio · Rotterdam',
+        heroTitle: 'Modern websites, Shopify stores<br> and workflows built for growth.',
         heroSubtitle:
-            'Premium websites, webshops and AI solutions for entrepreneurs who think ahead — part of Breure Media, Rotterdam.',
-        ctaPrimary: 'Start your project',
-        sectionExpertise: 'Expertise',
-        svc1Title: 'Premium websites',
+            'ABshops helps founders and teams with web design, Shopify ecommerce, SEO and digital foundations — human-led delivery with tooling only where it saves real time.',
+        ctaPrimary: 'Schedule a no-obligation call',
+        sectionExpertise: 'Four clear pillars',
+        svc1Title: 'Websites & platforms',
         svc1Text:
-            'From first idea to scalable platform: brand, UX and engineering aligned — including a solid SEO foundation.',
-        svc2Title: 'Webshops & e-commerce',
+            'Modern web design and fast responsive sites — SEO-friendly structure and Next.js / Vercel when it fits your project.',
+        svc2Title: 'Shopify & ecommerce',
         svc2Text:
-            'Checkout that converts, fast load times and a shopping experience that earns trust — built to sell.',
-        svc3Title: 'SEO & growth',
+            'Shopify setup, sharp catalogs and navigation, conversion improvements and clearer affiliate or omnichannel workflows.',
+        svc3Title: 'Automation & workflows',
         svc3Text:
-            'Organic traffic is part of the design: structure, content and performance that search engines and users value.',
-        svc4Title: 'AI solutions',
+            'Practical workflows with supporting automation — from content to operations — always with human guardrails.',
+        svc4Title: 'Digital business infrastructure',
         svc4Text:
-            'Practical automation and smart flows — always with control, quality and your brand first.',
-        feat1Title: 'Fast',
-        feat1Text: 'Optimized for performance. Every millisecond counts.',
-        feat2Title: 'Secure',
-        feat2Text: 'Enterprise-grade security. Standard, not an add-on.',
-        feat3Title: 'Scalable',
-        feat3Text: 'Grow with your ambitions. Without compromise.',
-        approachLabel: 'Approach',
-        approachTitle: 'From idea to impact',
-        step1Title: 'Discovery',
-        step1Text: 'We start by listening. Your goals, challenges and ambitions form the foundation.',
-        step2Title: 'Strategy',
-        step2Text: 'Data-informed planning. We turn insights into a concrete roadmap.',
-        step3Title: 'Execution',
-        step3Text: 'Development with attention to detail. Clean code, modern design, tested on every device.',
-        step4Title: 'Growth',
-        step4Text: 'Launch is the beginning. We optimize, measure and improve continuously.',
-        statYears: 'Years of experience',
-        statQuality: 'Commitment to quality',
-        statRegion: 'Rotterdam & region',
-        statsHeading: 'ABshops at a glance',
+            'Google Workspace and team email, domains and DNS, hosting and deployment — the baseline so your site and shop stay reliable.',
+        feat1Title: 'Ecommerce experience',
+        feat1Text:
+            'From checkout behaviour to catalog logic: we build stores to sell, not just to go live.',
+        feat2Title: 'Shopify depth',
+        feat2Text:
+            'Themes, collections, navigation and conversion patterns — aligned with your assortment and roadmap.',
+        feat3Title: 'SEO in the foundation',
+        feat3Text:
+            'Structure, internal linking and performance are designed in — not patched on later.',
+        feat4Title: 'Modern deployment',
+        feat4Text:
+            'Clear hosting and release workflows — including Next.js and Vercel when it fits.',
+        feat5Title: 'Practical smart workflows',
+        feat5Text:
+            'Where tooling can honestly reduce repetitive work, we wire it in — with review by your team.',
+        approachLabel: 'How we work',
+        approachTitle: 'Human-led. Tooling where it helps.',
+        step1Title: 'Intake & clear rhythm',
+        step1Text:
+            'We begin with goals, funnel and constraints — no prefab package. Scope and milestones are set before build.',
+        step2Title: 'Design & stack choices',
+        step2Text:
+            'Design and engineering choices match discoverability, maintenance and growth — including SEO architecture and performance budgets.',
+        step3Title: 'Build with control',
+        step3Text:
+            'Development with previews and quality checks. Where workflows reduce repetitive work, we introduce tooling deliberately — with review where it matters.',
+        step4Title: 'Launch, measure, iterate',
+        step4Text:
+            'After go-live we monitor and improve conversion, speed or automation — evidence-led.',
+        credHeading: 'Working with ABshops',
+        cred1Title: 'Clear scope and milestones',
+        cred1Text:
+            'You know what ships when, where feedback fits and what launch includes — plus a short overlap for handover.',
+        cred2Title: 'EU-first and privacy-aware',
+        cred2Text:
+            'We choose configurations and processors that fit your risk profile — especially for mail, analytics and workflows touching customer data.',
+        cred3Title: 'Directly with people who build',
+        cred3Text:
+            'No endless account maze: you speak with the team delivering the work, from first call through optimization.',
         ctaTitle: 'Ready to start?',
-        ctaLead: 'Tell us briefly about your brand and goals — we would love to schedule a no-obligation call.',
+        ctaLead:
+            'Tell us briefly about your brand and goals — we would love to schedule a no-obligation call.',
         ctaBtn: 'Contact',
         featuresLabel: 'Why ABshops',
-        trustLabel: 'Rotterdam & Europe',
+        trustLabel: 'From Rotterdam, for Dutch founders',
         trustBody:
-            'ABshops (Breure Media) is a Rotterdam-based digital agency: premium website and webshop development, AI automation, SEO and digital strategy — for founders in the Netherlands and Europe who value quality over shortcuts.',
+            'ABshops is a digital commerce studio focused on websites, Shopify, SEO and digital infrastructure — not a vague full-service promise. We connect how customers find you with the systems that must run every day.',
         trustCta: 'Request a no-obligation intake'
     };
 
     /* ——— Contact ——— */
     DICT.nl.contact = {
-        metaTitle: 'Contact & offerte | ABshops — Breure Media Rotterdam',
+        metaTitle: 'Contact ABshops Rotterdam | offerte website & Shopify',
         metaDesc:
-            'Neem contact op met ABshops (Breure Media) in Rotterdam: websites, webshops en AI-oplossingen. Mail info@abshops.nl of plan een vrijblijvend gesprek.',
-        ogTitle: 'Contact | ABshops',
-        ogDesc: 'Rotterdam · info@abshops.nl · Weena 70. We reageren persoonlijk en snel op je bericht.',
+            'Neem contact op met ABshops in Rotterdam: websites, Shopify-webshops, SEO, workflows en Google Workspace-instellingen. Mail info@abshops.nl.',
+        ogTitle: 'Contact | ABshops Rotterdam',
+        ogDesc: 'Weena 70 · info@abshops.nl · reactie op werkdagen meestal binnen één dag.',
         heroTitle: 'Laten we kennismaken',
         heroLead:
-            'Vertel kort wat je wilt bereiken — nieuwe site, migratie van een shop of een eerste AI-pilot. We lezen persoonlijk mee en plannen zo nodig een call om scope en verwachtingen scherp te krijgen.',
+            'Vertel kort wat je wilt bereiken — nieuwe site, Shopify-shop, technische inrichting (Google Workspace, DNS) of een gerichte automatiserings-pilot. We lezen persoonlijk mee en plannen zo nodig een call om scope scherp te krijgen.',
         directTitle: 'Direct contact',
         dtEmail: 'E-mail',
         dtAddress: 'Adres',
@@ -371,15 +417,26 @@
         submit: 'Verstuur bericht',
         servicesTitle: 'Diensten',
         servicesIntro: 'Wil je eerst lezen wat we precies leveren? Bekijk onze servicepagina’s:',
-        crossWebTitle: 'Premium websites',
-        crossWebText: 'Design, techniek, performance en SEO-fundering.',
-        crossShopTitle: 'Webshops',
-        crossShopText: 'Conversie, checkout en schaalbare e-commerce.',
-        crossAiTitle: 'AI-oplossingen',
-        crossAiText: 'Automatisering en workflows met controle.',
-        bmTitle: 'Breure Media',
+        crossWebTitle: 'Websites & platforms',
+        crossWebText: 'Webdesign, performance en SEO-vriendelijke structuur.',
+        crossShopTitle: 'Shopify & ecommerce',
+        crossShopText: 'Webshop inrichten, conversie en SEO voor shops.',
+        crossAiTitle: 'Automatisering & workflows',
+        crossAiText: 'Praktische workflows met menselijke regie.',
+        crossInfraTitle: 'Digitale bedrijfsinrichting',
+        crossInfraText: 'Google Workspace, domeinen, DNS en hosting.',
+        infraTitle: 'Digitale bedrijfsinrichting',
+        infraLead:
+            'Naast sites en shops helpen we met de technische basis van je bedrijf — compact en zonder onnodige complexiteit:',
+        infraLi1: 'Google Workspace: gebruikers, e-mail en basisinstellingen',
+        infraLi2: 'Domeinen, DNS en verwijzing naar hosting of platforms',
+        infraLi3: 'Hosting en deployment — onder andere voor statische sites en moderne frontends',
+        infraLi4: 'Technische setup en checklist voor kleine teams die online serieus aan de slag willen',
+        infraCtaPrefix: 'Wil je dit combineren met een site of shop?',
+        infraCtaLink: 'Ga naar het formulier',
+        bmTitle: 'Handelsnamen',
         bmText:
-            'ABshops opereert onder de vlag van Breure Media — een compact team met focus op kwaliteit boven volume. Geen account circus: je praat met mensen die het werk ook daadwerkelijk uitvoeren.',
+            'ABshops is de hoofdhandelsnaam voor digitale commerce-diensten en een bedrijfsonderdeel binnen de onderneming van Ard Breure. Breure Media is een aparte handelsnaam voor creatieve en media-uitgaven — buiten die context verschijnt die naam op deze site alleen subtiel in juridische teksten.',
         mailDirect: 'Mail direct',
         ctaCallTitle: 'Liever teruggebeld worden?',
         ctaCallLead: 'Geef in je mail twee tijdvakken die uitkomen — dan stemmen we af wat het beste past.',
@@ -387,14 +444,14 @@
     };
 
     DICT.en.contact = {
-        metaTitle: 'Contact & quote | ABshops — Breure Media Rotterdam',
+        metaTitle: 'Contact ABshops Rotterdam | website & Shopify quotes',
         metaDesc:
-            'Contact ABshops (Breure Media) in Rotterdam: websites, webshops and AI solutions. Email info@abshops.nl or schedule a no-obligation conversation.',
-        ogTitle: 'Contact | ABshops',
-        ogDesc: 'Rotterdam · info@abshops.nl · Weena 70. We reply personally and quickly.',
+            'Contact ABshops in Rotterdam: websites, Shopify stores, SEO, workflows and Google Workspace setup. Email info@abshops.nl.',
+        ogTitle: 'Contact | ABshops Rotterdam',
+        ogDesc: 'Weena 70 · info@abshops.nl · we usually reply within one business day.',
         heroTitle: 'Let’s connect',
         heroLead:
-            'Tell us briefly what you want to achieve — a new site, a shop migration or a first AI pilot. We read every message and can schedule a call to align scope and expectations.',
+            'Tell us briefly what you want to achieve — a new site, a Shopify project, technical setup (Google Workspace, DNS) or a focused automation pilot. We read every message and can schedule a call to align scope.',
         directTitle: 'Direct contact',
         dtEmail: 'Email',
         dtAddress: 'Address',
@@ -421,15 +478,26 @@
         submit: 'Send message',
         servicesTitle: 'Services',
         servicesIntro: 'Want to read what we deliver first? Explore our service pages:',
-        crossWebTitle: 'Premium websites',
+        crossWebTitle: 'Websites & platforms',
         crossWebText: 'Design, engineering, performance and SEO foundations.',
-        crossShopTitle: 'Webshops',
-        crossShopText: 'Conversion, checkout and scalable e-commerce.',
-        crossAiTitle: 'AI solutions',
-        crossAiText: 'Automation and workflows with control.',
-        bmTitle: 'Breure Media',
+        crossShopTitle: 'Shopify & ecommerce',
+        crossShopText: 'Shop setup, conversion and ecommerce SEO.',
+        crossAiTitle: 'Automation & workflows',
+        crossAiText: 'Practical workflows with human oversight.',
+        crossInfraTitle: 'Digital infrastructure',
+        crossInfraText: 'Google Workspace, domains, DNS and hosting.',
+        infraTitle: 'Digital business infrastructure',
+        infraLead:
+            'Beyond sites and shops we help with the technical baseline — lean and without needless complexity:',
+        infraLi1: 'Google Workspace: users, email and baseline configuration',
+        infraLi2: 'Domains, DNS and routing to hosting or platforms',
+        infraLi3: 'Hosting and deployment — including static sites and modern frontends',
+        infraLi4: 'Technical setup checklist for small teams going online seriously',
+        infraCtaPrefix: 'Combine this with a site or shop?',
+        infraCtaLink: 'Go to the form',
+        bmTitle: 'Trade names',
         bmText:
-            'ABshops operates under Breure Media — a compact team focused on quality over volume. No account maze: you speak with people who actually do the work.',
+            'ABshops is the primary trade name for digital commerce work and operates within Ard Breure’s business. Breure Media is a separate trade name for creative publishing — on this site it only appears subtly in legal copy.',
         mailDirect: 'Email us directly',
         ctaCallTitle: 'Prefer a callback?',
         ctaCallLead: 'Mention two time windows that work for you — we will align from there.',
@@ -438,15 +506,15 @@
 
     /* ——— Websites page ——— */
     DICT.nl.websites = {
-        metaTitle: 'Premium websites laten bouwen | ABshops — Breure Media',
+        metaTitle: 'Website laten maken Rotterdam | webdesign & SEO | ABshops',
         metaDesc:
-            'Premium websites door ABshops (Breure Media): strategie, design, snelle performance en SEO-vriendelijke techniek. Rotterdam.',
-        ogTitle: 'Premium websites | ABshops',
+            'Website laten maken en webdesign in Rotterdam door ABshops: snelle sites, SEO-vriendelijke structuur, Next.js/Vercel waar passend. Offerte op maat.',
+        ogTitle: 'Webdesign & websites | ABshops Rotterdam',
         ogDesc:
-            'Merkbouwende sites met focus op conversie, snelheid en vindbaarheid. Ontdek hoe we jouw digitale presence neerzetten.',
-        heroTitle: 'Premium websites die werken',
+            'Strak webdesign, performance en SEO als onderdeel van het traject — niet als los onderdeel.',
+        heroTitle: 'Websites die vindbaar zijn én converteren',
         heroLead:
-            'Jouw site is vaak het eerste wat klanten zien. Wij bouwen strakke, snelle en flexibele platforms die je merk ondersteunen — van positioning tot meetbare conversie.',
+            'Van eerste schets tot livegang: ABshops bouwt moderne, responsieve sites voor ondernemers — met Rotterdam als thuisbasis en klanten door heel Nederland. Techniek en vindbaarheid horen bij elkaar.',
         heroCta: 'Vraag een gesprek aan',
         s1Title: 'Wat je krijgt',
         s1p1:
@@ -455,7 +523,7 @@
             'We denken mee over contenthiërarchie, calls-to-action en microcopy, zodat je site niet alleen mooi is, maar ook richting geeft aan je funnel.',
         s2Title: 'Performance & techniek',
         s2p:
-            'Snelheid is UX en SEO tegelijk. We optimaliseren assets, caching en kritieke rendering paths waar dat nodig is. Technisch leggen we een solide basis: toegankelijkheid meenemen waar het kan, nette semantische markup en een codebase die onderhoudbaar blijft als je door groeit.',
+            'Snelheid is UX en SEO tegelijk. We optimaliseren assets, caching en kritieke rendering paths. Waar het past gebruiken we moderne stacks zoals Next.js op Vercel; waar eenvoud volstaat, houden we het bewust licht. Altijd: nette semantische markup, toegankelijkheid waar het kan, en een codebase die onderhoudbaar blijft.',
         s2li1: 'Snelle laadtijden en stabiele Core Web Vitals als uitgangspunt',
         s2li2: 'Responsive layouts voor desktop, tablet en mobiel',
         s2li3: 'Beveiliging en updates als vast onderdeel van het plaatje — geen bijzaak',
@@ -468,12 +536,14 @@
         s4p:
             'Transparante planning, vaste momenten om feedback te verzamelen en een duidelijke launch-checklist. Je weet waar je aan toe bent: scope, mijlpalen en wat er ná live nog gebeurt (meten, bijsturen, uitbreiden).',
         crossTitle: 'Ook interessant',
-        crossShopTitle: 'Webshops',
+        crossShopTitle: 'Shopify & ecommerce',
         crossShopText: 'E-commerce met focus op conversie en schaalbare catalogi.',
-        crossAiTitle: 'AI-oplossingen',
-        crossAiText: 'Automatisering en slimme workflows naast je website.',
+        crossAiTitle: 'Automatisering & workflows',
+        crossAiText: 'Praktische workflows naast je website.',
+        crossInfraTitle: 'Digitale bedrijfsinrichting',
+        crossInfraText: 'Google Workspace, domeinen, DNS en hosting.',
         crossContact: 'Vragen over planning, scope of samenwerking?',
-        leadTitle: 'Plan je aanvraag — premium website',
+        leadTitle: 'Plan je aanvraag — website',
         leadIntro:
             'Vul dit multi-stappen formulier in. Je gegevens worden alleen gebruikt om je aanvraag te beoordelen en persoonlijk contact op te nemen — conform je toestemming in de laatste stap.',
         ctaTitle: 'Plan een introductie',
@@ -484,14 +554,14 @@
     };
 
     DICT.en.websites = {
-        metaTitle: 'Premium websites built for results | ABshops — Breure Media',
+        metaTitle: 'Websites built for discovery | ABshops Rotterdam',
         metaDesc:
-            'Premium websites by ABshops (Breure Media): strategy, design, fast performance and SEO-friendly engineering. Rotterdam.',
-        ogTitle: 'Premium websites | ABshops',
-        ogDesc: 'Brand-led sites focused on conversion, speed and discoverability.',
-        heroTitle: 'Premium websites that perform',
+            'Website design and development by ABshops in Rotterdam: fast builds, SEO-minded structure, Next.js/Vercel when it fits.',
+        ogTitle: 'Web design & websites | ABshops Rotterdam',
+        ogDesc: 'Calm design, performance and SEO woven into the project.',
+        heroTitle: 'Websites built to be found — and to convert',
         heroLead:
-            'Your site is often the first thing customers see. We build crisp, fast and flexible platforms that support your brand — from positioning to measurable conversion.',
+            'From first sketch to launch: ABshops builds modern responsive sites with Rotterdam as home base and clients across the Netherlands. Discoverability and engineering belong together.',
         heroCta: 'Request a conversation',
         s1Title: 'What you get',
         s1p1:
@@ -500,7 +570,7 @@
             'We help shape hierarchy, calls-to-action and microcopy so your site is not only beautiful but actively guides your funnel.',
         s2Title: 'Performance & engineering',
         s2p:
-            'Speed is UX and SEO at once. We optimize assets, caching and critical rendering paths where needed. Technically we lay a solid foundation: accessibility where it matters, clean semantic markup and maintainable code as you grow.',
+            'Speed is UX and SEO together. We optimize assets, caching and critical rendering paths. Where it fits we use modern stacks such as Next.js on Vercel; where simplicity wins we keep things deliberately light. Always: semantic markup, accessibility where it matters and maintainable code.',
         s2li1: 'Fast load times with stable Core Web Vitals as the baseline',
         s2li2: 'Responsive layouts for desktop, tablet and mobile',
         s2li3: 'Security and updates as part of the package — not an afterthought',
@@ -513,12 +583,14 @@
         s4p:
             'Transparent planning, structured feedback moments and a clear launch checklist. You always know the scope, milestones and what happens after go-live (measure, iterate, extend).',
         crossTitle: 'Also explore',
-        crossShopTitle: 'Webshops',
+        crossShopTitle: 'Shopify & ecommerce',
         crossShopText: 'E-commerce focused on conversion and scalable catalogs.',
-        crossAiTitle: 'AI solutions',
-        crossAiText: 'Automation and smart workflows alongside your website.',
+        crossAiTitle: 'Automation & workflows',
+        crossAiText: 'Practical workflows alongside your website.',
+        crossInfraTitle: 'Digital infrastructure',
+        crossInfraText: 'Google Workspace, domains, DNS and hosting.',
         crossContact: 'Questions about scope, timing or collaboration?',
-        leadTitle: 'Submit your request — premium website',
+        leadTitle: 'Submit your request — website',
         leadIntro:
             'Complete this multi-step form. Your details are used only to review your request and contact you personally — as confirmed by your consent in the final step.',
         ctaTitle: 'Book an introduction',
@@ -530,14 +602,15 @@
 
     /* ——— Webshops ——— */
     DICT.nl.webshops = {
-        metaTitle: 'Premium webshops & e-commerce | ABshops — Breure Media',
+        metaTitle: 'Shopify specialist & webshop laten maken | ABshops Rotterdam',
         metaDesc:
-            'Premium webshops en e-commerce door ABshops (Breure Media): conversie, checkout, performance en schaalbare catalogi.',
-        ogTitle: 'Premium webshops & e-commerce | ABshops',
-        ogDesc: 'Verkoop online met een store die snel is, vertrouwen uitstraalt en meegroeit met je assortiment.',
-        heroTitle: 'Webshops die verkopen',
+            'Webshop laten maken op Shopify door ABshops: inrichting, collections, navigatie, conversie en SEO voor ecommerce. Rotterdam · heel Nederland.',
+        ogTitle: 'Shopify webshops | ABshops',
+        ogDesc:
+            'Shopify specialist voor ondernemers: scherp ingerichte shops met focus op verkopen — niet op overbodige plugins.',
+        heroTitle: 'Shopify-webshops met scherpe conversie',
         heroLead:
-            'E-commerce draait om vertrouwen, snelheid en een checkout zonder frictie. ABshops ontwerpt en realiseert premium webshops die zijn gebouwd om omzet te maken — met ruimte om uit te breiden naarmate je assortiment groeit.',
+            'Als Shopify specialist helpt ABshops met webshops die klanten begrijpen: snelle UX, duidelijke navigatie en een checkout die vertrouwen uitstraalt — inclusief SEO voor categorieën en producten.',
         heroCta: 'Laten we je store bespreken',
         s1Title: 'Customer journey die klopt',
         s1p1:
@@ -557,12 +630,12 @@
         s4p:
             'Organisch verkeer voor categorieën en producten vraagt structuur: duplicate content vermijden, sterke interne links en pagina’s die echt waarde bieden naast je listings. We zetten de technische basis neer en geven richting voor content die het verschil maakt in competitive niches.',
         crossTitle: 'Meer van ABshops',
-        crossWebTitle: 'Premium websites',
-        crossWebText: 'Corporate sites en campagnes naast je shop.',
-        crossAiTitle: 'AI-oplossingen',
+        crossWebTitle: 'Websites & platforms',
+        crossWebText: 'SEO-vriendelijke sites en campagnepagina’s naast je shop.',
+        crossAiTitle: 'Automatisering & workflows',
         crossAiText: 'Supportflows en automatisering rondom orders.',
         crossContact: 'Vragen over groei, integraties of doorlooptijd?',
-        leadTitle: 'Plan je aanvraag — premium webshop',
+        leadTitle: 'Plan je aanvraag — Shopify-webshop',
         leadIntro:
             'Vertel ons over je assortiment, verkeer en ambities. We volgen hetzelfde professionele intake-proces als bij onze website-projecten, afgestemd op e-commerce.',
         ctaTitle: 'Jouw volgende groeistap',
@@ -573,14 +646,14 @@
     };
 
     DICT.en.webshops = {
-        metaTitle: 'Premium webshops & e-commerce | ABshops — Breure Media',
+        metaTitle: 'Shopify stores built to sell | ABshops Rotterdam',
         metaDesc:
-            'Premium webshops and e-commerce by ABshops (Breure Media): conversion, checkout, performance and scalable catalogs.',
-        ogTitle: 'Premium webshops & e-commerce | ABshops',
-        ogDesc: 'Sell online with a store that is fast, trustworthy and grows with your catalog.',
-        heroTitle: 'Webshops built to sell',
+            'Shopify ecommerce by ABshops: setup, collections, navigation, conversion and ecommerce SEO — Rotterdam and the Netherlands.',
+        ogTitle: 'Shopify ecommerce | ABshops',
+        ogDesc: 'Lean Shopify builds focused on selling — not plugin clutter.',
+        heroTitle: 'Shopify stores shaped for conversion',
         heroLead:
-            'E-commerce is trust, speed and a frictionless checkout. ABshops designs and builds premium stores focused on revenue — with room to expand as your assortment grows.',
+            'ABshops helps founders launch and refine Shopify stores shoppers understand: fast UX, clear navigation and a trustworthy checkout — plus SEO for categories and products.',
         heroCta: 'Let’s discuss your store',
         s1Title: 'A customer journey that fits',
         s1p1:
@@ -600,12 +673,12 @@
         s4p:
             'Organic traffic for categories and products needs structure: avoid duplication, strengthen internal linking and build pages that add value beyond listings. We set the technical foundation and guide content that wins in competitive niches.',
         crossTitle: 'More from ABshops',
-        crossWebTitle: 'Premium websites',
-        crossWebText: 'Corporate sites and campaigns alongside your shop.',
-        crossAiTitle: 'AI solutions',
+        crossWebTitle: 'Websites & platforms',
+        crossWebText: 'SEO-minded sites and landing pages alongside your shop.',
+        crossAiTitle: 'Automation & workflows',
         crossAiText: 'Support flows and automation around orders.',
         crossContact: 'Questions about growth, integrations or lead time?',
-        leadTitle: 'Submit your request — premium webshop',
+        leadTitle: 'Submit your request — Shopify store',
         leadIntro:
             'Tell us about assortment, traffic and ambitions. We follow the same professional intake as our website projects, tailored to e-commerce.',
         ctaTitle: 'Your next growth step',
@@ -617,16 +690,17 @@
 
     /* ——— AI ——— */
     DICT.nl.ai = {
-        metaTitle: 'AI-oplossingen & automatisering | ABshops — Breure Media',
+        metaTitle: 'Automatisering voor bedrijven | ABshops — workflows & agents',
         metaDesc:
-            'AI-oplossingen voor bedrijven door ABshops (Breure Media): slimme automatisering, assistenten en workflows — veilig, meetbaar en merkconsistent.',
-        ogTitle: 'AI-oplossingen voor organisaties | ABshops',
-        ogDesc: 'Praktische AI: minder handwerk, betere antwoorden, schaalbare processen — met menselijke controle.',
-        heroTitle: 'AI die het werk ondersteunt',
+            'Praktische automatisering en workflows voor bedrijven: ondersteuning bij agents, content en operations — menselijk geleid, privacybewust. Rotterdam.',
+        ogTitle: 'Automatisering & workflows | ABshops',
+        ogDesc:
+            'Minder handwerk waar het veilig kan, mét controle en eigenaarschap bij jouw team.',
+        heroTitle: 'Workflows die het werk dragelijker maken',
         heroLead:
-            'AI is pas waardevol als het past bij je processen, data en merk. ABshops ontwerpt en implementeert oplossingen die repetitieve taken verminderen, teams ondersteunen en schaal geven — altijd met heldere grenzen en kwaliteitscontrole.',
-        heroCta: 'Spreek AI voor jouw organisatie door',
-        s1Title: 'Waar AI het verschil maakt',
+            'ABshops ontwerpt en bouwt praktische automatisering die past bij je processen — van support tot content. Waar modellen of agents helpen, zetten we ze gericht in; waar mensen moeten oordelen, houden we review vast.',
+        heroCta: 'Bespreek een concrete pilot',
+        s1Title: 'Waar automatisering het verschil maakt',
         s1p1:
             'Denk aan klantvragen die eerst categorisch worden ingedeeld, concept-antwoorden voor je servicedesk, interne kennisbanken die doorzoekbaar worden met natuurlijke taal, of contentworkflows die sneller itereren — mét human review waar het moet.',
         s1p2:
@@ -640,19 +714,21 @@
             '<strong>Marketing &amp; product:</strong> bulk-varianten van teksten controleren, SEO-blauwdrukken, experimentatie versnellen',
         s3Title: 'Privacy, security & eigenaarschap',
         s3p1:
-            'Gegevens blijven bij jou waar dat hoort: we kijken naar retention, toegang en logging. Waar cloud-AI nodig is, kiezen we configuraties die passen bij jouw risicoprofiel — en waar mogelijk combineren we met on-prem of EU-regio’s.',
+            'Gegevens blijven bij jou waar dat hoort: we kijken naar retention, toegang en logging. Waar cloudmodellen nodig zijn, kiezen we configuraties die passen bij jouw risicoprofiel — en waar mogelijk combineren we met on-prem of EU-regio’s.',
         s3p2:
             'Je behoudt eigenaarschap over prompts, workflows en output — geen black box zonder overdracht.',
         s4Title: 'Implementatie die volgt',
         s4p:
-            'Pilot → evalueren → uitbreiden. We meten wat telt: doorlooptijd, foutpercentages, tevredenheid en kosten per interactie. Zo wordt AI een onderdeel van je bedrijfsvoering, geen eenmalige demo.',
-        crossTitle: 'Combinatie met web',
-        crossWebTitle: 'Premium websites',
-        crossWebText: 'AI-features ingebed in je publieke site waar het zinvol is.',
-        crossShopTitle: 'Webshops',
-        crossShopText: 'Productadvies, zoekhulp en post-sale flows die converteren.',
+            'Pilot → evalueren → uitbreiden. We meten wat telt: doorlooptijd, foutpercentages, tevredenheid en kosten per interactie. Zo wordt automatisering onderdeel van je bedrijfsvoering, geen eenmalige demo.',
+        crossTitle: 'Combinatie met web en shop',
+        crossWebTitle: 'Websites & platforms',
+        crossWebText:
+            'Publieke sites en landingspagina’s waar interne workflows naadloos op aansluiten.',
+        crossShopTitle: 'Shopify & ecommerce',
+        crossShopText:
+            'Shop-UX, zoekfuncties en flows ná de koop — daar waar ondersteuning het verschil maakt.',
         crossContact: 'Twijfel je tussen pilot, security of EU-data?',
-        leadTitle: 'Plan je aanvraag — AI & automatisering',
+        leadTitle: 'Plan je aanvraag — automatisering & workflows',
         leadIntro:
             'Beschrijf kort je proces, volumes en risico’s. We gebruiken dezelfde intake-flow om snel te bepalen of een pilot zinvol is — transparant en zonder marketingdruk.',
         ctaTitle: 'Ontdek wat haalbaar is',
@@ -663,16 +739,16 @@
     };
 
     DICT.en.ai = {
-        metaTitle: 'AI solutions & automation | ABshops — Breure Media',
+        metaTitle: 'Business automation | ABshops — workflows & agents',
         metaDesc:
-            'AI solutions for organizations by ABshops (Breure Media): smart automation, assistants and workflows — safe, measurable and on-brand.',
-        ogTitle: 'AI solutions for organizations | ABshops',
-        ogDesc: 'Practical AI: less manual work, better answers, scalable processes — with human control.',
-        heroTitle: 'AI that supports the work',
+            'Practical automation and workflows for teams: agents, content and operations — human-led and privacy-aware. Rotterdam.',
+        ogTitle: 'Automation & workflows | ABshops',
+        ogDesc: 'Less manual work where it is safe — with control and ownership on your side.',
+        heroTitle: 'Workflows that make operations lighter',
         heroLead:
-            'AI is valuable when it fits your processes, data and brand. ABshops designs and implements solutions that reduce repetitive work, support teams and scale — with clear boundaries and quality control.',
-        heroCta: 'Explore AI for your organization',
-        s1Title: 'Where AI moves the needle',
+            'ABshops designs practical automation that fits your processes — from support to content. Where models or agents help we introduce them deliberately; where humans must judge we keep review in place.',
+        heroCta: 'Discuss a focused pilot',
+        s1Title: 'Where automation earns its place',
         s1p1:
             'Think triaging customer questions, draft replies for support, searchable internal knowledge bases in natural language, or faster content workflows — with human review where it matters.',
         s1p2:
@@ -691,14 +767,14 @@
             'You keep ownership of prompts, workflows and output — no opaque black box without handover.',
         s4Title: 'Implementation that sticks',
         s4p:
-            'Pilot → evaluate → expand. We measure what matters: cycle time, error rates, satisfaction and cost per interaction — so AI becomes operations, not a one-off demo.',
-        crossTitle: 'Combined with web',
-        crossWebTitle: 'Premium websites',
-        crossWebText: 'Embed AI features in your public site where it makes sense.',
-        crossShopTitle: 'Webshops',
-        crossShopText: 'Product guidance, search assist and post-sale flows that convert.',
+            'Pilot → evaluate → expand. We measure what matters: cycle time, error rates, satisfaction and cost per interaction — so automation becomes operations, not a one-off demo.',
+        crossTitle: 'Combined with web and shop',
+        crossWebTitle: 'Websites & platforms',
+        crossWebText: 'Public sites and landing pages aligned with internal workflows.',
+        crossShopTitle: 'Shopify & ecommerce',
+        crossShopText: 'Shop UX, search and post-purchase flows — where support matters.',
         crossContact: 'Unsure about pilots, security or EU data residency?',
-        leadTitle: 'Submit your request — AI & automation',
+        leadTitle: 'Submit your request — automation & workflows',
         leadIntro:
             'Briefly describe process, volumes and risks. We use the same intake flow to see quickly whether a pilot makes sense — transparent and without hype.',
         ctaTitle: 'Discover what is feasible',

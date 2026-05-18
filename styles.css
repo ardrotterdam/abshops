@@ -1488,6 +1488,66 @@ html[data-theme="dark"] .hero.hero--home .hero-visual-frame {
     object-position: 50% 42%;
 }
 
+/* Homepage — workflow infographic (below hero) */
+.workflow-infographic {
+    padding: clamp(4rem, 11vw, 7rem) clamp(1.75rem, 5vw, 3rem) clamp(3.25rem, 9vw, 5.5rem);
+    margin: 0;
+}
+
+.workflow-infographic-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.workflow-infographic-eyebrow {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin: 0 0 0.85rem;
+}
+
+.workflow-infographic-lead {
+    font-size: clamp(0.9375rem, 1.35vw, 1.0625rem);
+    line-height: 1.62;
+    color: var(--gray-600);
+    margin: 0 auto 2.25rem;
+    max-width: 36rem;
+}
+
+.workflow-infographic-frame {
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 13px;
+    overflow: hidden;
+    border: 1px solid var(--gray-200);
+    background: var(--gray-100);
+    box-shadow:
+        0 24px 56px -28px rgba(15, 23, 42, 0.18),
+        0 0 0 1px rgba(15, 23, 42, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    max-width: 100%;
+}
+
+html[data-theme="dark"] .workflow-infographic-frame {
+    border-color: rgba(242, 243, 247, 0.12);
+    background: rgba(10, 11, 14, 0.55);
+    box-shadow:
+        0 28px 64px -32px rgba(0, 0, 0, 0.55),
+        0 0 0 1px rgba(255, 255, 255, 0.06),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.workflow-infographic-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
 .hero-eyebrow {
     display: inline-block;
     font-size: 0.6875rem;

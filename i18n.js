@@ -253,6 +253,10 @@
         heroSubtitle:
             'Web, Shopify en automatisering met slimme tooling — menselijk geleid, technisch strak. Rotterdam · heel Nederland.',
         ctaPrimary: 'Plan een vrijblijvend gesprek',
+        workflowEyebrow: 'HOE WIJ WERKEN',
+        workflowLead: 'Van strategie en development tot AI-automatisering en groei.',
+        workflowImgAlt:
+            'Workflow infographic van ABshops met strategie, webdevelopment, AI automatisering en digitale groei',
         sectionExpertise: 'Vier duidelijke pijlers',
         svc1Title: 'Websites & platforms',
         svc1Text:
@@ -338,6 +342,10 @@
         heroSubtitle:
             'Web, Shopify and automation with careful tooling — human-led, engineered well. Rotterdam · across the Netherlands.',
         ctaPrimary: 'Schedule a no-obligation call',
+        workflowEyebrow: 'HOW WE WORK',
+        workflowLead: 'From strategy and development to AI automation and growth.',
+        workflowImgAlt:
+            'ABshops workflow infographic: strategy, web development, AI automation and digital growth',
         sectionExpertise: 'Four clear pillars',
         svc1Title: 'Websites & platforms',
         svc1Text:

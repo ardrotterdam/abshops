@@ -1356,14 +1356,13 @@ html[data-theme="dark"] .hero::before {
     text-align: center;
 }
 
-/* Homepage hero: copy + premium workspace visual (two-column, text-forward) */
+/* Homepage hero — premium split layout (Stripe / Linear inspired: calm, substantial visual) */
 .hero.hero--home {
     align-items: center;
     justify-content: center;
-    /* Avoid full-viewport hero dominated by image; content sets height */
     min-height: 0;
-    padding-top: max(6.5rem, calc(5rem + env(safe-area-inset-top, 0px)));
-    padding-bottom: clamp(3.25rem, 7vw, 5rem);
+    padding-top: max(5.25rem, calc(4.25rem + env(safe-area-inset-top, 0px)));
+    padding-bottom: clamp(2.75rem, 5vw, 4rem);
 }
 
 .hero.hero--home::after {
@@ -1374,33 +1373,58 @@ html[data-theme="dark"] .hero::before {
     position: relative;
     z-index: 1;
     width: 100%;
-    max-width: 1180px;
+    max-width: 1224px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(240px, min(34vw, 400px));
-    gap: clamp(1.75rem, 4vw, 3rem);
-    align-items: start;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: clamp(2rem, 4.5vw, 3.5rem);
+    align-items: center;
 }
 
 .hero.hero--home .hero-content {
-    max-width: 34rem;
-    padding-top: 0.35rem;
+    max-width: 28rem;
+    padding-top: 0;
     text-align: left;
     margin-left: 0;
     margin-right: 0;
 }
 
+.hero.hero--home .hero-eyebrow {
+    margin-bottom: 1.125rem;
+}
+
 .hero.hero--home .hero-subtitle {
     margin-left: 0;
     margin-right: 0;
-    max-width: 30rem;
+    max-width: 26rem;
+    font-size: clamp(0.9375rem, 1.25vw, 1.0625rem);
+    line-height: 1.58;
+    margin-bottom: 1.75rem;
+    color: var(--gray-600);
+}
+
+.hero.hero--home .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1.25rem;
+}
+
+/* Compact premium H1 — homepage only */
+.hero.hero--home .hero-title--home {
+    font-size: clamp(2rem, 3.9vw, 3.125rem);
+    line-height: 1.1;
+    letter-spacing: -0.038em;
+    font-weight: 600;
+    margin-bottom: 1.125rem;
+    text-wrap: balance;
 }
 
 .hero.hero--home .hero-visual {
     margin: 0;
-    justify-self: end;
+    justify-self: stretch;
     width: 100%;
-    max-width: min(400px, 100%);
+    max-width: none;
 }
 
 .hero-visual {
@@ -1421,8 +1445,13 @@ html[data-theme="dark"] .hero::before {
 }
 
 .hero.hero--home .hero-visual-frame {
-    /* Width capped by .hero-visual; no tall vh-based frame */
     max-height: none;
+    border-radius: 13px;
+    /* Substantial integrated visual: fills right column, scales with viewport */
+    box-shadow:
+        0 28px 64px -28px rgba(15, 23, 42, 0.22),
+        0 0 0 1px rgba(15, 23, 42, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.38);
 }
 
 html[data-theme="dark"] .hero-visual-frame {
@@ -1431,6 +1460,13 @@ html[data-theme="dark"] .hero-visual-frame {
     box-shadow:
         0 20px 48px -20px rgba(0, 0, 0, 0.5),
         inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+html[data-theme="dark"] .hero.hero--home .hero-visual-frame {
+    box-shadow:
+        0 36px 72px -36px rgba(0, 0, 0, 0.65),
+        0 0 0 1px rgba(255, 255, 255, 0.06),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .hero-visual-img {
@@ -1442,7 +1478,7 @@ html[data-theme="dark"] .hero-visual-frame {
 }
 
 .hero.hero--home .hero-visual-img {
-    object-position: 50% 44%;
+    object-position: 50% 42%;
 }
 
 .hero-eyebrow {
@@ -2677,13 +2713,13 @@ html[data-theme="dark"] .footer-mail:hover {
 
     .hero.hero--home {
         min-height: 0;
-        padding-bottom: clamp(3rem, 8vw, 4.5rem);
+        padding-bottom: clamp(2.75rem, 7vw, 4rem);
     }
 
     .hero.hero--home .hero-inner {
         grid-template-columns: 1fr;
-        gap: 2rem;
-        max-width: 36rem;
+        gap: 2.25rem;
+        max-width: min(38rem, 100%);
     }
 
     .hero.hero--home .hero-content {
@@ -2695,12 +2731,17 @@ html[data-theme="dark"] .footer-mail:hover {
     .hero.hero--home .hero-subtitle {
         margin-left: auto;
         margin-right: auto;
-        max-width: 36rem;
+        max-width: 34rem;
+    }
+
+    .hero.hero--home .hero-actions {
+        justify-content: center;
     }
 
     .hero.hero--home .hero-visual {
         justify-self: center;
-        max-width: min(380px, 100%);
+        width: 100%;
+        max-width: min(520px, 100%);
     }
 
     .hero.hero--home .hero-visual-frame {
@@ -2779,6 +2820,11 @@ html[data-theme="dark"] .footer-mail:hover {
 
     .hero-title {
         font-size: 2.5rem;
+    }
+
+    .hero.hero--home .hero-title--home {
+        font-size: clamp(1.7rem, 6.5vw, 2.2rem);
+        line-height: 1.11;
     }
     
     .services-grid,

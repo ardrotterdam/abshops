@@ -249,9 +249,9 @@
         heroEyebrow: 'Digitale commerce studio · Rotterdam',
         heroImgAlt:
             'Premium AI-assisted ecommerce workspace van ABshops voor websites, Shopify en digitale automatisering',
-        heroTitle: 'Moderne websites, Shopify-webshops<br> en workflows die online groei dragen.',
+        heroTitle: 'Websites, Shopify-webshops<br> en slimme AI-workflows.',
         heroSubtitle:
-            'ABshops helpt ondernemers en teams met webdesign, ecommerce op Shopify, SEO en digitale inrichting — menselijk geleid, technisch strak, met slimme tooling waar het echt tijd bespaart.',
+            'Web, Shopify en automatisering met slimme tooling — menselijk geleid, technisch strak. Rotterdam · heel Nederland.',
         ctaPrimary: 'Plan een vrijblijvend gesprek',
         sectionExpertise: 'Vier duidelijke pijlers',
         svc1Title: 'Websites & platforms',
@@ -334,9 +334,9 @@
         heroEyebrow: 'Digital commerce studio · Rotterdam',
         heroImgAlt:
             'Premium AI-assisted ecommerce workspace by ABshops for websites, Shopify and digital automation',
-        heroTitle: 'Modern websites, Shopify stores<br> and workflows built for growth.',
+        heroTitle: 'Websites, Shopify stores<br> and pragmatic AI workflows.',
         heroSubtitle:
-            'ABshops helps founders and teams with web design, Shopify ecommerce, SEO and digital foundations — human-led delivery with tooling only where it saves real time.',
+            'Web, Shopify and automation with careful tooling — human-led, engineered well. Rotterdam · across the Netherlands.',
         ctaPrimary: 'Schedule a no-obligation call',
         sectionExpertise: 'Four clear pillars',
         svc1Title: 'Websites & platforms',

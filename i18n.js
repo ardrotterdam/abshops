@@ -78,6 +78,19 @@
         rights: '© 2026 ABshops. All rights reserved.'
     };
 
+    DICT.nl.startCta = {
+        eyebrow: 'Klein beginnen?',
+        title: 'Professionele websites vanaf €499.',
+        lede: 'Voor ondernemers die online willen staan zonder een groot traject. Live binnen 10 werkdagen.',
+        cta: 'Bekijk ABshops Start'
+    };
+    DICT.en.startCta = {
+        eyebrow: 'Starting small?',
+        title: 'Professional websites from €499.',
+        lede: 'For business owners who want to go online without a big project. Live within 10 working days.',
+        cta: 'Check out ABshops Start'
+    };
+
     DICT.nl.lang = {
         groupAria: 'Taal',
         labelNl: 'Nederlands',

@@ -12,6 +12,9 @@
     --gray-800: #262626;
     --gray-900: #141414;
 
+    /* Matches start.abshops.nl brand accent (used only in .start-cta here) */
+    --start-accent: #ff5b1f;
+
     --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-display: 'Syne', var(--font);
     --ease-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2540,6 +2543,110 @@ html[data-theme="dark"] .cta-section .cta-mail-link:hover {
 
 html[data-theme="dark"] .footer-mail:hover {
     border-bottom-color: var(--gray-600);
+}
+
+/* ABshops Start — pre-footer promo */
+.start-cta {
+    padding: 56px 3rem;
+    border-top: 1px solid var(--gray-200);
+    background: var(--gray-50);
+    transition: var(--transition);
+}
+
+@media (min-width: 768px) {
+    .start-cta {
+        padding: 80px 3rem;
+    }
+}
+
+.start-cta .container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.start-cta-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(2rem, 5vw, 3rem);
+}
+
+.start-cta-text {
+    flex: 1 1 18rem;
+    min-width: 0;
+    position: relative;
+    padding-left: 1.125rem;
+}
+
+.start-cta-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    bottom: 0.2rem;
+    width: 4px;
+    border-radius: 2px;
+    background: var(--start-accent);
+}
+
+.start-cta-eyebrow {
+    margin: 0 0 0.6rem;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--start-accent);
+}
+
+.start-cta-title {
+    margin: 0 0 0.85rem;
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 3.75vw, 2.5rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    color: var(--gray-900);
+}
+
+.start-cta-lede {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.65;
+    font-weight: 400;
+    color: var(--gray-600);
+    max-width: 30rem;
+}
+
+.start-cta-link {
+    flex-shrink: 0;
+    align-self: flex-start;
+    text-align: center;
+}
+
+.start-cta .start-cta-link::after {
+    content: "\00a0→";
+    color: var(--start-accent);
+}
+
+@media (max-width: 767px) {
+    .start-cta-inner {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .start-cta-link {
+        align-self: stretch;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+
+html[data-theme="dark"] .start-cta {
+    background: var(--gray-100);
+    border-color: var(--gray-200);
 }
 
 .footer-bottom {

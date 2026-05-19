@@ -228,10 +228,17 @@ body {
     background-color: var(--white);
     color: var(--gray-900);
     line-height: 1.62;
-    overflow-x: hidden;
+    overflow-x: clip;
+    max-width: 100%;
     transition-property: background-color, color;
     transition-duration: var(--theme-duration);
     transition-timing-function: var(--ease-out);
+}
+
+@supports not (overflow: clip) {
+    body {
+        overflow-x: hidden;
+    }
 }
 
 ::selection {
@@ -250,6 +257,9 @@ html[data-theme="dark"] ::selection {
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     background: var(--nav-header-bg);
     backdrop-filter: blur(var(--nav-backdrop-blur)) saturate(165%);
     -webkit-backdrop-filter: blur(var(--nav-backdrop-blur)) saturate(165%);
@@ -2582,19 +2592,8 @@ html[data-theme="dark"] .footer-mail:hover {
 .start-cta-text {
     flex: 1 1 18rem;
     min-width: 0;
-    position: relative;
     padding-left: 1.125rem;
-}
-
-.start-cta-text::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    border-radius: 2px;
-    background: var(--start-accent);
+    border-left: 4px solid var(--start-accent);
 }
 
 .start-cta-eyebrow {
@@ -3057,27 +3056,71 @@ html[data-theme="dark"] .start-cta {
 
 /* Keep main header on one row on phone; `.nav-container` uses wrap ≤640px for other pages/layouts */
 @media (max-width: 768px) {
+    html,
+    body {
+        overscroll-behavior-x: none;
+    }
+
+    body {
+        touch-action: pan-y pinch-zoom;
+    }
+
     .nav .nav-container {
         flex-wrap: nowrap;
         row-gap: 0;
     }
 
-    /* Homepage hero image: edge-to-edge — no shifting side gutters on phones */
+  /* Block horizontal page shift — no negative-margin bleed hacks */
+    .hero,
+    .workflow-infographic,
+    .services,
+    .features,
+    .approach,
+    .insights-teaser,
+    .cred-band,
+    .cta-section,
+    .start-cta,
+    .footer,
+    .page-main,
+    .lead-form-section {
+        max-width: 100%;
+        overflow-x: clip;
+    }
+
+    img,
+    video,
+    svg,
+    figure {
+        max-width: 100%;
+    }
+
+    /* Homepage hero: copy padded, image true full-bleed (no side gutters / overflow) */
     .hero.hero--home {
         --hero-mobile-gutter: clamp(1.25rem, 5vw, 1.5rem);
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .hero.hero--home .hero-inner {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .hero.hero--home .hero-content {
         padding-left: var(--hero-mobile-gutter);
         padding-right: var(--hero-mobile-gutter);
     }
 
     .hero.hero--home .hero-visual {
-        width: calc(100% + (2 * var(--hero-mobile-gutter)));
-        max-width: calc(100% + (2 * var(--hero-mobile-gutter)));
-        margin-left: calc(-1 * var(--hero-mobile-gutter));
-        margin-right: calc(-1 * var(--hero-mobile-gutter));
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
     }
 
     .hero.hero--home .hero-visual-frame {
-        border-radius: 10px;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
     }
 }
 

@@ -1193,22 +1193,7 @@
     }
 
     function injectHreflang() {
-        if (document.querySelector('link[data-abshops-hreflang]')) return;
-        var url = window.location.href.replace(/#.*$/, '');
-        ['nl', 'en'].forEach(function (code) {
-            var link = document.createElement('link');
-            link.setAttribute('rel', 'alternate');
-            link.setAttribute('hreflang', code);
-            link.setAttribute('href', url);
-            link.setAttribute('data-abshops-hreflang', code);
-            document.head.appendChild(link);
-        });
-        var xdef = document.createElement('link');
-        xdef.setAttribute('rel', 'alternate');
-        xdef.setAttribute('hreflang', 'x-default');
-        xdef.setAttribute('href', url);
-        xdef.setAttribute('data-abshops-hreflang', 'x-default');
-        document.head.appendChild(xdef);
+        /* Disabled: no hreflang alternates — NL is canonical; EN toggle is client-side only. */
     }
 
     function applyMetaSeo(lang, pageId) {
@@ -1252,7 +1237,7 @@
             }
         }
 
-        document.documentElement.lang = lang === 'en' ? 'en' : 'nl';
+        /* Keep <html lang="nl"> for crawlers; EN is a client-side UI preference only. */
     }
 
     function applyBindings(lang) {

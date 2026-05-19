@@ -208,7 +208,14 @@ html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
     transition: background-color var(--theme-duration) var(--ease-out);
+}
+
+@supports not (overflow: clip) {
+    html {
+        overflow-x: hidden;
+    }
 }
 
 html:not([data-theme]) {
@@ -938,7 +945,7 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
         pointer-events: none;
         visibility: hidden;
         overflow-x: hidden;
-        max-width: 100vw;
+        max-width: 100%;
         transition:
             visibility 0s linear 0.48s,
             pointer-events 0s linear 0.48s;
@@ -2583,8 +2590,8 @@ html[data-theme="dark"] .footer-mail:hover {
     content: "";
     position: absolute;
     left: 0;
-    top: 0.2rem;
-    bottom: 0.2rem;
+    top: 0;
+    bottom: 0;
     width: 4px;
     border-radius: 2px;
     background: var(--start-accent);
@@ -2630,9 +2637,18 @@ html[data-theme="dark"] .footer-mail:hover {
 }
 
 @media (max-width: 767px) {
+    .start-cta {
+        padding-left: clamp(1.25rem, 5vw, 1.5rem);
+        padding-right: clamp(1.25rem, 5vw, 1.5rem);
+    }
+
     .start-cta-inner {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .start-cta-text {
+        width: 100%;
     }
 
     .start-cta-link {
@@ -2896,7 +2912,13 @@ html[data-theme="dark"] .start-cta {
     .hero.hero--home .hero-inner {
         grid-template-columns: 1fr;
         gap: 2.25rem;
-        max-width: min(38rem, 100%);
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .hero.hero--home .hero-content,
+    .hero.hero--home .hero-visual {
+        min-width: 0;
     }
 
     .hero.hero--home .hero-content {
@@ -2916,13 +2938,13 @@ html[data-theme="dark"] .start-cta {
     }
 
     .hero.hero--home .hero-visual {
-        justify-self: center;
+        justify-self: stretch;
         width: 100%;
-        max-width: min(520px, 100%);
+        max-width: none;
     }
 
     .hero.hero--home .hero-visual-frame {
-        margin: 0 auto;
+        margin: 0;
     }
     
     .services,
@@ -3038,6 +3060,24 @@ html[data-theme="dark"] .start-cta {
     .nav .nav-container {
         flex-wrap: nowrap;
         row-gap: 0;
+    }
+
+    /* Homepage hero image: edge-to-edge — no shifting side gutters on phones */
+    .hero.hero--home {
+        --hero-mobile-gutter: clamp(1.25rem, 5vw, 1.5rem);
+        padding-left: var(--hero-mobile-gutter);
+        padding-right: var(--hero-mobile-gutter);
+    }
+
+    .hero.hero--home .hero-visual {
+        width: calc(100% + (2 * var(--hero-mobile-gutter)));
+        max-width: calc(100% + (2 * var(--hero-mobile-gutter)));
+        margin-left: calc(-1 * var(--hero-mobile-gutter));
+        margin-right: calc(-1 * var(--hero-mobile-gutter));
+    }
+
+    .hero.hero--home .hero-visual-frame {
+        border-radius: 10px;
     }
 }
 

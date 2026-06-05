@@ -1110,7 +1110,7 @@
         ogTitle: 'Thank you | ABshops',
         ogDesc: 'Your request has been received.',
         heroTitle: 'Thank you',
-        heroLead: 'Thank you for your request. I will get back to you as soon as possible.',
+        heroLead: 'Thank you for your request. We will get back to you as soon as possible.',
         btnHome: 'Back to home',
         btnContact: 'Contact',
         nextTitle: 'Next steps',

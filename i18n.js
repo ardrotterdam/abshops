@@ -1096,7 +1096,7 @@
         ogTitle: 'Bedankt | ABshops',
         ogDesc: 'Uw aanvraag is ontvangen.',
         heroTitle: 'Bedankt',
-        heroLead: 'Bedankt voor uw aanvraag. Ik neem zo snel mogelijk contact met u op.',
+        heroLead: 'Bedankt voor uw aanvraag. Wij nemen zo snel mogelijk contact met u op.',
         btnHome: 'Terug naar home',
         btnContact: 'Contact',
         nextTitle: 'Volgende stappen',

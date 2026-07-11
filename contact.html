@@ -223,11 +223,11 @@
         <section class="content-section animate-in" id="bericht" aria-labelledby="contact-form-title">
             <h2 id="contact-form-title" data-i18n="contact.formSectionTitle">Bericht sturen</h2>
             <p data-i18n="contact.formIntro">Vul het formulier hieronder in. Na het versturen zie je een bevestigingspagina; we reageren doorgaans binnen één werkdag.</p>
-            <form class="contact-form" method="POST" action="https://formsubmit.co/info@abshops.nl">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_subject" value="Nieuwe aanvraag via ABshops.nl">
-                <input type="hidden" name="_next" value="https://abshops.nl/bedankt.html">
-                <input type="text" name="_honey" style="display:none">
+            <form class="contact-form" method="POST" action="https://api.web3forms.com/submit">
+                <input type="hidden" name="access_key" value="89874070-6606-46f4-929a-462c0ef86c2e">
+                <input type="hidden" name="subject" value="Nieuwe aanvraag via ABshops.nl">
+                <input type="hidden" name="redirect" value="https://abshops.nl/bedankt.html">
+                <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
                 <div class="lead-form-grid" style="margin-top: 1.25rem;">
                     <div class="lead-form-field">
                         <label for="cf-name" data-i18n="contact.labelName">Naam *</label>

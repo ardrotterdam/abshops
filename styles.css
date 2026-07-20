@@ -235,6 +235,21 @@ body {
     transition-timing-function: var(--ease-out);
 }
 
+/* Content headings use Inter (--font). Logo, nav, eyebrows keep Syne (--font-display). */
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font);
+    font-feature-settings: normal;
+    font-variant-alternates: normal;
+}
+
+h2.section-label,
+h2.workflow-infographic-eyebrow {
+    font-family: var(--font-display);
+}
+
 @supports not (overflow: clip) {
     body {
         overflow-x: hidden;
@@ -1601,7 +1616,7 @@ html[data-theme="dark"] .workflow-infographic-frame {
 }
 
 .hero-title {
-    font-family: var(--font-display);
+    font-family: var(--font);
     font-size: clamp(2.75rem, 7.5vw, 5.75rem);
     font-weight: 600;
     letter-spacing: -0.045em;
@@ -1811,7 +1826,7 @@ html[data-theme="dark"] .hero-inline-link {
 }
 
 .service-card h3 {
-    font-family: var(--font-display);
+    font-family: var(--font);
     font-size: 1.375rem;
     font-weight: 600;
     margin-bottom: 0.85rem;
@@ -1883,7 +1898,7 @@ html[data-theme="dark"] .hero-inline-link {
 }
 
 .feature-item h3 {
-    font-family: var(--font-display);
+    font-family: var(--font);
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.65rem;
@@ -1940,7 +1955,7 @@ html[data-theme="dark"] .hero-inline-link {
 }
 
 .approach h2 {
-    font-family: var(--font-display);
+    font-family: var(--font);
     font-size: clamp(2.25rem, 4.5vw, 3.75rem);
     font-weight: 600;
     letter-spacing: -0.035em;
@@ -1992,7 +2007,7 @@ html[data-theme="dark"] .hero-inline-link {
 }
 
 .approach-step h3 {
-    font-family: var(--font-display);
+    font-family: var(--font);
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--black);
@@ -2086,7 +2101,7 @@ html[data-theme="dark"] .stats {
 }
 
 .cred-band-item h3 {
-    font-family: var(--font-display);
+    font-family: var(--font);
     font-size: 1.05rem;
     font-weight: 600;
     color: var(--white);
@@ -2188,7 +2203,7 @@ html[data-theme="dark"] .trust-signal {
 }
 
 .insights-teaser-title {
-    font-family: var(--font-display);
+    font-family: var(--font);
     font-size: clamp(1.35rem, 3vw, 1.75rem);
     font-weight: 600;
     letter-spacing: -0.03em;
@@ -2302,7 +2317,7 @@ html[data-theme="dark"] .insights-teaser-title {
 }
 
 .insights-topic-card h3 {
-    font-family: var(--font-display);
+    font-family: var(--font);
     font-size: 1.05rem;
     font-weight: 600;
     margin: 0 0 0.5rem;
@@ -2342,7 +2357,7 @@ html[data-theme="dark"] .insights-topic-card {
 }
 
 .insights-bridge h2 {
-    font-family: var(--font-display);
+    font-family: var(--font);
     font-size: 1.1rem;
     font-weight: 600;
     margin: 0 0 0.5rem;
@@ -2391,7 +2406,7 @@ html[data-theme="dark"] .cta-section::before {
 }
 
 .cta-container h2 {
-    font-family: var(--font-display);
+    font-family: var(--font);
     font-size: clamp(2rem, 4.5vw, 3.5rem);
     font-weight: 600;
     letter-spacing: -0.035em;
@@ -2620,7 +2635,7 @@ html[data-theme="dark"] .footer-mail:hover {
 
 .start-cta-title {
     margin: 0 0 0.85rem;
-    font-family: var(--font-display);
+    font-family: var(--font);
     font-size: clamp(1.75rem, 3.75vw, 2.5rem);
     font-weight: 600;
     letter-spacing: -0.03em;
@@ -2763,14 +2778,18 @@ html[data-theme="dark"] .start-cta {
     border-bottom: none;
 }
 
-.content-section h2 {
-    font-family: var(--font-display);
+.content-section h2:not(.section-label) {
+    font-family: var(--font);
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: -0.03em;
     color: var(--black);
     margin-bottom: 1.125rem;
     line-height: 1.2;
+}
+
+.content-section h2.section-label {
+    font-family: var(--font-display);
 }
 
 .content-section p {
@@ -2830,7 +2849,7 @@ html[data-theme="dark"] .start-cta {
 }
 
 .service-cross-link h3 {
-    font-family: var(--font-display);
+    font-family: var(--font);
     font-size: 1.125rem;
     font-weight: 600;
     color: var(--black);
@@ -3170,7 +3189,7 @@ html[data-theme="dark"] .start-cta {
 }
 
 .lead-form-intro h2 {
-    font-family: var(--font-display);
+    font-family: var(--font);
     font-size: clamp(1.5rem, 3.5vw, 2rem);
     font-weight: 600;
     letter-spacing: -0.03em;

@@ -5,6 +5,20 @@
         return window.ABshopsI18n ? window.ABshopsI18n.getLang() : 'nl';
     }
 
+    function thankYouUrl() {
+        if (window.ABshopsI18n && typeof window.ABshopsI18n.thankYouUrl === 'function') {
+            return window.ABshopsI18n.thankYouUrl(currentLang());
+        }
+        return 'https://abshops.nl/' + currentLang() + '/bedankt';
+    }
+
+    function syncFormRedirects(root) {
+        var url = thankYouUrl();
+        root.querySelectorAll('input[name="_next"], input[name="redirect"]').forEach(function (input) {
+            input.value = url;
+        });
+    }
+
     function stepLabels() {
         return window.ABshopsI18n ? window.ABshopsI18n.leadSteps(currentLang()) : ['Contact', 'Organisatie', 'Project', 'Afronden'];
     }
@@ -214,15 +228,23 @@
         document.querySelectorAll('form[data-lead-form]').forEach(function (form) {
             var idx = parseInt(form.getAttribute('data-current-step'), 10);
             if (isNaN(idx)) idx = 0;
+            syncFormRedirects(form);
             renderProgressShell(form);
             updateProgress(form, idx);
+        });
+        document.querySelectorAll('form.contact-form').forEach(function (form) {
+            syncFormRedirects(form);
         });
     }
 
     document.addEventListener('abshops:i18n-applied', refreshLeadFormsI18n);
 
     document.querySelectorAll('form[data-lead-form]').forEach(function (form) {
+        syncFormRedirects(form);
         renderProgressShell(form);
         initLeadForm(form);
+    });
+    document.querySelectorAll('form.contact-form').forEach(function (form) {
+        syncFormRedirects(form);
     });
 })();

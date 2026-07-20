@@ -1,5 +1,7 @@
 /**
- * ABshops lightweight i18n (nl / en). Vanilla JS, localStorage, no external APIs.
+ * ABshops lightweight i18n (nl / en).
+ * Locale-prefixed pages (/nl/…, /en/…) bake content in HTML; URL locale wins.
+ * Legacy pages (e.g. insight articles) may still use localStorage + client swap.
  */
 (function () {
     'use strict';
@@ -1118,16 +1120,33 @@
             'Your message has been sent. Please check your spam folder if you do not hear from us. For urgent questions you can also email <a href="mailto:info@abshops.nl">info@abshops.nl</a> directly.'
     };
 
+    function pathSegments() {
+        var rawPath = window.location.pathname || '';
+        var path = rawPath.replace(/\\/g, '/');
+        return path.split('/').filter(function (s) {
+            return s.length > 0;
+        });
+    }
+
+    function detectLocaleFromPath() {
+        var segs = pathSegments();
+        if (segs.length && SUPPORTED[segs[0]]) return segs[0];
+        var body = document.body;
+        if (body) {
+            var fromBody = body.getAttribute('data-locale');
+            if (fromBody && SUPPORTED[fromBody]) return fromBody;
+        }
+        return null;
+    }
+
     function detectPageId() {
         var body = document.body;
         if (body && body.getAttribute('data-i18n-page')) {
             return body.getAttribute('data-i18n-page');
         }
-        var rawPath = window.location.pathname || '';
-        var path = rawPath.replace(/\\/g, '/');
-        var segs = path.split('/').filter(function (s) {
-            return s.length > 0;
-        });
+        var segs = pathSegments();
+        if (segs.length && SUPPORTED[segs[0]]) segs = segs.slice(1);
+
         var ix = segs.indexOf('insights');
         if (ix !== -1) {
             var sub = segs[ix + 1];
@@ -1142,11 +1161,17 @@
             '': 'index',
             index: 'index',
             'index.html': 'index',
+            insights: 'insights',
             'insights.html': 'insights',
+            contact: 'contact',
             'contact.html': 'contact',
+            websites: 'websites',
             'websites.html': 'websites',
+            webshops: 'webshops',
             'webshops.html': 'webshops',
+            automation: 'ai',
             'ai-oplossingen.html': 'ai',
+            bedankt: 'bedankt',
             'bedankt.html': 'bedankt'
         };
         return map[pathTail] || 'index';
@@ -1164,6 +1189,8 @@
     }
 
     function getPreferredLang() {
+        var fromPath = detectLocaleFromPath();
+        if (fromPath) return fromPath;
         try {
             var s = localStorage.getItem(STORAGE_KEY);
             if (s && SUPPORTED[s]) return s;
@@ -1193,10 +1220,18 @@
     }
 
     function injectHreflang() {
-        /* Disabled: no hreflang alternates — NL is canonical; EN toggle is client-side only. */
+        /* Hreflang is baked into locale HTML pages at build time. */
     }
 
     function applyMetaSeo(lang, pageId) {
+        /* Locale-prefixed pages already ship correct meta in the HTML response. */
+        if (detectLocaleFromPath()) {
+            if (document.documentElement) {
+                document.documentElement.setAttribute('lang', lang);
+            }
+            return;
+        }
+
         var prefix = pageId + '.';
         var title = t(lang, prefix + 'metaTitle');
         if (title) document.title = title;
@@ -1237,7 +1272,9 @@
             }
         }
 
-        /* Keep <html lang="nl"> for crawlers; EN is a client-side UI preference only. */
+        if (document.documentElement) {
+            document.documentElement.setAttribute('lang', lang);
+        }
     }
 
     function applyBindings(lang) {
@@ -1313,9 +1350,17 @@
 
         roots.forEach(function (root) {
             root.querySelectorAll('.lang-switch-btn').forEach(function (btn) {
-                btn.addEventListener('click', function () {
+                btn.addEventListener('click', function (ev) {
                     var next = btn.getAttribute('data-lang');
                     if (!next || !SUPPORTED[next]) return;
+
+                    /* Locale pages: <a href="/en/..."> navigates; only remember preference. */
+                    if (btn.tagName === 'A' && btn.getAttribute('href')) {
+                        setStoredLang(next);
+                        return;
+                    }
+
+                    ev.preventDefault();
                     if (next === getPreferredLang()) return;
                     applyLanguage(next);
                 });
@@ -1339,13 +1384,17 @@
     function applyLanguage(lang, opts) {
         if (!SUPPORTED[lang]) lang = DEFAULT_LANG;
         var silent = opts && opts.silent;
+        var localePrefixed = !!detectLocaleFromPath();
 
         function inner() {
             setStoredLang(lang);
             var pageId = detectPageId();
             injectHreflang();
             applyMetaSeo(lang, pageId);
-            applyBindings(lang);
+            /* Baked locale pages already contain the correct language in HTML. */
+            if (!localePrefixed) {
+                applyBindings(lang);
+            }
 
             document.dispatchEvent(
                 new CustomEvent('abshops:i18n-applied', {
@@ -1377,6 +1426,7 @@
         supported: SUPPORTED,
         dict: DICT,
         detectPageId: detectPageId,
+        detectLocaleFromPath: detectLocaleFromPath,
         getLang: getPreferredLang,
         setLang: function (lang) {
             applyLanguage(lang);
@@ -1385,6 +1435,10 @@
             return t(getPreferredLang(), path);
         },
         apply: init,
+        thankYouUrl: function (lang) {
+            var code = lang && SUPPORTED[lang] ? lang : getPreferredLang();
+            return 'https://abshops.nl/' + code + '/bedankt';
+        },
         /** For lead-form.js */
         leadSteps: function (lang) {
             var raw = getRaw(lang, 'lead.steps');

@@ -627,12 +627,25 @@ html[data-theme="dark"] .theme-toggle-icon-moon {
     border-radius: 999px;
     line-height: 1;
     min-width: 0;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
     transition:
         color calc(var(--nav-transition-duration) * 0.75) var(--ease-nav),
         background-color calc(var(--nav-transition-duration) * 0.75) var(--ease-nav),
         transform 0.22s var(--ease-nav),
         box-shadow 0.4s var(--ease-nav);
     -webkit-tap-highlight-color: transparent;
+}
+
+a.lang-switch-btn {
+    color: var(--nav-lang-pill-inactive);
+}
+
+a.lang-switch-btn:hover {
+    text-decoration: none;
 }
 
 .lang-switch-btn span {

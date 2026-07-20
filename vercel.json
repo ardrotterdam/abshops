@@ -2,7 +2,80 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "outputDirectory": ".",
   "redirects": [
-    { "source": "/insights", "destination": "/insights.html", "permanent": true },
-    { "source": "/insights/", "destination": "/insights.html", "permanent": true }
+    {
+      "source": "/",
+      "destination": "/nl/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/nl/",
+      "permanent": true
+    },
+    {
+      "source": "/websites.html",
+      "destination": "/nl/websites",
+      "permanent": true
+    },
+    {
+      "source": "/webshops.html",
+      "destination": "/nl/webshops",
+      "permanent": true
+    },
+    {
+      "source": "/ai-oplossingen.html",
+      "destination": "/nl/automation",
+      "permanent": true
+    },
+    {
+      "source": "/insights.html",
+      "destination": "/nl/insights",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/nl/contact",
+      "permanent": true
+    },
+    {
+      "source": "/bedankt.html",
+      "destination": "/nl/bedankt",
+      "permanent": true
+    },
+    {
+      "source": "/insights",
+      "destination": "/nl/insights",
+      "permanent": true
+    },
+    {
+      "source": "/insights/",
+      "destination": "/nl/insights",
+      "permanent": true
+    },
+    {
+      "source": "/nl",
+      "destination": "/nl/",
+      "permanent": true
+    },
+    {
+      "source": "/en",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/:locale(nl|en)/index.html",
+      "destination": "/:locale/",
+      "permanent": true
+    },
+    {
+      "source": "/:locale(nl|en)/:path+/index.html",
+      "destination": "/:locale/:path+",
+      "permanent": true
+    },
+    {
+      "source": "/:locale(nl|en)/:path([^/]+)/",
+      "destination": "/:locale/:path",
+      "permanent": true
+    }
   ]
 }

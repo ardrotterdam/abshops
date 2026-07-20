@@ -1,57 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://abshops.nl/</loc>
-    <lastmod>2026-05-19</lastmod>
+    <loc>https://abshops.nl/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://abshops.nl/nl/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abshops.nl/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abshops.nl/nl/" />
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://abshops.nl/websites.html</loc>
-    <lastmod>2026-05-19</lastmod>
+    <loc>https://abshops.nl/en/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://abshops.nl/nl/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abshops.nl/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abshops.nl/nl/" />
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://abshops.nl/nl/websites</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://abshops.nl/nl/websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abshops.nl/en/websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abshops.nl/nl/websites" />
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://abshops.nl/webshops.html</loc>
-    <lastmod>2026-05-19</lastmod>
+    <loc>https://abshops.nl/en/websites</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://abshops.nl/nl/websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abshops.nl/en/websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abshops.nl/nl/websites" />
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://abshops.nl/ai-oplossingen.html</loc>
-    <lastmod>2026-05-19</lastmod>
+    <loc>https://abshops.nl/nl/webshops</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://abshops.nl/nl/webshops" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abshops.nl/en/webshops" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abshops.nl/nl/webshops" />
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://abshops.nl/insights.html</loc>
-    <lastmod>2026-05-19</lastmod>
+    <loc>https://abshops.nl/en/webshops</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://abshops.nl/nl/webshops" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abshops.nl/en/webshops" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abshops.nl/nl/webshops" />
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abshops.nl/nl/automation</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://abshops.nl/nl/automation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abshops.nl/en/automation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abshops.nl/nl/automation" />
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abshops.nl/en/automation</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://abshops.nl/nl/automation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abshops.nl/en/automation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abshops.nl/nl/automation" />
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abshops.nl/nl/insights</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://abshops.nl/nl/insights" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abshops.nl/en/insights" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abshops.nl/nl/insights" />
+    <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://abshops.nl/en/insights</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://abshops.nl/nl/insights" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abshops.nl/en/insights" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abshops.nl/nl/insights" />
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://abshops.nl/nl/contact</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://abshops.nl/nl/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abshops.nl/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abshops.nl/nl/contact" />
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://abshops.nl/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://abshops.nl/nl/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abshops.nl/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abshops.nl/nl/contact" />
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://abshops.nl/insights/ai-automation/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://abshops.nl/insights/shopify-ecommerce/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://abshops.nl/insights/webdevelopment/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://abshops.nl/contact.html</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 </urlset>
